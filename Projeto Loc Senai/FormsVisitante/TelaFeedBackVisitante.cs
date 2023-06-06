@@ -53,6 +53,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
                  {
                     if (box_obs_usuario.Text != "") 
                     {
+
                          m_feedback mf = new m_feedback();
                           mf.setnome_usuario(box_nome_usuario.Text);
                           mf.setavaliacao_software(avaliacao);
