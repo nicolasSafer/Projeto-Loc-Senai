@@ -72,7 +72,7 @@ namespace Projeto_Loc_Senai.FormsAdm
             m_feedback muf = new m_feedback();
             muf.codigofeedback = Convert.ToInt32(teste);
             muf.setavaliacao_software(box_avaliacao_software.Text);
-            muf.setobservavoes(box_observacao_software.Text);
+            muf.setobservacao(box_observacao_software.Text);
             muf.setnome_usuario(box_nome_usuario.Text);
             controller_feedback cf = new controller_feedback();
             if (cf.updatesala(muf) == true)

@@ -14,7 +14,28 @@ namespace CONTROL
         bool resultado = false;
         string sql;
         conexao con = new conexao();
-
+        public bool insertfeedback(m_feedback mf)
+        {
+            try
+            {
+                //"insert into tb_sala_do_predio(nome_sala,descricao_sala,numeracao,bloco) values (@nome_sala,@descricao_sala,@numeracao,@bloco)"
+                sql = "insert into tb_feedback_software(nome_usuario,avaliacao_software,observacoes) values (@nome_usuario,@avaliacao_software,@observacao_software)";
+                string[] campos = { "@nome_usuario", "@avaliacao_software", "@observacao_software"};
+                string[] valores = { mf.Getnome_usuario(), mf.Getavaliacao_software(), mf.Getobservacao()};
+                if (con.cadastrar(campos, valores, sql) >= 1)
+                {
+                    return resultado = true;
+                }
+                else
+                {
+                    return resultado = false;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                throw new System.Exception(ex.Message);
+            }
+        }
         public bool updatesala(m_feedback muf)
         {
             try

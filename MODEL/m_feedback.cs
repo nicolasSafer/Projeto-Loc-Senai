@@ -42,7 +42,7 @@ namespace MODEL
         {
             this.avaliacao_software = avaliacao_software;
         }
-        public void setobservavoes (string observacao)
+        public void setobservacao (string observacao)
         {
             this.observacao = observacao;
         }

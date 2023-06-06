@@ -42,9 +42,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.box_obs_usuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.box_nome_usuario = new System.Windows.Forms.TextBox();
             this.PainelSuperior = new CONTROL.GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,9 +76,9 @@
             this.PainelCentral.Controls.Add(this.pictureBox1);
             this.PainelCentral.Controls.Add(this.iconButton1);
             this.PainelCentral.Controls.Add(this.label2);
-            this.PainelCentral.Controls.Add(this.textBox2);
+            this.PainelCentral.Controls.Add(this.box_obs_usuario);
             this.PainelCentral.Controls.Add(this.label1);
-            this.PainelCentral.Controls.Add(this.textBox1);
+            this.PainelCentral.Controls.Add(this.box_nome_usuario);
             this.PainelCentral.Controls.Add(this.PainelSuperior);
             this.PainelCentral.Location = new System.Drawing.Point(35, 35);
             this.PainelCentral.Name = "PainelCentral";
@@ -111,6 +111,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label7
             // 
@@ -138,6 +139,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label5
             // 
@@ -165,6 +167,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label4
             // 
@@ -192,6 +195,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label3
             // 
@@ -219,6 +223,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // iconButton1
             // 
@@ -234,6 +239,7 @@
             this.iconButton1.TabIndex = 10;
             this.iconButton1.Text = "Enviar";
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label2
             // 
@@ -247,18 +253,18 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Observações";
             // 
-            // textBox2
+            // box_obs_usuario
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.box_obs_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(37, 482);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(820, 100);
-            this.textBox2.TabIndex = 8;
+            this.box_obs_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_obs_usuario.Location = new System.Drawing.Point(37, 482);
+            this.box_obs_usuario.Margin = new System.Windows.Forms.Padding(2);
+            this.box_obs_usuario.Multiline = true;
+            this.box_obs_usuario.Name = "box_obs_usuario";
+            this.box_obs_usuario.Size = new System.Drawing.Size(820, 100);
+            this.box_obs_usuario.TabIndex = 8;
             // 
             // label1
             // 
@@ -272,16 +278,16 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Nome";
             // 
-            // textBox1
+            // box_nome_usuario
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.box_nome_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(76, 188);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(751, 34);
-            this.textBox1.TabIndex = 5;
+            this.box_nome_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_nome_usuario.Location = new System.Drawing.Point(76, 188);
+            this.box_nome_usuario.Margin = new System.Windows.Forms.Padding(2);
+            this.box_nome_usuario.Name = "box_nome_usuario";
+            this.box_nome_usuario.Size = new System.Drawing.Size(751, 32);
+            this.box_nome_usuario.TabIndex = 5;
             // 
             // PainelSuperior
             // 
@@ -312,12 +318,12 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(110, 37);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(666, 77);
+            this.label6.Size = new System.Drawing.Size(620, 71);
             this.label6.TabIndex = 2;
             this.label6.Text = "FeedBack do Usuário";
             // 
@@ -347,9 +353,9 @@
         private CONTROL.GradientPanel PainelCentral;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox box_obs_usuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox box_nome_usuario;
         private CONTROL.GradientPanel PainelSuperior;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
