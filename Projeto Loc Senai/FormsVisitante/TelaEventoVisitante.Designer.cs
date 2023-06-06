@@ -104,34 +104,65 @@
             this.panel26 = new System.Windows.Forms.Panel();
             this.button40 = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.box_teste = new System.Windows.Forms.TextBox();
+            this.box_id_2_seg = new System.Windows.Forms.TextBox();
             this.label_hora_segunda = new System.Windows.Forms.Label();
             this.label_nome_segunda = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.box_id_3_seg = new System.Windows.Forms.TextBox();
+            this.box_id_1_seg = new System.Windows.Forms.TextBox();
+            this.box_id_4_seg = new System.Windows.Forms.TextBox();
+            this.box_teste_data = new System.Windows.Forms.TextBox();
+            this.box_teste_dia = new System.Windows.Forms.TextBox();
             this.cbx_teste1 = new System.Windows.Forms.ComboBox();
             this.cbx_teste2 = new System.Windows.Forms.ComboBox();
+            this.box_id_4_ter = new System.Windows.Forms.TextBox();
+            this.box_id_3_ter = new System.Windows.Forms.TextBox();
+            this.box_id_1_ter = new System.Windows.Forms.TextBox();
+            this.box_id_2_ter = new System.Windows.Forms.TextBox();
+            this.box_id_4_qua = new System.Windows.Forms.TextBox();
+            this.box_id_3_qua = new System.Windows.Forms.TextBox();
+            this.box_id_1_qua = new System.Windows.Forms.TextBox();
+            this.box_id_2_qua = new System.Windows.Forms.TextBox();
+            this.box_id_4_qui = new System.Windows.Forms.TextBox();
+            this.box_id_3_qui = new System.Windows.Forms.TextBox();
+            this.box_id_1_qui = new System.Windows.Forms.TextBox();
+            this.box_id_2_qui = new System.Windows.Forms.TextBox();
+            this.box_id_4_dom = new System.Windows.Forms.TextBox();
+            this.box_id_3_dom = new System.Windows.Forms.TextBox();
+            this.box_id_1_dom = new System.Windows.Forms.TextBox();
+            this.box_id_2_dom = new System.Windows.Forms.TextBox();
+            this.box_id_4_sab = new System.Windows.Forms.TextBox();
+            this.box_id_3_sab = new System.Windows.Forms.TextBox();
+            this.box_id_1_sab = new System.Windows.Forms.TextBox();
+            this.box_id_2_sab = new System.Windows.Forms.TextBox();
+            this.box_id_4_sex = new System.Windows.Forms.TextBox();
+            this.box_id_3_sex = new System.Windows.Forms.TextBox();
+            this.box_id_1_sex = new System.Windows.Forms.TextBox();
+            this.box_id_2_sex = new System.Windows.Forms.TextBox();
+            this.box_teste_select = new System.Windows.Forms.TextBox();
             this.dayContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
+            this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
+            this.panel27.SuspendLayout();
             this.SuspendLayout();
             // 
             // dayContainer
@@ -312,6 +343,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
+            this.panel3.Controls.Add(this.box_id_4_ter);
+            this.panel3.Controls.Add(this.box_id_1_ter);
+            this.panel3.Controls.Add(this.box_id_3_ter);
+            this.panel3.Controls.Add(this.box_id_2_ter);
             this.panel3.Location = new System.Drawing.Point(211, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(30, 248);
@@ -384,6 +419,10 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
+            this.panel6.Controls.Add(this.box_id_4_qua);
+            this.panel6.Controls.Add(this.box_id_1_qua);
+            this.panel6.Controls.Add(this.box_id_3_qua);
+            this.panel6.Controls.Add(this.box_id_2_qua);
             this.panel6.Location = new System.Drawing.Point(427, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(30, 248);
@@ -456,6 +495,10 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.DarkGray;
+            this.panel9.Controls.Add(this.box_id_4_qui);
+            this.panel9.Controls.Add(this.box_id_1_qui);
+            this.panel9.Controls.Add(this.box_id_3_qui);
+            this.panel9.Controls.Add(this.box_id_2_qui);
             this.panel9.Location = new System.Drawing.Point(643, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(30, 248);
@@ -528,10 +571,10 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkGray;
-            this.panel12.Controls.Add(this.textBox3);
-            this.panel12.Controls.Add(this.textBox1);
-            this.panel12.Controls.Add(this.textBox2);
-            this.panel12.Controls.Add(this.box_teste);
+            this.panel12.Controls.Add(this.box_id_4_seg);
+            this.panel12.Controls.Add(this.box_id_3_seg);
+            this.panel12.Controls.Add(this.box_id_1_seg);
+            this.panel12.Controls.Add(this.box_id_2_seg);
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(22, 248);
@@ -639,6 +682,10 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.DarkGray;
+            this.panel18.Controls.Add(this.box_id_4_sab);
+            this.panel18.Controls.Add(this.box_id_1_sab);
+            this.panel18.Controls.Add(this.box_id_3_sab);
+            this.panel18.Controls.Add(this.box_id_2_sab);
             this.panel18.Location = new System.Drawing.Point(211, 281);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(30, 248);
@@ -783,6 +830,10 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.DarkGray;
+            this.panel24.Controls.Add(this.box_id_4_dom);
+            this.panel24.Controls.Add(this.box_id_1_dom);
+            this.panel24.Controls.Add(this.box_id_3_dom);
+            this.panel24.Controls.Add(this.box_id_2_dom);
             this.panel24.Location = new System.Drawing.Point(427, 281);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(30, 248);
@@ -855,17 +906,22 @@
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.DarkGray;
+            this.panel27.Controls.Add(this.box_id_4_sex);
+            this.panel27.Controls.Add(this.box_id_1_sex);
+            this.panel27.Controls.Add(this.box_id_3_sex);
+            this.panel27.Controls.Add(this.box_id_2_sex);
             this.panel27.Location = new System.Drawing.Point(3, 281);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(22, 248);
             this.panel27.TabIndex = 15;
             // 
-            // box_teste
+            // box_id_2_seg
             // 
-            this.box_teste.Location = new System.Drawing.Point(0, 98);
-            this.box_teste.Name = "box_teste";
-            this.box_teste.Size = new System.Drawing.Size(20, 20);
-            this.box_teste.TabIndex = 1;
+            this.box_id_2_seg.Location = new System.Drawing.Point(0, 98);
+            this.box_id_2_seg.Name = "box_id_2_seg";
+            this.box_id_2_seg.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_seg.TabIndex = 1;
+            this.box_id_2_seg.TextChanged += new System.EventHandler(this.box_id_2_seg_TextChanged);
             // 
             // label_hora_segunda
             // 
@@ -889,40 +945,40 @@
             this.label_nome_segunda.TabIndex = 7;
             this.label_nome_segunda.Text = "Boticario";
             // 
-            // textBox1
+            // box_id_3_seg
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 142);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(20, 20);
-            this.textBox1.TabIndex = 2;
+            this.box_id_3_seg.Location = new System.Drawing.Point(0, 142);
+            this.box_id_3_seg.Name = "box_id_3_seg";
+            this.box_id_3_seg.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_seg.TabIndex = 2;
             // 
-            // textBox2
+            // box_id_1_seg
             // 
-            this.textBox2.Location = new System.Drawing.Point(-1, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(20, 20);
-            this.textBox2.TabIndex = 3;
+            this.box_id_1_seg.Location = new System.Drawing.Point(-1, 54);
+            this.box_id_1_seg.Name = "box_id_1_seg";
+            this.box_id_1_seg.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_seg.TabIndex = 3;
             // 
-            // textBox3
+            // box_id_4_seg
             // 
-            this.textBox3.Location = new System.Drawing.Point(0, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(20, 20);
-            this.textBox3.TabIndex = 4;
+            this.box_id_4_seg.Location = new System.Drawing.Point(0, 186);
+            this.box_id_4_seg.Name = "box_id_4_seg";
+            this.box_id_4_seg.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_seg.TabIndex = 4;
             // 
-            // textBox4
+            // box_teste_data
             // 
-            this.textBox4.Location = new System.Drawing.Point(575, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 20);
-            this.textBox4.TabIndex = 1;
+            this.box_teste_data.Location = new System.Drawing.Point(575, 100);
+            this.box_teste_data.Name = "box_teste_data";
+            this.box_teste_data.Size = new System.Drawing.Size(81, 20);
+            this.box_teste_data.TabIndex = 1;
             // 
-            // textBox5
+            // box_teste_dia
             // 
-            this.textBox5.Location = new System.Drawing.Point(705, 100);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(86, 20);
-            this.textBox5.TabIndex = 2;
+            this.box_teste_dia.Location = new System.Drawing.Point(705, 100);
+            this.box_teste_dia.Name = "box_teste_dia";
+            this.box_teste_dia.Size = new System.Drawing.Size(86, 20);
+            this.box_teste_dia.TabIndex = 2;
             // 
             // cbx_teste1
             // 
@@ -940,16 +996,192 @@
             this.cbx_teste2.Size = new System.Drawing.Size(121, 21);
             this.cbx_teste2.TabIndex = 4;
             // 
+            // box_id_4_ter
+            // 
+            this.box_id_4_ter.Location = new System.Drawing.Point(8, 181);
+            this.box_id_4_ter.Name = "box_id_4_ter";
+            this.box_id_4_ter.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_ter.TabIndex = 8;
+            // 
+            // box_id_3_ter
+            // 
+            this.box_id_3_ter.Location = new System.Drawing.Point(8, 137);
+            this.box_id_3_ter.Name = "box_id_3_ter";
+            this.box_id_3_ter.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_ter.TabIndex = 6;
+            // 
+            // box_id_1_ter
+            // 
+            this.box_id_1_ter.Location = new System.Drawing.Point(7, 49);
+            this.box_id_1_ter.Name = "box_id_1_ter";
+            this.box_id_1_ter.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_ter.TabIndex = 7;
+            // 
+            // box_id_2_ter
+            // 
+            this.box_id_2_ter.Location = new System.Drawing.Point(8, 93);
+            this.box_id_2_ter.Name = "box_id_2_ter";
+            this.box_id_2_ter.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_ter.TabIndex = 5;
+            // 
+            // box_id_4_qua
+            // 
+            this.box_id_4_qua.Location = new System.Drawing.Point(8, 181);
+            this.box_id_4_qua.Name = "box_id_4_qua";
+            this.box_id_4_qua.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_qua.TabIndex = 12;
+            // 
+            // box_id_3_qua
+            // 
+            this.box_id_3_qua.Location = new System.Drawing.Point(8, 137);
+            this.box_id_3_qua.Name = "box_id_3_qua";
+            this.box_id_3_qua.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_qua.TabIndex = 10;
+            // 
+            // box_id_1_qua
+            // 
+            this.box_id_1_qua.Location = new System.Drawing.Point(7, 49);
+            this.box_id_1_qua.Name = "box_id_1_qua";
+            this.box_id_1_qua.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_qua.TabIndex = 11;
+            // 
+            // box_id_2_qua
+            // 
+            this.box_id_2_qua.Location = new System.Drawing.Point(8, 93);
+            this.box_id_2_qua.Name = "box_id_2_qua";
+            this.box_id_2_qua.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_qua.TabIndex = 9;
+            // 
+            // box_id_4_qui
+            // 
+            this.box_id_4_qui.Location = new System.Drawing.Point(4, 176);
+            this.box_id_4_qui.Name = "box_id_4_qui";
+            this.box_id_4_qui.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_qui.TabIndex = 16;
+            // 
+            // box_id_3_qui
+            // 
+            this.box_id_3_qui.Location = new System.Drawing.Point(4, 132);
+            this.box_id_3_qui.Name = "box_id_3_qui";
+            this.box_id_3_qui.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_qui.TabIndex = 14;
+            // 
+            // box_id_1_qui
+            // 
+            this.box_id_1_qui.Location = new System.Drawing.Point(3, 44);
+            this.box_id_1_qui.Name = "box_id_1_qui";
+            this.box_id_1_qui.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_qui.TabIndex = 15;
+            // 
+            // box_id_2_qui
+            // 
+            this.box_id_2_qui.Location = new System.Drawing.Point(4, 88);
+            this.box_id_2_qui.Name = "box_id_2_qui";
+            this.box_id_2_qui.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_qui.TabIndex = 13;
+            // 
+            // box_id_4_dom
+            // 
+            this.box_id_4_dom.Location = new System.Drawing.Point(8, 176);
+            this.box_id_4_dom.Name = "box_id_4_dom";
+            this.box_id_4_dom.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_dom.TabIndex = 20;
+            // 
+            // box_id_3_dom
+            // 
+            this.box_id_3_dom.Location = new System.Drawing.Point(8, 132);
+            this.box_id_3_dom.Name = "box_id_3_dom";
+            this.box_id_3_dom.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_dom.TabIndex = 18;
+            // 
+            // box_id_1_dom
+            // 
+            this.box_id_1_dom.Location = new System.Drawing.Point(7, 44);
+            this.box_id_1_dom.Name = "box_id_1_dom";
+            this.box_id_1_dom.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_dom.TabIndex = 19;
+            // 
+            // box_id_2_dom
+            // 
+            this.box_id_2_dom.Location = new System.Drawing.Point(8, 88);
+            this.box_id_2_dom.Name = "box_id_2_dom";
+            this.box_id_2_dom.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_dom.TabIndex = 17;
+            // 
+            // box_id_4_sab
+            // 
+            this.box_id_4_sab.Location = new System.Drawing.Point(1, 186);
+            this.box_id_4_sab.Name = "box_id_4_sab";
+            this.box_id_4_sab.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_sab.TabIndex = 24;
+            // 
+            // box_id_3_sab
+            // 
+            this.box_id_3_sab.Location = new System.Drawing.Point(1, 142);
+            this.box_id_3_sab.Name = "box_id_3_sab";
+            this.box_id_3_sab.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_sab.TabIndex = 22;
+            // 
+            // box_id_1_sab
+            // 
+            this.box_id_1_sab.Location = new System.Drawing.Point(0, 54);
+            this.box_id_1_sab.Name = "box_id_1_sab";
+            this.box_id_1_sab.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_sab.TabIndex = 23;
+            // 
+            // box_id_2_sab
+            // 
+            this.box_id_2_sab.Location = new System.Drawing.Point(1, 98);
+            this.box_id_2_sab.Name = "box_id_2_sab";
+            this.box_id_2_sab.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_sab.TabIndex = 21;
+            // 
+            // box_id_4_sex
+            // 
+            this.box_id_4_sex.Location = new System.Drawing.Point(3, 186);
+            this.box_id_4_sex.Name = "box_id_4_sex";
+            this.box_id_4_sex.Size = new System.Drawing.Size(20, 20);
+            this.box_id_4_sex.TabIndex = 28;
+            // 
+            // box_id_3_sex
+            // 
+            this.box_id_3_sex.Location = new System.Drawing.Point(3, 142);
+            this.box_id_3_sex.Name = "box_id_3_sex";
+            this.box_id_3_sex.Size = new System.Drawing.Size(20, 20);
+            this.box_id_3_sex.TabIndex = 26;
+            // 
+            // box_id_1_sex
+            // 
+            this.box_id_1_sex.Location = new System.Drawing.Point(2, 54);
+            this.box_id_1_sex.Name = "box_id_1_sex";
+            this.box_id_1_sex.Size = new System.Drawing.Size(20, 20);
+            this.box_id_1_sex.TabIndex = 27;
+            // 
+            // box_id_2_sex
+            // 
+            this.box_id_2_sex.Location = new System.Drawing.Point(3, 98);
+            this.box_id_2_sex.Name = "box_id_2_sex";
+            this.box_id_2_sex.Size = new System.Drawing.Size(20, 20);
+            this.box_id_2_sex.TabIndex = 25;
+            // 
+            // box_teste_select
+            // 
+            this.box_teste_select.Location = new System.Drawing.Point(54, 554);
+            this.box_teste_select.Name = "box_teste_select";
+            this.box_teste_select.Size = new System.Drawing.Size(100, 20);
+            this.box_teste_select.TabIndex = 5;
+            // 
             // TelaEventoVisitante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(140)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(1394, 876);
+            this.Controls.Add(this.box_teste_select);
             this.Controls.Add(this.cbx_teste2);
             this.Controls.Add(this.cbx_teste1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.box_teste_dia);
+            this.Controls.Add(this.box_teste_data);
             this.Controls.Add(this.dayContainer);
             this.Name = "TelaEventoVisitante";
             this.Text = "TelaEventoVisitante";
@@ -959,12 +1191,18 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
@@ -973,15 +1211,21 @@
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1065,15 +1309,40 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox box_teste;
+        private System.Windows.Forms.TextBox box_id_2_seg;
         private System.Windows.Forms.Label label_hora_segunda;
         private System.Windows.Forms.Label label_nome_segunda;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox box_id_4_seg;
+        private System.Windows.Forms.TextBox box_id_3_seg;
+        private System.Windows.Forms.TextBox box_id_1_seg;
+        private System.Windows.Forms.TextBox box_teste_data;
+        private System.Windows.Forms.TextBox box_teste_dia;
         private System.Windows.Forms.ComboBox cbx_teste1;
         private System.Windows.Forms.ComboBox cbx_teste2;
+        private System.Windows.Forms.TextBox box_id_4_ter;
+        private System.Windows.Forms.TextBox box_id_1_ter;
+        private System.Windows.Forms.TextBox box_id_3_ter;
+        private System.Windows.Forms.TextBox box_id_2_ter;
+        private System.Windows.Forms.TextBox box_id_4_qua;
+        private System.Windows.Forms.TextBox box_id_1_qua;
+        private System.Windows.Forms.TextBox box_id_3_qua;
+        private System.Windows.Forms.TextBox box_id_2_qua;
+        private System.Windows.Forms.TextBox box_id_4_qui;
+        private System.Windows.Forms.TextBox box_id_1_qui;
+        private System.Windows.Forms.TextBox box_id_3_qui;
+        private System.Windows.Forms.TextBox box_id_2_qui;
+        private System.Windows.Forms.TextBox box_id_4_sex;
+        private System.Windows.Forms.TextBox box_id_1_sex;
+        private System.Windows.Forms.TextBox box_id_3_sex;
+        private System.Windows.Forms.TextBox box_id_2_sex;
+        private System.Windows.Forms.TextBox box_id_4_sab;
+        private System.Windows.Forms.TextBox box_id_1_sab;
+        private System.Windows.Forms.TextBox box_id_3_sab;
+        private System.Windows.Forms.TextBox box_id_2_sab;
+        private System.Windows.Forms.TextBox box_id_4_dom;
+        private System.Windows.Forms.TextBox box_id_1_dom;
+        private System.Windows.Forms.TextBox box_id_3_dom;
+        private System.Windows.Forms.TextBox box_id_2_dom;
+        private System.Windows.Forms.TextBox box_teste_select;
     }
 }

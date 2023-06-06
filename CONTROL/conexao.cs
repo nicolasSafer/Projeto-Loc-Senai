@@ -30,6 +30,7 @@ namespace WindowsFormsApp3
             {
                 getconexao().Open();
                 result = true;
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -37,6 +38,7 @@ namespace WindowsFormsApp3
                 MessageBox.Show("Falha: " + ex.Message);
             }
             return result;
+            
         }
         public int cadastrar(string[] campos, string[] valores, string SQLinsert)
         {
