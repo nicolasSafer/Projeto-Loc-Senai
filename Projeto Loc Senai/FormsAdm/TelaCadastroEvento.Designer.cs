@@ -118,7 +118,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(383, 275);
+            this.label4.Location = new System.Drawing.Point(386, 278);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 21;
@@ -129,7 +129,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 277);
+            this.label3.Location = new System.Drawing.Point(271, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 24);
             this.label3.TabIndex = 19;
@@ -217,10 +217,10 @@
             // 
             // box_data_evento
             // 
-            this.box_data_evento.Location = new System.Drawing.Point(331, 279);
-            this.box_data_evento.Mask = "00/00";
+            this.box_data_evento.Location = new System.Drawing.Point(321, 279);
+            this.box_data_evento.Mask = "00/00/00";
             this.box_data_evento.Name = "box_data_evento";
-            this.box_data_evento.Size = new System.Drawing.Size(46, 20);
+            this.box_data_evento.Size = new System.Drawing.Size(59, 20);
             this.box_data_evento.TabIndex = 34;
             // 
             // label7
@@ -245,7 +245,7 @@
             "SEXTA",
             "SABADO",
             "DOMINGO"});
-            this.cmb_dia_da_semana.Location = new System.Drawing.Point(186, 278);
+            this.cmb_dia_da_semana.Location = new System.Drawing.Point(179, 278);
             this.cmb_dia_da_semana.Name = "cmb_dia_da_semana";
             this.cmb_dia_da_semana.Size = new System.Drawing.Size(86, 21);
             this.cmb_dia_da_semana.TabIndex = 37;

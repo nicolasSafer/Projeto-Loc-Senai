@@ -26,15 +26,75 @@ namespace Projeto_Loc_Senai.FormsVisitante
             InitializeComponent();
         }
         Thread f1;
+        int cont = 0;
+        bool dia = false;
         private void TelaEventoVisitante_Load(object sender, EventArgs e)
         {
             displaDays();
+
+            //box_teste.Text = dt.GetString(3);
             conexao conn = new conexao();
 
-            ConsultarDados consu = new ConsultarDados();
-            MySqlDataReader dt = consu.select("select * from tb_evento");
+           ConsultarDados consu = new ConsultarDados();
+           MySqlDataReader dt = consu.select("select id_evento from tb_evento where data_evento = DATE_FORMAT(current_date, '%d/%m/%y');");
             dt.Read();
-            box_teste.Text = dt.GetString(3);
+            //box_teste.Text = dt.GetString(0);
+            List<string[]> produtos = new List<string[]>();
+
+            // Loop para ler cada registro retornado pelo SELECT
+            while (dt.Read())
+            {
+                // Array para armazenar os valores do produto (nome e descrição)
+                string[] produto = new string[2];
+
+                // Preenche o array com os valores do registro atual
+                produto[0] = dt.GetString(0);  // Nome do produto (coluna 0)
+                produto[1] = dt.GetString(1);  // Descrição do produto (coluna 1)
+
+                // Adiciona o produto à lista
+                produtos.Add(produto);
+            }
+
+            // Agora, você pode usar a matriz bidimensional ou a lista de produtos conforme necessário
+            // Por exemplo, exibir os produtos em um controle de seleção (ComboBox)
+
+            foreach (string[] produto in produtos)
+            {
+                string nomeProduto = produto[0];
+                string descricaoProduto = produto[1];
+
+                // Adicione o produto ao controle de seleção
+                cbx_teste1.Items.Add(nomeProduto);
+
+                // Armazene a descrição do produto como um item de dados do controle de seleção
+                cbx_teste1.Items[cbx_teste1.Items.Count - 1] = descricaoProduto;
+            }
+            //try
+            //{
+            //    conexao conn = new conexao();
+
+            //    ConsultarDados consu = new ConsultarDados();
+            //    MySqlDataReader dt = consu.select("select * from tb_evento where dia_semana = 'SEGUNDA' ");
+            //    while (dt.Read())
+            //    {
+            //        cont++;
+
+            //    }
+            //    if (cont == 0)
+            //    {
+            //        dia = false;
+            //    }
+            //    else
+            //    {
+            //        dia = true;
+            //    }
+            //}
+            //catch
+            //{
+            //    dia = false;
+            //}
+
+            //return dia;
 
         }
 

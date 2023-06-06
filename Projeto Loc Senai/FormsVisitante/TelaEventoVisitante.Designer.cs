@@ -105,7 +105,15 @@
             this.button40 = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.box_teste = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label_hora_segunda = new System.Windows.Forms.Label();
+            this.label_nome_segunda = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cbx_teste1 = new System.Windows.Forms.ComboBox();
+            this.cbx_teste2 = new System.Windows.Forms.ComboBox();
             this.dayContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -115,6 +123,7 @@
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -233,7 +242,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label_nome_segunda);
+            this.panel1.Controls.Add(this.label_hora_segunda);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button3);
@@ -257,10 +267,13 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 44);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 38);
             this.button1.TabIndex = 1;
+            this.button1.Text = "            -";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -515,6 +528,10 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.DarkGray;
+            this.panel12.Controls.Add(this.textBox3);
+            this.panel12.Controls.Add(this.textBox1);
+            this.panel12.Controls.Add(this.textBox2);
+            this.panel12.Controls.Add(this.box_teste);
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(22, 248);
@@ -845,21 +862,83 @@
             // 
             // box_teste
             // 
-            this.box_teste.Location = new System.Drawing.Point(70, 274);
+            this.box_teste.Location = new System.Drawing.Point(0, 98);
             this.box_teste.Name = "box_teste";
-            this.box_teste.Size = new System.Drawing.Size(100, 20);
+            this.box_teste.Size = new System.Drawing.Size(20, 20);
             this.box_teste.TabIndex = 1;
             // 
-            // label8
+            // label_hora_segunda
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Gainsboro;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 49);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 24);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "18:00 - Boticario";
+            this.label_hora_segunda.AutoSize = true;
+            this.label_hora_segunda.BackColor = System.Drawing.Color.Gainsboro;
+            this.label_hora_segunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora_segunda.Location = new System.Drawing.Point(12, 49);
+            this.label_hora_segunda.Name = "label_hora_segunda";
+            this.label_hora_segunda.Size = new System.Drawing.Size(55, 24);
+            this.label_hora_segunda.TabIndex = 6;
+            this.label_hora_segunda.Text = "18:00";
+            // 
+            // label_nome_segunda
+            // 
+            this.label_nome_segunda.AutoSize = true;
+            this.label_nome_segunda.BackColor = System.Drawing.Color.Gainsboro;
+            this.label_nome_segunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nome_segunda.Location = new System.Drawing.Point(83, 49);
+            this.label_nome_segunda.Name = "label_nome_segunda";
+            this.label_nome_segunda.Size = new System.Drawing.Size(82, 24);
+            this.label_nome_segunda.TabIndex = 7;
+            this.label_nome_segunda.Text = "Boticario";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 142);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(20, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(-1, 54);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(20, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(0, 186);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(20, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(575, 100);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(81, 20);
+            this.textBox4.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(705, 100);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(86, 20);
+            this.textBox5.TabIndex = 2;
+            // 
+            // cbx_teste1
+            // 
+            this.cbx_teste1.FormattingEnabled = true;
+            this.cbx_teste1.Location = new System.Drawing.Point(54, 343);
+            this.cbx_teste1.Name = "cbx_teste1";
+            this.cbx_teste1.Size = new System.Drawing.Size(121, 21);
+            this.cbx_teste1.TabIndex = 3;
+            // 
+            // cbx_teste2
+            // 
+            this.cbx_teste2.FormattingEnabled = true;
+            this.cbx_teste2.Location = new System.Drawing.Point(54, 378);
+            this.cbx_teste2.Name = "cbx_teste2";
+            this.cbx_teste2.Size = new System.Drawing.Size(121, 21);
+            this.cbx_teste2.TabIndex = 4;
             // 
             // TelaEventoVisitante
             // 
@@ -867,7 +946,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(140)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(1394, 876);
-            this.Controls.Add(this.box_teste);
+            this.Controls.Add(this.cbx_teste2);
+            this.Controls.Add(this.cbx_teste1);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dayContainer);
             this.Name = "TelaEventoVisitante";
             this.Text = "TelaEventoVisitante";
@@ -886,6 +968,8 @@
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
@@ -982,6 +1066,14 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.TextBox box_teste;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_hora_segunda;
+        private System.Windows.Forms.Label label_nome_segunda;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cbx_teste1;
+        private System.Windows.Forms.ComboBox cbx_teste2;
     }
 }

@@ -44,7 +44,7 @@ namespace CONTROL
 
 
                 }
-                id_on = Convert.ToInt32(us.GetString(0));
+                // id_on = Convert.ToInt32(us.GetString(0));
 
             }catch
             {
