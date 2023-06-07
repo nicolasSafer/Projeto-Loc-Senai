@@ -135,7 +135,6 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         default:
                             MessageBox.Show("Nada");
                             break;
-                    
                     }
                     
                     count++;    
