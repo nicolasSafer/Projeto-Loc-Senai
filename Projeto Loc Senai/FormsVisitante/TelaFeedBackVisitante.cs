@@ -14,7 +14,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 {
     public partial class TelaFeedBackVisitante : Form
     {
-        string avaliacao;
+        string avaliacao ;
         public TelaFeedBackVisitante()
         {
             InitializeComponent();
@@ -47,41 +47,37 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            if(box_nome_usuario.Text != "") 
-            { 
-                if (avaliacao != "")
-                 {
-                    if (box_obs_usuario.Text != "") 
+            if (box_nome_usuario.Text != "" && box_obs_usuario.Text != "")
+            {
+                if (avaliacao != null)
+                {
+                    m_feedback mf = new m_feedback();
+                    mf.setnome_usuario(box_nome_usuario.Text);
+                    mf.setavaliacao_software(avaliacao);
+                    mf.setobservacao(box_obs_usuario.Text);
+                    controller_feedback cf = new controller_feedback();
+
+                    if (cf.insertfeedback(mf) == true)
                     {
-
-                         m_feedback mf = new m_feedback();
-                          mf.setnome_usuario(box_nome_usuario.Text);
-                          mf.setavaliacao_software(avaliacao);
-                          mf.setobservacao(box_obs_usuario.Text);
-                         controller_feedback cf = new controller_feedback();
-
-                             if (cf.insertfeedback(mf) == true)
-                             {
-                                 MessageBox.Show("Feedback enviado com sucesso. Obriago pelo apoio!!!!!");
-                             }
-                             else
-                             {
-                                MessageBox.Show("Erro em inserir o feedback");
-                             }
+                        MessageBox.Show("Feedback enviado com sucesso. Obriago pelo apoio!!!!!");
                     }
                     else
                     {
-                        MessageBox.Show("Favor inserir uma observação");
+                        MessageBox.Show("Erro em inserir o feedback");
                     }
                 }
+
+
+
                 else
                 {
-                 MessageBox.Show("Favor selecionar uma avalição do software. (Ruim, Boa, Muito Bom)");
+                    MessageBox.Show("Selecione uma avaliação");
                 }
+
             }
             else
             {
-                MessageBox.Show("Favor inserir o seu nome");
+                MessageBox.Show("Verificar os campus nome ou descrição se estão vazios.");
             }
         }
     }
