@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.32-MariaDB, for Win32 (AMD64)
+-- MariaDB dump 10.19  Distrib 10.4.27-MariaDB, for Win64 (AMD64)
 --
 -- Host: 127.0.0.1    Database: db_loc
 -- ------------------------------------------------------
--- Server version	10.1.32-MariaDB
+-- Server version	10.4.27-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -32,7 +32,7 @@ CREATE TABLE `tb_avaliacao` (
   KEY `fk_id_funcionario_2` (`id_funcionario`),
   CONSTRAINT `fk_id_feedback` FOREIGN KEY (`id_feedback`) REFERENCES `tb_feedback_software` (`id_feedback`) ON UPDATE CASCADE,
   CONSTRAINT `fk_id_funcionario_2` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -55,7 +55,7 @@ CREATE TABLE `tb_bloco` (
   `id_bloco` int(6) NOT NULL AUTO_INCREMENT,
   `nome_bloco` varchar(50) NOT NULL,
   PRIMARY KEY (`id_bloco`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,7 +85,7 @@ CREATE TABLE `tb_cadastro_evento` (
   KEY `fk_id_evento` (`id_evento`),
   CONSTRAINT `fk_id_evento` FOREIGN KEY (`id_evento`) REFERENCES `tb_evento` (`id_evento`) ON UPDATE CASCADE,
   CONSTRAINT `fk_id_funcionario` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `tb_cadastro_sala` (
   KEY `fk_id_sala` (`id_sala`),
   CONSTRAINT `fk_id_funcionario_3` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE,
   CONSTRAINT `fk_id_sala` FOREIGN KEY (`id_sala`) REFERENCES `tb_sala_do_predio` (`id_sala`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,11 +138,12 @@ CREATE TABLE `tb_evento` (
   `id_evento` int(6) NOT NULL AUTO_INCREMENT,
   `nome_evento` varchar(50) NOT NULL,
   `local_evento` varchar(50) NOT NULL,
-  `data_evento` date NOT NULL,
-  `horario_evento` time NOT NULL,
+  `data_evento` varchar(50) NOT NULL,
+  `horario_evento` varchar(50) NOT NULL,
   `descricao_evento` varchar(250) NOT NULL,
+  `dia_semana` varchar(45) NOT NULL,
   PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +152,7 @@ CREATE TABLE `tb_evento` (
 
 LOCK TABLES `tb_evento` WRITE;
 /*!40000 ALTER TABLE `tb_evento` DISABLE KEYS */;
-INSERT INTO `tb_evento` VALUES (1,'teste','teste','2004-06-21','21:21:21','Boa'),(3,'a','asd','2004-06-21','21:21:21','sadasd');
+INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA');
 /*!40000 ALTER TABLE `tb_evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -164,14 +165,11 @@ DROP TABLE IF EXISTS `tb_feedback_software`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_feedback_software` (
   `id_feedback` int(6) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(6) NOT NULL,
   `nome_usuario` varchar(50) NOT NULL,
   `avaliacao_software` varchar(50) NOT NULL,
   `observacoes` varchar(250) NOT NULL,
-  PRIMARY KEY (`id_feedback`),
-  KEY `fk_id_usuario` (`id_usuario`),
-  CONSTRAINT `fk_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `tb_usuario` (`id_usuario`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id_feedback`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,6 +178,7 @@ CREATE TABLE `tb_feedback_software` (
 
 LOCK TABLES `tb_feedback_software` WRITE;
 /*!40000 ALTER TABLE `tb_feedback_software` DISABLE KEYS */;
+INSERT INTO `tb_feedback_software` VALUES (2,'Nicolas','','O melhor projeto'),(3,'Nicolas','Muito bom','Melhor equipe senai'),(4,'Nicolas','Bom','A');
 /*!40000 ALTER TABLE `tb_feedback_software` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -194,7 +193,7 @@ CREATE TABLE `tb_funcao_funcionario` (
   `id_funcao` int(6) NOT NULL AUTO_INCREMENT,
   `funcao_funcionario` varchar(50) NOT NULL,
   PRIMARY KEY (`id_funcao`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +224,7 @@ CREATE TABLE `tb_funcionario` (
   PRIMARY KEY (`id_funcionario`),
   KEY `fk_id_funcao` (`id_funcao`),
   CONSTRAINT `fk_id_funcao` FOREIGN KEY (`id_funcao`) REFERENCES `tb_funcao_funcionario` (`id_funcao`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -252,7 +251,7 @@ CREATE TABLE `tb_sala_do_predio` (
   `numeracao` varchar(50) DEFAULT NULL,
   `bloco` varchar(50) NOT NULL,
   PRIMARY KEY (`id_sala`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +275,7 @@ CREATE TABLE `tb_usuario` (
   `id_usuario` int(6) NOT NULL AUTO_INCREMENT,
   `perfil` varchar(50) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -298,4 +297,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-08 17:20:51
+-- Dump completed on 2023-06-06  2:08:04
