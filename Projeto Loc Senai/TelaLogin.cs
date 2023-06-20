@@ -38,6 +38,7 @@ namespace Projeto_Loc_Senai
 
         public TelaLogin()
         {
+            InitializeComponent();
         }
 
         //Comando para responsividade da tela

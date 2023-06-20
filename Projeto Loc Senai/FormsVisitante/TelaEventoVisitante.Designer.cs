@@ -921,7 +921,6 @@
             this.box_id_2_seg.Name = "box_id_2_seg";
             this.box_id_2_seg.Size = new System.Drawing.Size(20, 20);
             this.box_id_2_seg.TabIndex = 1;
-            this.box_id_2_seg.TextChanged += new System.EventHandler(this.box_id_2_seg_TextChanged);
             // 
             // label_hora_segunda
             // 
