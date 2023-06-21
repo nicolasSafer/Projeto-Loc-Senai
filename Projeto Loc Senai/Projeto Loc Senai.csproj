@@ -193,6 +193,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TelaAdm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +267,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaAdm.resx">
       <DependentUpon>TelaAdm.cs</DependentUpon>
@@ -304,6 +310,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\do-utilizador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eduardo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feliz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amei1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apaixonado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apaixonado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feliz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morto2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triste.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

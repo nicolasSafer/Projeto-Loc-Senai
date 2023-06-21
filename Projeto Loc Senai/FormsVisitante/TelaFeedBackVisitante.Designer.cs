@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaFeedBackVisitante));
             this.PainelCentral = new CONTROL.GradientPanel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.box_obs_usuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,19 +42,19 @@
             this.PainelSuperior = new CONTROL.GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.picApaixonado = new System.Windows.Forms.PictureBox();
+            this.picAmei = new System.Windows.Forms.PictureBox();
+            this.picFeliz = new System.Windows.Forms.PictureBox();
+            this.picTriste = new System.Windows.Forms.PictureBox();
+            this.picMorte = new System.Windows.Forms.PictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.PainelCentral.SuspendLayout();
             this.PainelSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picApaixonado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAmei)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFeliz)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTriste)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMorte)).BeginInit();
             this.SuspendLayout();
             // 
             // PainelCentral
@@ -65,17 +64,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PainelCentral.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(105)))), ((int)(((byte)(157)))));
             this.PainelCentral.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(140)))), ((int)(((byte)(189)))));
+            this.PainelCentral.Controls.Add(this.picApaixonado);
+            this.PainelCentral.Controls.Add(this.picAmei);
+            this.PainelCentral.Controls.Add(this.picFeliz);
+            this.PainelCentral.Controls.Add(this.picTriste);
+            this.PainelCentral.Controls.Add(this.picMorte);
             this.PainelCentral.Controls.Add(this.label9);
             this.PainelCentral.Controls.Add(this.label8);
-            this.PainelCentral.Controls.Add(this.pictureBox5);
             this.PainelCentral.Controls.Add(this.label7);
-            this.PainelCentral.Controls.Add(this.pictureBox4);
             this.PainelCentral.Controls.Add(this.label5);
-            this.PainelCentral.Controls.Add(this.pictureBox3);
             this.PainelCentral.Controls.Add(this.label4);
-            this.PainelCentral.Controls.Add(this.pictureBox2);
             this.PainelCentral.Controls.Add(this.label3);
-            this.PainelCentral.Controls.Add(this.pictureBox1);
             this.PainelCentral.Controls.Add(this.iconButton1);
             this.PainelCentral.Controls.Add(this.label2);
             this.PainelCentral.Controls.Add(this.box_obs_usuario);
@@ -83,10 +82,22 @@
             this.PainelCentral.Controls.Add(this.box_nome_usuario);
             this.PainelCentral.Controls.Add(this.PainelSuperior);
             this.PainelCentral.Location = new System.Drawing.Point(47, 43);
-            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4);
             this.PainelCentral.Name = "PainelCentral";
             this.PainelCentral.Size = new System.Drawing.Size(1200, 800);
             this.PainelCentral.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(255, 210);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(669, 34);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Por Favor, deixe seu feedback para ajudar melhorar o software";
             // 
             // label8
             // 
@@ -95,7 +106,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(993, 500);
+            this.label8.Location = new System.Drawing.Point(991, 500);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 32);
             this.label8.TabIndex = 20;
@@ -108,7 +119,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(801, 500);
+            this.label7.Location = new System.Drawing.Point(792, 500);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 32);
             this.label7.TabIndex = 18;
@@ -121,7 +132,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(535, 500);
+            this.label5.Location = new System.Drawing.Point(532, 500);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 32);
             this.label5.TabIndex = 16;
@@ -134,7 +145,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(321, 501);
+            this.label4.Location = new System.Drawing.Point(325, 500);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 32);
             this.label4.TabIndex = 14;
@@ -152,22 +163,6 @@
             this.label3.Size = new System.Drawing.Size(157, 32);
             this.label3.TabIndex = 12;
             this.label3.Text = "Muito Ruim";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(993, 726);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(149, 50);
-            this.iconButton1.TabIndex = 10;
-            this.iconButton1.Text = "Enviar";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label2
             // 
@@ -248,95 +243,102 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(157, 46);
+            this.label6.Location = new System.Drawing.Point(210, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(778, 87);
             this.label6.TabIndex = 2;
             this.label6.Text = "FeedBack do Usuário";
             // 
-            // pictureBox5
+            // picApaixonado
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(993, 346);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.picApaixonado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picApaixonado.BackColor = System.Drawing.Color.Transparent;
+            this.picApaixonado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picApaixonado.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
+            this.picApaixonado.Image = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
+            this.picApaixonado.Location = new System.Drawing.Point(989, 345);
+            this.picApaixonado.Name = "picApaixonado";
+            this.picApaixonado.Size = new System.Drawing.Size(149, 150);
+            this.picApaixonado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picApaixonado.TabIndex = 25;
+            this.picApaixonado.TabStop = false;
+            this.picApaixonado.Click += new System.EventHandler(this.Pic_Click);
             // 
-            // pictureBox4
+            // picAmei
             // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(765, 346);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.picAmei.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAmei.BackColor = System.Drawing.Color.Transparent;
+            this.picAmei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAmei.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.amei1;
+            this.picAmei.Image = global::Projeto_Loc_Senai.Properties.Resources.amei1;
+            this.picAmei.Location = new System.Drawing.Point(753, 345);
+            this.picAmei.Name = "picAmei";
+            this.picAmei.Size = new System.Drawing.Size(149, 150);
+            this.picAmei.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAmei.TabIndex = 24;
+            this.picAmei.TabStop = false;
+            this.picAmei.Click += new System.EventHandler(this.Pic_Click);
             // 
-            // pictureBox3
+            // picFeliz
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(527, 346);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picFeliz.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picFeliz.BackColor = System.Drawing.Color.Transparent;
+            this.picFeliz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picFeliz.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
+            this.picFeliz.Image = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
+            this.picFeliz.Location = new System.Drawing.Point(517, 345);
+            this.picFeliz.Name = "picFeliz";
+            this.picFeliz.Size = new System.Drawing.Size(149, 150);
+            this.picFeliz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFeliz.TabIndex = 23;
+            this.picFeliz.TabStop = false;
+            this.picFeliz.Click += new System.EventHandler(this.Pic_Click);
             // 
-            // pictureBox2
+            // picTriste
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(287, 346);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picTriste.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picTriste.BackColor = System.Drawing.Color.Transparent;
+            this.picTriste.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picTriste.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.triste1;
+            this.picTriste.Image = global::Projeto_Loc_Senai.Properties.Resources.triste1;
+            this.picTriste.Location = new System.Drawing.Point(281, 345);
+            this.picTriste.Name = "picTriste";
+            this.picTriste.Size = new System.Drawing.Size(149, 150);
+            this.picTriste.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picTriste.TabIndex = 22;
+            this.picTriste.TabStop = false;
+            this.picTriste.Click += new System.EventHandler(this.Pic_Click);
             // 
-            // pictureBox1
+            // picMorte
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(47, 346);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picMorte.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picMorte.BackColor = System.Drawing.Color.Transparent;
+            this.picMorte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMorte.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.morto1;
+            this.picMorte.Image = global::Projeto_Loc_Senai.Properties.Resources.morto1;
+            this.picMorte.Location = new System.Drawing.Point(45, 345);
+            this.picMorte.Name = "picMorte";
+            this.picMorte.Size = new System.Drawing.Size(149, 150);
+            this.picMorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMorte.TabIndex = 21;
+            this.picMorte.TabStop = false;
+            this.picMorte.Click += new System.EventHandler(this.Pic_Click);
             // 
-            // label9
+            // iconButton1
             // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(220, 210);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(669, 34);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Por Favor, deixe seu feedback para ajudar melhorar o software";
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(993, 726);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(149, 50);
+            this.iconButton1.TabIndex = 10;
+            this.iconButton1.Text = "Enviar";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // TelaFeedBackVisitante
             // 
@@ -344,18 +346,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 879);
             this.Controls.Add(this.PainelCentral);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaFeedBackVisitante";
             this.Text = "TelaFeedBackVisitante";
             this.PainelCentral.ResumeLayout(false);
             this.PainelCentral.PerformLayout();
             this.PainelSuperior.ResumeLayout(false);
             this.PainelSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picApaixonado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAmei)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFeliz)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTriste)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMorte)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,11 +378,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox picMorte;
+        private System.Windows.Forms.PictureBox picAmei;
+        private System.Windows.Forms.PictureBox picFeliz;
+        private System.Windows.Forms.PictureBox picTriste;
+        private System.Windows.Forms.PictureBox picApaixonado;
     }
 }

@@ -1,11 +1,13 @@
 ﻿using CONTROL;
 using MODEL;
+using Projeto_Loc_Senai.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,35 +16,25 @@ namespace Projeto_Loc_Senai.FormsVisitante
 {
     public partial class TelaFeedBackVisitante : Form
     {
-        string avaliacao ;
+        string avaliacao;
         public TelaFeedBackVisitante()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Pic_Click(object sender, EventArgs e)
         {
-            avaliacao = "Muito Ruim";
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            avaliacao = "Ruim";
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            avaliacao = "Satisfeito";
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            avaliacao = "Bom";
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            avaliacao = "Muito bom";
+            PictureBox picture = (PictureBox)sender;
+            foreach (var pic in PainelCentral.Controls.OfType<PictureBox>())
+                pic.Image = pic.ErrorImage;
+            switch (picture.Name)
+            {
+                case "picMorte": avaliacao = "Muito Ruim"; picture.Image = Resources.morto; break;
+                case "picTriste": avaliacao = "Ruim"; picture.Image = Resources.triste; break;
+                case "picFeliz": avaliacao = "Satisfeito"; picture.Image = Resources.feliz; break;
+                case "picAmei": avaliacao = "Bom"; picture.Image = Resources.amei; break;
+                case "picApaixonado": avaliacao = "Muito bom"; picture.Image = Resources.apaixonado; break;
+            }
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -80,5 +72,6 @@ namespace Projeto_Loc_Senai.FormsVisitante
                 MessageBox.Show("Verificar os campus nome ou descrição se estão vazios.");
             }
         }
+
     }
 }
