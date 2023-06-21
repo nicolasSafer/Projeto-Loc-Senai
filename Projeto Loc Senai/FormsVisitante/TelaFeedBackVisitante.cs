@@ -59,7 +59,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
                     if (cf.insertfeedback(mf) == true)
                     {
-                        MessageBox.Show("Feedback enviado com sucesso. Obriago pelo apoio!!!!!");
+                        MessageBox.Show("Feedback enviado com sucesso. Obrigado pelo apoio!!!!!");
                     }
                     else
                     {

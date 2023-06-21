@@ -36,11 +36,6 @@ namespace Projeto_Loc_Senai
             this.id_on = id_on;
         }
 
-        public TelaLogin()
-        {
-            InitializeComponent();
-        }
-
         //Comando para responsividade da tela
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
