@@ -84,7 +84,430 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
 
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + dia_atual+ "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + label2.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
                     }
                     break;
                 case "Tuesday":
@@ -110,10 +533,434 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
 
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + label1.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + dia_atual + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
                     }
 
                     break;
+                    
                 case "Wednesday":
                     dia_atual = "QUARTA";
                     box_teste_dia.Text = dia_atual;
@@ -137,6 +984,430 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
+
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + label1.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + label2.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + dia_atual + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
 
                     }
                     break;
@@ -163,7 +1434,430 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
 
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + label1.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + label2.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + dia_atual + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
                     }
 
                     break;
@@ -248,13 +1942,14 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
                                 count_1++;
                             }
-
+                            dt1.Close();
 
                         }
+
                         //=============================================
                         // select terça id
                         //=============================================
-                        if (box_calculo1.Text != "")
+                        if (box_calculo2.Text != "")
                         {
 
                             ConsultarDados consu2 = new ConsultarDados();
@@ -308,9 +2003,130 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
                                 count_2++;
                             }
-
+                            dt2.Close();
 
                         }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+                       
 
                         //=============================================
                         // select sexta id
@@ -369,21 +2185,147 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
                                     count_5++;
                                 }
+                            dt5.Close();
 
-                            
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+                           
                         }
 
-                    }
 
+
+
+
+
+                    }
+                    //fim sexta
                     break;
                 case "Saturday":
                     dia_atual = "SABADO";
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal6.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal6.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo6.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta - 5;
                         terca = conta - 4;
@@ -399,7 +2341,430 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
 
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + label1.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + label2.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + dia_atual + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + label7.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
                     }
                     break;
                 case "Sunday":
@@ -425,7 +2790,430 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
+                        //=============================================
+                        // select segunda id
+                        //=============================================
+                        if (box_calculo1.Text != "")
+                        {
 
+                            ConsultarDados consu1 = new ConsultarDados();
+                            MySqlDataReader dt1 = consu1.select("select id_evento from tb_evento where dia_semana = '" + label1.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_1 = new List<string[]>();
+                            string[] resultado_1 = new string[4];
+                            int count_1 = 0;
+                            while (dt1.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_1[count_1] = dt1["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_1++;
+                            }
+                            count_1 = 0;
+                            string id_on_1 = "0";
+                            foreach (string i in resultado_1)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_1 = "0";
+                                }
+                                else
+                                {
+                                    id_on_1 = i;
+                                }
+                                switch (count_1)
+                                {
+                                    case 0:
+                                        box_id_1_seg.Text = id_on_1;
+                                        break;
+                                    case 1:
+                                        box_id_2_seg.Text = id_on_1;
+                                        break;
+                                    case 2:
+                                        box_id_3_seg.Text = id_on_1;
+                                        break;
+                                    case 3:
+                                        box_id_4_seg.Text = id_on_1;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_1++;
+                            }
+                            dt1.Close();
+
+                        }
+
+                        //=============================================
+                        // select terça id
+                        //=============================================
+                        if (box_calculo2.Text != "")
+                        {
+
+                            ConsultarDados consu2 = new ConsultarDados();
+                            MySqlDataReader dt2 = consu2.select("select id_evento from tb_evento where dia_semana = '" + label2.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_2 = new List<string[]>();
+                            string[] resultado_2 = new string[4];
+                            int count_2 = 0;
+                            while (dt2.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_2[count_2] = dt2["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_2++;
+                            }
+                            count_2 = 0;
+                            string id_on_2 = "0";
+                            foreach (string i in resultado_2)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_2 = "0";
+                                }
+                                else
+                                {
+                                    id_on_2 = i;
+                                }
+                                switch (count_2)
+                                {
+                                    case 0:
+                                        box_id_1_ter.Text = id_on_2;
+                                        break;
+                                    case 1:
+                                        box_id_2_ter.Text = id_on_2;
+                                        break;
+                                    case 2:
+                                        box_id_3_ter.Text = id_on_2;
+                                        break;
+                                    case 3:
+                                        box_id_4_ter.Text = id_on_2;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_2++;
+                            }
+                            dt2.Close();
+
+                        }
+                        //=============================================
+                        // select quarta id
+                        //=============================================
+                        if (box_calculo3.Text != "")
+                        {
+
+                            ConsultarDados consu3 = new ConsultarDados();
+                            MySqlDataReader dt3 = consu3.select("select id_evento from tb_evento where dia_semana = '" + label4.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_3 = new List<string[]>();
+                            string[] resultado_3 = new string[4];
+                            int count_3 = 0;
+                            while (dt3.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_3[count_3] = dt3["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_3++;
+                            }
+                            count_3 = 0;
+                            string id_on_3 = "0";
+                            foreach (string i in resultado_3)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_3 = "0";
+                                }
+                                else
+                                {
+                                    id_on_3 = i;
+                                }
+                                switch (count_3)
+                                {
+                                    case 0:
+                                        box_id_1_qua.Text = id_on_3;
+                                        break;
+                                    case 1:
+                                        box_id_2_qua.Text = id_on_3;
+                                        break;
+                                    case 2:
+                                        box_id_3_qua.Text = id_on_3;
+                                        break;
+                                    case 3:
+                                        box_id_4_qua.Text = id_on_3;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_3++;
+                            }
+                            dt3.Close();
+
+                        }
+                        //=============================================
+                        // select quinta id
+                        //=============================================
+                        if (box_calculo4.Text != "")
+                        {
+
+                            ConsultarDados consu4 = new ConsultarDados();
+                            MySqlDataReader dt4 = consu4.select("select id_evento from tb_evento where dia_semana = '" + label3.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_4 = new List<string[]>();
+                            string[] resultado_4 = new string[4];
+                            int count_4 = 0;
+                            while (dt4.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_4[count_4] = dt4["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_4++;
+                            }
+                            count_4 = 0;
+                            string id_on_4 = "0";
+                            foreach (string i in resultado_4)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_4 = "0";
+                                }
+                                else
+                                {
+                                    id_on_4 = i;
+                                }
+                                switch (count_4)
+                                {
+                                    case 0:
+                                        box_id_1_qui.Text = id_on_4;
+                                        break;
+                                    case 1:
+                                        box_id_2_qui.Text = id_on_4;
+                                        break;
+                                    case 2:
+                                        box_id_3_qui.Text = id_on_4;
+                                        break;
+                                    case 3:
+                                        box_id_4_qui.Text = id_on_4;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_4++;
+                            }
+                            dt4.Close();
+
+                        }
+
+
+                        //=============================================
+                        // select sexta id
+                        //=============================================
+                        if (box_calculo5.Text != "")
+                        {
+
+                            ConsultarDados consu5 = new ConsultarDados();
+                            MySqlDataReader dt5 = consu5.select("select id_evento from tb_evento where dia_semana = '" + label6.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_5 = new List<string[]>();
+                            string[] resultado_5 = new string[4];
+                            int count_5 = 0;
+                            while (dt5.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_5[count_5] = dt5["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_5++;
+                            }
+                            count_5 = 0;
+                            string id_on_5 = "0";
+                            foreach (string i in resultado_5)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_5 = "0";
+                                }
+                                else
+                                {
+                                    id_on_5 = i;
+                                }
+                                switch (count_5)
+                                {
+                                    case 0:
+                                        box_id_1_sex.Text = id_on_5;
+                                        break;
+                                    case 1:
+                                        box_id_2_sex.Text = id_on_5;
+                                        break;
+                                    case 2:
+                                        box_id_3_sex.Text = id_on_5;
+                                        break;
+                                    case 3:
+                                        box_id_4_sex.Text = id_on_5;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_5++;
+                            }
+                            dt5.Close();
+
+                        }
+                        //=============================================
+                        // select sabado id
+                        //=============================================
+                        if (box_calculo6.Text != "")
+                        {
+
+                            ConsultarDados consu6 = new ConsultarDados();
+                            MySqlDataReader dt6 = consu6.select("select id_evento from tb_evento where dia_semana = '" + label5.Text + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_6 = new List<string[]>();
+                            string[] resultado_6 = new string[4];
+                            int count_6 = 0;
+                            while (dt6.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_6[count_6] = dt6["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_6++;
+                            }
+                            count_6 = 0;
+                            string id_on_6 = "0";
+                            foreach (string i in resultado_6)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_6 = "0";
+                                }
+                                else
+                                {
+                                    id_on_6 = i;
+                                }
+                                switch (count_6)
+                                {
+                                    case 0:
+                                        box_id_1_sab.Text = id_on_6;
+                                        break;
+                                    case 1:
+                                        box_id_2_sab.Text = id_on_6;
+                                        break;
+                                    case 2:
+                                        box_id_3_sab.Text = id_on_6;
+                                        break;
+                                    case 3:
+                                        box_id_4_sab.Text = id_on_6;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_6++;
+                            }
+                            dt6.Close();
+
+                        }
+                        //=============================================
+                        // select domingo id
+                        //=============================================
+                        if (box_calculo7.Text != "")
+                        {
+
+                            ConsultarDados consu7 = new ConsultarDados();
+                            MySqlDataReader dt7 = consu7.select("select id_evento from tb_evento where dia_semana = '" + dia_atual + "';");
+                            //dt2.Read();
+                            //box_teste_select.Text = dt2.GetString(0);
+
+                            List<string[]> resultados_7 = new List<string[]>();
+                            string[] resultado_7 = new string[4];
+                            int count_7 = 0;
+                            while (dt7.Read())
+                            {
+
+                                // Supondo duas colunas retornadas pela consulta
+                                resultado_7[count_7] = dt7["id_evento"].ToString(); // Supondo que a primeira coluna seja do tipo string
+
+                                count_7++;
+                            }
+                            count_7 = 0;
+                            string id_on_7 = "0";
+                            foreach (string i in resultado_7)
+                            {
+
+
+                                if (i == null)
+                                {
+                                    id_on_7 = "0";
+                                }
+                                else
+                                {
+                                    id_on_7 = i;
+                                }
+                                switch (count_7)
+                                {
+                                    case 0:
+                                        box_id_1_dom.Text = id_on_7;
+                                        break;
+                                    case 1:
+                                        box_id_2_dom.Text = id_on_7;
+                                        break;
+                                    case 2:
+                                        box_id_3_dom.Text = id_on_7;
+                                        break;
+                                    case 3:
+                                        box_id_4_dom.Text = id_on_7;
+                                        break;
+                                    default:
+                                        MessageBox.Show("Nada");
+                                        break;
+                                }
+
+                                count_7++;
+                            }
+                            dt7.Close();
+
+
+                        }
                     }
                     break;
 
