@@ -37,11 +37,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_nome_segunda = new System.Windows.Forms.Label();
             this.label_hora_segunda = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.box_calculo1 = new System.Windows.Forms.TextBox();
+            this.dia_principal1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -55,6 +54,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.box_calculo2 = new System.Windows.Forms.TextBox();
+            this.dia_principal2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -68,6 +69,8 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.box_calculo3 = new System.Windows.Forms.TextBox();
+            this.dia_principal3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -81,6 +84,8 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.box_calculo4 = new System.Windows.Forms.TextBox();
+            this.dia_principal4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -96,6 +101,8 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.box_calculo5 = new System.Windows.Forms.TextBox();
+            this.dia_principal5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button30 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -109,6 +116,8 @@
             this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.box_calculo6 = new System.Windows.Forms.TextBox();
+            this.dia_principal6 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button40 = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -122,6 +131,8 @@
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.dia_principal7 = new System.Windows.Forms.TextBox();
+            this.box_calculo7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button35 = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
@@ -140,20 +151,15 @@
             this.cbx_teste2 = new System.Windows.Forms.ComboBox();
             this.box_teste_select = new System.Windows.Forms.TextBox();
             this.box_mes_atual = new System.Windows.Forms.TextBox();
-            this.dia_principal1 = new System.Windows.Forms.TextBox();
-            this.dia_principal2 = new System.Windows.Forms.TextBox();
-            this.dia_principal3 = new System.Windows.Forms.TextBox();
-            this.dia_principal4 = new System.Windows.Forms.TextBox();
-            this.dia_principal7 = new System.Windows.Forms.TextBox();
-            this.dia_principal6 = new System.Windows.Forms.TextBox();
-            this.dia_principal5 = new System.Windows.Forms.TextBox();
-            this.box_calculo7 = new System.Windows.Forms.TextBox();
-            this.box_calculo5 = new System.Windows.Forms.TextBox();
-            this.box_calculo6 = new System.Windows.Forms.TextBox();
-            this.box_calculo4 = new System.Windows.Forms.TextBox();
-            this.box_calculo3 = new System.Windows.Forms.TextBox();
-            this.box_calculo2 = new System.Windows.Forms.TextBox();
-            this.box_calculo1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.dayContainer.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -251,12 +257,18 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label_nome_segunda);
             this.panel1.Controls.Add(this.label_hora_segunda);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(31, 3);
@@ -286,14 +298,6 @@
             this.label_hora_segunda.TabIndex = 6;
             this.label_hora_segunda.Text = "18:00";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 176);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 38);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(131, 216);
@@ -302,22 +306,6 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "+";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 38);
-            this.button3.TabIndex = 3;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 38);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -329,6 +317,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(174, 38);
             this.panel2.TabIndex = 1;
+            // 
+            // box_calculo1
+            // 
+            this.box_calculo1.Location = new System.Drawing.Point(151, 9);
+            this.box_calculo1.Name = "box_calculo1";
+            this.box_calculo1.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo1.TabIndex = 41;
+            // 
+            // dia_principal1
+            // 
+            this.dia_principal1.Location = new System.Drawing.Point(16, 11);
+            this.dia_principal1.Name = "dia_principal1";
+            this.dia_principal1.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal1.TabIndex = 28;
             // 
             // label1
             // 
@@ -451,6 +453,20 @@
             this.panel5.Size = new System.Drawing.Size(174, 38);
             this.panel5.TabIndex = 1;
             // 
+            // box_calculo2
+            // 
+            this.box_calculo2.Location = new System.Drawing.Point(149, 9);
+            this.box_calculo2.Name = "box_calculo2";
+            this.box_calculo2.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo2.TabIndex = 40;
+            // 
+            // dia_principal2
+            // 
+            this.dia_principal2.Location = new System.Drawing.Point(26, 11);
+            this.dia_principal2.Name = "dia_principal2";
+            this.dia_principal2.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal2.TabIndex = 29;
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -568,6 +584,20 @@
             this.panel8.Size = new System.Drawing.Size(174, 38);
             this.panel8.TabIndex = 1;
             // 
+            // box_calculo3
+            // 
+            this.box_calculo3.Location = new System.Drawing.Point(149, 11);
+            this.box_calculo3.Name = "box_calculo3";
+            this.box_calculo3.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo3.TabIndex = 39;
+            // 
+            // dia_principal3
+            // 
+            this.dia_principal3.Location = new System.Drawing.Point(33, 3);
+            this.dia_principal3.Name = "dia_principal3";
+            this.dia_principal3.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal3.TabIndex = 30;
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -684,6 +714,20 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(174, 38);
             this.panel11.TabIndex = 1;
+            // 
+            // box_calculo4
+            // 
+            this.box_calculo4.Location = new System.Drawing.Point(149, 9);
+            this.box_calculo4.Name = "box_calculo4";
+            this.box_calculo4.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo4.TabIndex = 38;
+            // 
+            // dia_principal4
+            // 
+            this.dia_principal4.Location = new System.Drawing.Point(19, 11);
+            this.dia_principal4.Name = "dia_principal4";
+            this.dia_principal4.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal4.TabIndex = 31;
             // 
             // label3
             // 
@@ -818,6 +862,20 @@
             this.panel20.Size = new System.Drawing.Size(174, 38);
             this.panel20.TabIndex = 1;
             // 
+            // box_calculo5
+            // 
+            this.box_calculo5.Location = new System.Drawing.Point(145, 8);
+            this.box_calculo5.Name = "box_calculo5";
+            this.box_calculo5.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo5.TabIndex = 36;
+            // 
+            // dia_principal5
+            // 
+            this.dia_principal5.Location = new System.Drawing.Point(27, 6);
+            this.dia_principal5.Name = "dia_principal5";
+            this.dia_principal5.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal5.TabIndex = 34;
+            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -935,6 +993,20 @@
             this.panel26.Size = new System.Drawing.Size(174, 38);
             this.panel26.TabIndex = 1;
             // 
+            // box_calculo6
+            // 
+            this.box_calculo6.Location = new System.Drawing.Point(149, 8);
+            this.box_calculo6.Name = "box_calculo6";
+            this.box_calculo6.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo6.TabIndex = 37;
+            // 
+            // dia_principal6
+            // 
+            this.dia_principal6.Location = new System.Drawing.Point(26, 6);
+            this.dia_principal6.Name = "dia_principal6";
+            this.dia_principal6.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal6.TabIndex = 33;
+            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -1051,6 +1123,20 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(174, 38);
             this.panel23.TabIndex = 1;
+            // 
+            // dia_principal7
+            // 
+            this.dia_principal7.Location = new System.Drawing.Point(18, 3);
+            this.dia_principal7.Name = "dia_principal7";
+            this.dia_principal7.Size = new System.Drawing.Size(20, 20);
+            this.dia_principal7.TabIndex = 32;
+            // 
+            // box_calculo7
+            // 
+            this.box_calculo7.Location = new System.Drawing.Point(149, 11);
+            this.box_calculo7.Name = "box_calculo7";
+            this.box_calculo7.Size = new System.Drawing.Size(20, 20);
+            this.box_calculo7.TabIndex = 35;
             // 
             // label7
             // 
@@ -1206,103 +1292,107 @@
             this.box_mes_atual.Size = new System.Drawing.Size(81, 20);
             this.box_mes_atual.TabIndex = 6;
             // 
-            // dia_principal1
+            // label8
             // 
-            this.dia_principal1.Location = new System.Drawing.Point(16, 11);
-            this.dia_principal1.Name = "dia_principal1";
-            this.dia_principal1.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal1.TabIndex = 28;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Gainsboro;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(83, 93);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 24);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Boticario";
             // 
-            // dia_principal2
+            // label9
             // 
-            this.dia_principal2.Location = new System.Drawing.Point(26, 11);
-            this.dia_principal2.Name = "dia_principal2";
-            this.dia_principal2.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal2.TabIndex = 29;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Gainsboro;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 93);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 24);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "18:00";
             // 
-            // dia_principal3
+            // button2
             // 
-            this.dia_principal3.Location = new System.Drawing.Point(33, 3);
-            this.dia_principal3.Name = "dia_principal3";
-            this.dia_principal3.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal3.TabIndex = 30;
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(3, 88);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 38);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "            -";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // dia_principal4
+            // label10
             // 
-            this.dia_principal4.Location = new System.Drawing.Point(19, 11);
-            this.dia_principal4.Name = "dia_principal4";
-            this.dia_principal4.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal4.TabIndex = 31;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Gainsboro;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(83, 133);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 24);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Boticario";
             // 
-            // dia_principal7
+            // label12
             // 
-            this.dia_principal7.Location = new System.Drawing.Point(18, 3);
-            this.dia_principal7.Name = "dia_principal7";
-            this.dia_principal7.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal7.TabIndex = 32;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Gainsboro;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(12, 133);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 24);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "18:00";
             // 
-            // dia_principal6
+            // button3
             // 
-            this.dia_principal6.Location = new System.Drawing.Point(26, 6);
-            this.dia_principal6.Name = "dia_principal6";
-            this.dia_principal6.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal6.TabIndex = 33;
+            this.button3.BackColor = System.Drawing.Color.Gainsboro;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(3, 128);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(168, 38);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "            -";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // dia_principal5
+            // label13
             // 
-            this.dia_principal5.Location = new System.Drawing.Point(27, 6);
-            this.dia_principal5.Name = "dia_principal5";
-            this.dia_principal5.Size = new System.Drawing.Size(20, 20);
-            this.dia_principal5.TabIndex = 34;
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Gainsboro;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(83, 173);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(82, 24);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Boticario";
             // 
-            // box_calculo7
+            // label14
             // 
-            this.box_calculo7.Location = new System.Drawing.Point(149, 11);
-            this.box_calculo7.Name = "box_calculo7";
-            this.box_calculo7.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo7.TabIndex = 35;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Gainsboro;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 173);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 24);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "18:00";
             // 
-            // box_calculo5
+            // button4
             // 
-            this.box_calculo5.Location = new System.Drawing.Point(145, 8);
-            this.box_calculo5.Name = "box_calculo5";
-            this.box_calculo5.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo5.TabIndex = 36;
-            // 
-            // box_calculo6
-            // 
-            this.box_calculo6.Location = new System.Drawing.Point(149, 8);
-            this.box_calculo6.Name = "box_calculo6";
-            this.box_calculo6.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo6.TabIndex = 37;
-            // 
-            // box_calculo4
-            // 
-            this.box_calculo4.Location = new System.Drawing.Point(149, 9);
-            this.box_calculo4.Name = "box_calculo4";
-            this.box_calculo4.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo4.TabIndex = 38;
-            // 
-            // box_calculo3
-            // 
-            this.box_calculo3.Location = new System.Drawing.Point(149, 11);
-            this.box_calculo3.Name = "box_calculo3";
-            this.box_calculo3.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo3.TabIndex = 39;
-            // 
-            // box_calculo2
-            // 
-            this.box_calculo2.Location = new System.Drawing.Point(149, 9);
-            this.box_calculo2.Name = "box_calculo2";
-            this.box_calculo2.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo2.TabIndex = 40;
-            // 
-            // box_calculo1
-            // 
-            this.box_calculo1.Location = new System.Drawing.Point(151, 9);
-            this.box_calculo1.Name = "box_calculo1";
-            this.box_calculo1.Size = new System.Drawing.Size(20, 20);
-            this.box_calculo1.TabIndex = 41;
+            this.button4.BackColor = System.Drawing.Color.Gainsboro;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(3, 168);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(168, 38);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "            -";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // TelaEventoVisitante
             // 
@@ -1377,10 +1467,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
@@ -1493,5 +1580,14 @@
         private System.Windows.Forms.TextBox box_calculo5;
         private System.Windows.Forms.TextBox box_calculo6;
         private System.Windows.Forms.TextBox box_calculo7;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button2;
     }
 }
