@@ -14,6 +14,9 @@ using System.Threading;
 using FontAwesome.Sharp;
 using WindowsFormsApp3;
 using System.Windows.Controls;
+using MySql.Data.MySqlClient;
+using static System.Net.Mime.MediaTypeNames;
+using Application = System.Windows.Forms.Application;
 
 namespace Projeto_Loc_Senai
 {
@@ -23,8 +26,8 @@ namespace Projeto_Loc_Senai
         Thread f2;
         conexao con = new conexao();
         User us = new User();
-        public int id_on;
-        public TelaLogin(int id_on)
+        public string id_on;
+        public TelaLogin()
         {
             InitializeComponent();
             //Desativa barra superior padrão do Windows
@@ -33,7 +36,7 @@ namespace Projeto_Loc_Senai
             // Define o tamanho padrão da tela como 1440x1024 pixels
             this.Size = new Size(1440, 1024);
             this.MinimumSize = new Size(850, 600);
-            this.id_on = id_on;
+            
         }
 
         //Comando para responsividade da tela
@@ -90,13 +93,13 @@ namespace Projeto_Loc_Senai
         //Fechar a Tela Login e Abrir Visitante
         private void AbrirJan(object obj)
         {
-            Application.Run(new TelaAdm(id_on));
+            System.Windows.Forms.Application.Run(new TelaAdm(id_on));
         }
 
         //Fechar a Tela Login e Abrir Visitante
         private void AbrirJan2(object obj)
         {
-            Application.Run(new TelaVisitante(id_on));
+            System.Windows.Forms.Application.Run(new TelaVisitante());
         }
 
         private void btnlogin_vis_Click(object sender, EventArgs e)
@@ -106,7 +109,8 @@ namespace Projeto_Loc_Senai
             f2.SetApartmentState(ApartmentState.STA);
             f2.Start();
         }
-
+        string user;
+        string senha;
         private void btnlogin_adm_Click(object sender, EventArgs e)
         {
             
@@ -114,10 +118,18 @@ namespace Projeto_Loc_Senai
 
             us.setsenha(txtsenha_adm.Text);
             us.setuser(txtusuario_adm.Text);
-
+            user = txtusuario_adm.Text;
+            senha = txtsenha_adm.Text;
             bool logado = cl.login(us);
             if (logado == true)
             {
+                // 
+                ConsultarDados consu = new ConsultarDados();
+                MySqlDataReader dt = consu.select("select id_funcionario from tb_funcionario where usuario_funcionario = '"+user+"' and senha_funcionario = '"+senha+"';");
+
+                dt.Read();
+                id_on = dt.GetString(0);
+
                 this.Close();
                 f1 = new Thread(AbrirJan);
                 f1.SetApartmentState(ApartmentState.STA);

@@ -36,6 +36,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
         int domingo = 0;
         int cont = 0;
         bool dia = false;
+        string dia_on;
 
         public TelaEventoVisitante()
         {
@@ -84,7 +85,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
-                        
+                       
                     }
                     break;
                 case "Tuesday":
@@ -220,7 +221,24 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
-                        
+                        //if (box_calculo6.Text != "")
+                        //{
+
+                        //    ConsultarDados consu2 = new ConsultarDados();
+                        //    MySqlDataReader dt2 = consu.select("select id_evento,horario_evento,nome_evento from tb_evento where data_evento = '" + data_atual + "/" + mes_atual + "/" + ano_atual + "'  and dia_semana = '" + dia_atual + "';");
+                        //    dt2.Read();
+                        //    box_id_1_seg.Text = dt2.GetString(0);
+                        //    label_hora_sabado1.Text = dt2.GetString(1);
+                        //    label_nome_sabado1.Text = dt2.GetString(2);
+                        //    ConsultarDados consu3 = new ConsultarDados();
+                        //    MySqlDataReader dt3 = consu.select("select id_evento,horario_evento,nome_evento from tb_evento where data_evento = '" + data_atual + "/" + mes_atual + "/" + ano_atual + "'  and dia_semana = '" + dia_atual + "';");
+                        //    dt3.Read();
+                        //    box_id_1_seg.Text = dt3.GetString(0);
+                        //    label_hora_sabado1.Text = dt3.GetString(1);
+                        //    label_nome_sabado1.Text = dt3.GetString(2);
+
+                        //}
+
                     }
                     break;
 
@@ -259,6 +277,101 @@ namespace Projeto_Loc_Senai.FormsVisitante
         private void TelaEventoVisitante_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        Thread f;
+        Thread f2;
+        Thread f3;
+        Thread f4;
+        Thread f5;
+        Thread f6;
+        Thread f7;
+        private void AbrirJan1(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan2(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan3(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan4(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan5(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan6(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void AbrirJan7(object obj)
+        {
+            Application.Run(new TelaDescEvento(dia_on));
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            dia_on = box_calculo1.Text;
+            f = new Thread(AbrirJan1);
+            f.SetApartmentState(ApartmentState.STA);
+            f.Start(dia_on);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo2.Text;
+            f2 = new Thread(AbrirJan2);
+            f2.SetApartmentState(ApartmentState.STA);
+            f2.Start(dia_on);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo3.Text;
+            f3 = new Thread(AbrirJan3);
+            f3.SetApartmentState(ApartmentState.STA);
+            f3.Start(dia_on);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo4.Text;
+            f4 = new Thread(AbrirJan4);
+            f4.SetApartmentState(ApartmentState.STA);
+            f4.Start(dia_on);
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo5.Text;
+            f5 = new Thread(AbrirJan5);
+            f5.SetApartmentState(ApartmentState.STA);
+            f5.Start(dia_on);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo6.Text;
+            f6 = new Thread(AbrirJan6);
+            f6.SetApartmentState(ApartmentState.STA);
+            f6.Start(dia_on);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            dia_on = box_calculo7.Text;
+            f7 = new Thread(AbrirJan7);
+            f7.SetApartmentState(ApartmentState.STA);
+            f7.Start(dia_on);
         }
 
     }

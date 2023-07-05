@@ -16,35 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tb_avaliacao`
---
-
-DROP TABLE IF EXISTS `tb_avaliacao`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `tb_avaliacao` (
-  `id_avaliacoes` int(6) NOT NULL AUTO_INCREMENT,
-  `id_feedback` int(6) NOT NULL,
-  `id_funcionario` int(6) NOT NULL,
-  `situacao` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_avaliacoes`),
-  KEY `fk_id_feedback` (`id_feedback`),
-  KEY `fk_id_funcionario_2` (`id_funcionario`),
-  CONSTRAINT `fk_id_feedback` FOREIGN KEY (`id_feedback`) REFERENCES `tb_feedback_software` (`id_feedback`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_id_funcionario_2` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `tb_avaliacao`
---
-
-LOCK TABLES `tb_avaliacao` WRITE;
-/*!40000 ALTER TABLE `tb_avaliacao` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tb_avaliacao` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `tb_bloco`
 --
 
@@ -143,7 +114,7 @@ CREATE TABLE `tb_evento` (
   `descricao_evento` varchar(250) NOT NULL,
   `dia_semana` varchar(45) NOT NULL,
   PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +123,7 @@ CREATE TABLE `tb_evento` (
 
 LOCK TABLES `tb_evento` WRITE;
 /*!40000 ALTER TABLE `tb_evento` DISABLE KEYS */;
-INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA');
+INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA'),(11,'a','a','06/06/23','15:00','Bora','TERÇA'),(12,'Teste','Senais','18/06/23','18:16','AAA','DOMINGO'),(13,'teste2','senai','23/06/23','18:00','Teste','SEXTA'),(14,'teste3','teste','23/06/23','19:00','teste1','SABADO'),(15,'TESTE4','TESTE4','23/06/23','20:00','TESTE2','QUINTA'),(16,'dor','sofrimento','24/06/23','21:00','mds','SABADO');
 /*!40000 ALTER TABLE `tb_evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -169,7 +140,7 @@ CREATE TABLE `tb_feedback_software` (
   `avaliacao_software` varchar(50) NOT NULL,
   `observacoes` varchar(250) NOT NULL,
   PRIMARY KEY (`id_feedback`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +149,7 @@ CREATE TABLE `tb_feedback_software` (
 
 LOCK TABLES `tb_feedback_software` WRITE;
 /*!40000 ALTER TABLE `tb_feedback_software` DISABLE KEYS */;
-INSERT INTO `tb_feedback_software` VALUES (2,'Nicolas','','O melhor projeto'),(3,'Nicolas','Muito bom','Melhor equipe senai'),(4,'Nicolas','Bom','A');
+INSERT INTO `tb_feedback_software` VALUES (2,'Nicolas','','O melhor projeto'),(3,'Nicolas','Muito bom','Melhor equipe senai'),(4,'Nicolas','Bom','A'),(5,'a','Muito bom','a');
 /*!40000 ALTER TABLE `tb_feedback_software` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -297,4 +268,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-06  2:08:04
+-- Dump completed on 2023-06-24  2:35:12

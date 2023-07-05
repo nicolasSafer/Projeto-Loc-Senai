@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.PainelCentral = new CONTROL.GradientPanel();
+            this.painelArredondado1 = new CONTROL.PainelArredondado();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.PainelSuperior = new CONTROL.GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.painelArredondado1 = new CONTROL.PainelArredondado();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.PainelCentral.SuspendLayout();
-            this.PainelSuperior.SuspendLayout();
             this.painelArredondado1.SuspendLayout();
+            this.PainelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // PainelCentral
@@ -53,10 +53,94 @@
             this.PainelCentral.Controls.Add(this.painelArredondado1);
             this.PainelCentral.Controls.Add(this.PainelSuperior);
             this.PainelCentral.Location = new System.Drawing.Point(47, 43);
-            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4);
             this.PainelCentral.Name = "PainelCentral";
             this.PainelCentral.Size = new System.Drawing.Size(1200, 800);
             this.PainelCentral.TabIndex = 1;
+            // 
+            // painelArredondado1
+            // 
+            this.painelArredondado1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.painelArredondado1.BackColor = System.Drawing.Color.White;
+            this.painelArredondado1.BorderRadius = 30;
+            this.painelArredondado1.Controls.Add(this.label5);
+            this.painelArredondado1.Controls.Add(this.label4);
+            this.painelArredondado1.Controls.Add(this.label3);
+            this.painelArredondado1.Controls.Add(this.label2);
+            this.painelArredondado1.Controls.Add(this.label1);
+            this.painelArredondado1.ForeColor = System.Drawing.Color.Black;
+            this.painelArredondado1.GradientAngle = 90F;
+            this.painelArredondado1.GradientBottomColor = System.Drawing.Color.WhiteSmoke;
+            this.painelArredondado1.GradientTopColor = System.Drawing.Color.White;
+            this.painelArredondado1.Location = new System.Drawing.Point(149, 227);
+            this.painelArredondado1.Name = "painelArredondado1";
+            this.painelArredondado1.Size = new System.Drawing.Size(897, 514);
+            this.painelArredondado1.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(95, 400);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(697, 32);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "SENAI - Portão                           /   Fone: (41) 3271-8450\r\n";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(95, 321);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(695, 32);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "SENAI - CIC                                /   Fone: (41) 3271-7114\r\n";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(95, 239);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(695, 32);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "SENAI - Boqueirão                    /   Fone: (41) 3271-8947\r\n";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(95, 160);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(695, 32);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "SENAI - Celso Charuri              /   Fone: (41) 3271-9946\r\n";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(95, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(698, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "SENAI - Campus da Indústria  /   Fone: (41) 3271-7900\r\n";
             // 
             // PainelSuperior
             // 
@@ -89,95 +173,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(160, 50);
+            this.label6.Location = new System.Drawing.Point(165, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(857, 92);
             this.label6.TabIndex = 2;
             this.label6.Text = "Contatos Informativos";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(95, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(698, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "SENAI - Campus da Indústria  /   Fone: (41) 3271-7900\r\n";
-            // 
-            // painelArredondado1
-            // 
-            this.painelArredondado1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.painelArredondado1.BackColor = System.Drawing.Color.White;
-            this.painelArredondado1.BorderRadius = 30;
-            this.painelArredondado1.Controls.Add(this.label5);
-            this.painelArredondado1.Controls.Add(this.label4);
-            this.painelArredondado1.Controls.Add(this.label3);
-            this.painelArredondado1.Controls.Add(this.label2);
-            this.painelArredondado1.Controls.Add(this.label1);
-            this.painelArredondado1.ForeColor = System.Drawing.Color.Black;
-            this.painelArredondado1.GradientAngle = 90F;
-            this.painelArredondado1.GradientBottomColor = System.Drawing.Color.WhiteSmoke;
-            this.painelArredondado1.GradientTopColor = System.Drawing.Color.White;
-            this.painelArredondado1.Location = new System.Drawing.Point(149, 227);
-            this.painelArredondado1.Name = "painelArredondado1";
-            this.painelArredondado1.Size = new System.Drawing.Size(897, 514);
-            this.painelArredondado1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(95, 160);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(695, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "SENAI - Celso Charuri              /   Fone: (41) 3271-9946\r\n";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(95, 239);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(695, 32);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "SENAI - Boqueirão                    /   Fone: (41) 3271-8947\r\n";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(95, 321);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(695, 32);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "SENAI - CIC                                /   Fone: (41) 3271-7114\r\n";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(95, 400);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(697, 32);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "SENAI - Portão                           /   Fone: (41) 3271-8450\r\n";
             // 
             // TelaContatosSenai
             // 
@@ -185,14 +185,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 879);
             this.Controls.Add(this.PainelCentral);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaContatosSenai";
             this.Text = "TelaContatosSenai";
             this.PainelCentral.ResumeLayout(false);
-            this.PainelSuperior.ResumeLayout(false);
-            this.PainelSuperior.PerformLayout();
             this.painelArredondado1.ResumeLayout(false);
             this.painelArredondado1.PerformLayout();
+            this.PainelSuperior.ResumeLayout(false);
+            this.PainelSuperior.PerformLayout();
             this.ResumeLayout(false);
 
         }

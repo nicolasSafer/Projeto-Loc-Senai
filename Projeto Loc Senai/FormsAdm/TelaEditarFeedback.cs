@@ -61,9 +61,9 @@ namespace Projeto_Loc_Senai.FormsAdm
 
 
             DataGridViewRow row = dtFeedBack.Rows[indexRow];
-            box_nome_usuario.Text = row.Cells[3].Value.ToString();
-            box_avaliacao_software.Text = row.Cells[1].Value.ToString();
-            box_observacao_software.Text = row.Cells[2].Value.ToString();
+            box_nome_usuario.Text = row.Cells[1].Value.ToString();
+            box_avaliacao_software.Text = row.Cells[2].Value.ToString();
+            box_observacao_software.Text = row.Cells[3].Value.ToString();
            
         }
 

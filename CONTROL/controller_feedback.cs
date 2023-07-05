@@ -40,7 +40,7 @@ namespace CONTROL
         {
             try
             {
-                string sql = "UPDATE tb_feedback_software set avaliacao_software = @avaliacao_software, observacao = @observacao, nome_usuario = @nome_usuario where id_feedback=@codigo";
+                string sql = "UPDATE tb_feedback_software set avaliacao_software = @avaliacao_software, observacoes = @observacao, nome_usuario = @nome_usuario where id_feedback=@codigo";
                 string[] campos = { "@avaliacao_software", "@observacao", "@nome_usuario" };
                 string[] valores = { muf.Getavaliacao_software(), muf.Getobservacao(), muf.Getnome_usuario() };
                 if (con.atualizarDados(muf.codigofeedback, campos, valores, sql) >= 1)

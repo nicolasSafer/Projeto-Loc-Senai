@@ -16,9 +16,19 @@ namespace Projeto_Loc_Senai
     {
         Thread f1;
         private Form activeForm;
-        public int id_on;
-        public TelaAdm(int id_on)
+        public string id_on;
+        
+
+        public TelaAdm()
         {
+            
+           
+
+        }
+
+        public TelaAdm(string id_on)
+        {
+            this.id_on = id_on;
             InitializeComponent();
             //Desativa barra superior padrão do Windows
             this.Text = string.Empty;
@@ -26,8 +36,6 @@ namespace Projeto_Loc_Senai
             // Define o tamanho padrão da tela como 1440x1024 pixels
             this.Size = new Size(1440, 1024);
             this.MinimumSize = new Size(850, 600);
-            this.id_on = id_on;
-
         }
 
         //Comando para responsividade da tela
@@ -96,7 +104,7 @@ namespace Projeto_Loc_Senai
 
         private void Btnperfil_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormsAdm.TelaPerfil());
+            OpenChildForm(new FormsAdm.TelaPerfil(id_on));
         }
 
         private void btnSala_Click(object sender, EventArgs e)
@@ -117,7 +125,7 @@ namespace Projeto_Loc_Senai
         //Sair do Administrador
         private void AbrirJan(object obj)
         {
-            Application.Run(new TelaLogin(id_on));
+            Application.Run(new TelaLogin());
         }
 
         private void btnsair_Click(object sender, EventArgs e)
@@ -130,7 +138,12 @@ namespace Projeto_Loc_Senai
 
         private void TelaAdm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Convert.ToString(id_on));
+            //MessageBox.Show(id_on);
+        }
+
+        private void PainelGeral_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

@@ -59,11 +59,11 @@ namespace Projeto_Loc_Senai.FormsAdm
 
             if (cs.insertsala(sl) == true )
             {
-                MessageBox.Show("foi");
+                MessageBox.Show("Cadastrado com sucesso");
             }
             else
             {
-                MessageBox.Show("Não foi");
+                MessageBox.Show("Erro em cadastrar");
             }
 
         }

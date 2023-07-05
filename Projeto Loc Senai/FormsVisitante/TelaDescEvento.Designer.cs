@@ -28,71 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.box_nome_evento = new System.Windows.Forms.TextBox();
-            this.box_data_evento = new System.Windows.Forms.TextBox();
-            this.box_local_evento = new System.Windows.Forms.TextBox();
-            this.box_desc_evento = new System.Windows.Forms.TextBox();
-            this.box_hora_evento = new System.Windows.Forms.TextBox();
+            this.dtEvento = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEvento)).BeginInit();
             this.SuspendLayout();
             // 
-            // box_nome_evento
+            // dtEvento
             // 
-            this.box_nome_evento.Location = new System.Drawing.Point(386, 147);
-            this.box_nome_evento.Name = "box_nome_evento";
-            this.box_nome_evento.Size = new System.Drawing.Size(100, 20);
-            this.box_nome_evento.TabIndex = 1;
+            this.dtEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtEvento.Location = new System.Drawing.Point(170, 158);
+            this.dtEvento.Name = "dtEvento";
+            this.dtEvento.Size = new System.Drawing.Size(708, 341);
+            this.dtEvento.TabIndex = 0;
             // 
-            // box_data_evento
+            // textBox1
             // 
-            this.box_data_evento.Location = new System.Drawing.Point(386, 199);
-            this.box_data_evento.Name = "box_data_evento";
-            this.box_data_evento.Size = new System.Drawing.Size(100, 20);
-            this.box_data_evento.TabIndex = 2;
-            // 
-            // box_local_evento
-            // 
-            this.box_local_evento.Location = new System.Drawing.Point(386, 173);
-            this.box_local_evento.Name = "box_local_evento";
-            this.box_local_evento.Size = new System.Drawing.Size(100, 20);
-            this.box_local_evento.TabIndex = 3;
-            // 
-            // box_desc_evento
-            // 
-            this.box_desc_evento.Location = new System.Drawing.Point(386, 251);
-            this.box_desc_evento.Name = "box_desc_evento";
-            this.box_desc_evento.Size = new System.Drawing.Size(100, 20);
-            this.box_desc_evento.TabIndex = 4;
-            // 
-            // box_hora_evento
-            // 
-            this.box_hora_evento.Location = new System.Drawing.Point(386, 225);
-            this.box_hora_evento.Name = "box_hora_evento";
-            this.box_hora_evento.Size = new System.Drawing.Size(100, 20);
-            this.box_hora_evento.TabIndex = 5;
+            this.textBox1.Location = new System.Drawing.Point(387, 90);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // TelaDescEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 580);
-            this.Controls.Add(this.box_hora_evento);
-            this.Controls.Add(this.box_desc_evento);
-            this.Controls.Add(this.box_local_evento);
-            this.Controls.Add(this.box_data_evento);
-            this.Controls.Add(this.box_nome_evento);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtEvento);
             this.Name = "TelaDescEvento";
             this.Text = "TelaDescEvento";
             this.Load += new System.EventHandler(this.TelaDescEvento_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtEvento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox box_nome_evento;
-        private System.Windows.Forms.TextBox box_data_evento;
-        private System.Windows.Forms.TextBox box_local_evento;
-        private System.Windows.Forms.TextBox box_desc_evento;
-        private System.Windows.Forms.TextBox box_hora_evento;
+
+        private System.Windows.Forms.DataGridView dtEvento;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

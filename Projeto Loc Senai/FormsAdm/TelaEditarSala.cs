@@ -77,11 +77,6 @@ namespace Projeto_Loc_Senai.FormsAdm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             try
@@ -91,17 +86,17 @@ namespace Projeto_Loc_Senai.FormsAdm
 
                 ums.setnome_sala(box_nome_sala.Text);
                 ums.setnumeracao_sala(box_numeracao.Text);
-                ums.setbloco_sala(descricao_sala.Text);
-                ums.setdescricao_sala(box_bloco.Text);
+                ums.setbloco_sala(box_bloco.Text);
+                ums.setdescricao_sala(descricao_sala.Text);
 
                 controller_sala cs = new controller_sala();
                 if (cs.updatesala(ums) == true)
                 {
-                    MessageBox.Show("Deu boa");
+                    MessageBox.Show("Atualizado com sucesso");
                 }
                 else
                 {
-                    MessageBox.Show("Não deu boa");
+                    MessageBox.Show("Erro em atualizar");
                 }
             }
             catch (Exception ex)

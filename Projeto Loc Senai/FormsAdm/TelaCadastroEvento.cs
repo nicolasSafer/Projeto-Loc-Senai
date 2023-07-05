@@ -57,11 +57,11 @@ namespace Projeto_Loc_Senai.FormsAdm
 
             if (ctr_evento.cadastrar(mce) == true)
             {
-                MessageBox.Show("foi");
+                MessageBox.Show("Cadastrado com sucesso");
             }
             else
             {
-                MessageBox.Show("Não foi");
+                MessageBox.Show("Erro em cadastrar o evento");
             }
         }
 

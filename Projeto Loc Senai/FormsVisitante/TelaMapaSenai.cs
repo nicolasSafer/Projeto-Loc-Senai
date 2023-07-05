@@ -36,30 +36,31 @@ namespace Projeto_Loc_Senai.FormsVisitante
         int teste = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            teste = 1;
+            
+            picture_map.ImageLocation = "map1.png";
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            if(teste == 1) { 
-            Graphics g = this.pictureBox1.CreateGraphics();
-            Pen blackPen = new Pen(Color.Black, 3);
+           // if(teste == 1) { 
+           // Graphics g = this.pictureBox1.CreateGraphics();
+           // Pen blackPen = new Pen(Color.Black, 3);
 
-            PointF pnt1 = new PointF(586.0F, 489.0F);
-            PointF pnt2 = new PointF(586F, 451.0F);
+           // PointF pnt1 = new PointF(586.0F, 489.0F);
+           // PointF pnt2 = new PointF(586F, 451.0F);
 
-           e.Graphics.DrawLine(blackPen, pnt1, pnt2);
-            }
-            else
-            {
-                Graphics g = this.pictureBox1.CreateGraphics();
-                Pen blackPen = new Pen(Color.Black, 3);
+           //e.Graphics.DrawLine(blackPen, pnt1, pnt2);
+           // }
+           // else
+           // {
+           //     Graphics g = this.pictureBox1.CreateGraphics();
+           //     Pen blackPen = new Pen(Color.Black, 3);
 
-                PointF pnt1 = new PointF(586.0F, 489.0F);
-                PointF pnt2 = new PointF(586F, 489.0F);
+           //     PointF pnt1 = new PointF(586.0F, 489.0F);
+           //     PointF pnt2 = new PointF(586F, 489.0F);
 
-                e.Graphics.DrawLine(blackPen, pnt1, pnt2);
-            }
+           //     e.Graphics.DrawLine(blackPen, pnt1, pnt2);
+           // }
         }
         
         

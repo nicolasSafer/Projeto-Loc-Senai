@@ -347,5 +347,8 @@
   <ItemGroup>
     <None Include="Resources\triste.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormsVisitante\map1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

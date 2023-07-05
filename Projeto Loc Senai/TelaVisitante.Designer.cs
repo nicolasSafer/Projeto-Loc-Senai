@@ -66,9 +66,9 @@
             this.BarraSuperior.Controls.Add(this.iconeprin);
             this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraSuperior.Location = new System.Drawing.Point(0, 0);
-            this.BarraSuperior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BarraSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BarraSuperior.Name = "BarraSuperior";
-            this.BarraSuperior.Size = new System.Drawing.Size(1421, 50);
+            this.BarraSuperior.Size = new System.Drawing.Size(1066, 41);
             this.BarraSuperior.TabIndex = 3;
             this.BarraSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraSuperior_MouseDown);
             // 
@@ -84,10 +84,10 @@
             this.Minimizar.IconColor = System.Drawing.Color.White;
             this.Minimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Minimizar.IconSize = 25;
-            this.Minimizar.Location = new System.Drawing.Point(1261, 11);
-            this.Minimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Minimizar.Location = new System.Drawing.Point(946, 9);
+            this.Minimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(29, 30);
+            this.Minimizar.Size = new System.Drawing.Size(22, 24);
             this.Minimizar.TabIndex = 7;
             this.Minimizar.UseVisualStyleBackColor = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
@@ -104,10 +104,10 @@
             this.Janelas.IconColor = System.Drawing.Color.White;
             this.Janelas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Janelas.IconSize = 25;
-            this.Janelas.Location = new System.Drawing.Point(1317, 11);
-            this.Janelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Janelas.Location = new System.Drawing.Point(988, 9);
+            this.Janelas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Janelas.Name = "Janelas";
-            this.Janelas.Size = new System.Drawing.Size(29, 30);
+            this.Janelas.Size = new System.Drawing.Size(22, 24);
             this.Janelas.TabIndex = 6;
             this.Janelas.UseVisualStyleBackColor = false;
             this.Janelas.Click += new System.EventHandler(this.Janelas_Click);
@@ -124,10 +124,10 @@
             this.Fechar.IconColor = System.Drawing.Color.White;
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
-            this.Fechar.Location = new System.Drawing.Point(1368, 11);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fechar.Location = new System.Drawing.Point(1026, 9);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Fechar.Name = "Fechar";
-            this.Fechar.Size = new System.Drawing.Size(29, 30);
+            this.Fechar.Size = new System.Drawing.Size(22, 24);
             this.Fechar.TabIndex = 5;
             this.Fechar.UseVisualStyleBackColor = false;
             this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
@@ -138,19 +138,20 @@
             this.Nomepag.BackColor = System.Drawing.Color.Transparent;
             this.Nomepag.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nomepag.ForeColor = System.Drawing.Color.White;
-            this.Nomepag.Location = new System.Drawing.Point(72, 4);
+            this.Nomepag.Location = new System.Drawing.Point(54, 3);
+            this.Nomepag.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Nomepag.Name = "Nomepag";
-            this.Nomepag.Size = new System.Drawing.Size(305, 40);
+            this.Nomepag.Size = new System.Drawing.Size(253, 33);
             this.Nomepag.TabIndex = 1;
             this.Nomepag.Text = "Guia de Visitantes";
             // 
             // iconeprin
             // 
             this.iconeprin.Image = ((System.Drawing.Image)(resources.GetObject("iconeprin.Image")));
-            this.iconeprin.Location = new System.Drawing.Point(11, -7);
-            this.iconeprin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconeprin.Location = new System.Drawing.Point(8, -6);
+            this.iconeprin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconeprin.Name = "iconeprin";
-            this.iconeprin.Size = new System.Drawing.Size(60, 60);
+            this.iconeprin.Size = new System.Drawing.Size(45, 49);
             this.iconeprin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconeprin.TabIndex = 0;
             this.iconeprin.TabStop = false;
@@ -169,28 +170,25 @@
             this.PainelLateral.Controls.Add(this.BtnMapa);
             this.PainelLateral.Controls.Add(this.BtnInicio);
             this.PainelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PainelLateral.Location = new System.Drawing.Point(0, 50);
-            this.PainelLateral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PainelLateral.Location = new System.Drawing.Point(0, 41);
             this.PainelLateral.Name = "PainelLateral";
-            this.PainelLateral.Size = new System.Drawing.Size(93, 927);
+            this.PainelLateral.Size = new System.Drawing.Size(70, 753);
             this.PainelLateral.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(13, 352);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(10, 286);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(72, 2);
+            this.panel3.Size = new System.Drawing.Size(54, 2);
             this.panel3.TabIndex = 18;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(13, 74);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(10, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(72, 2);
+            this.panel2.Size = new System.Drawing.Size(54, 2);
             this.panel2.TabIndex = 17;
             // 
             // BtnSair
@@ -207,11 +205,11 @@
             this.BtnSair.IconColor = System.Drawing.Color.White;
             this.BtnSair.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BtnSair.IconSize = 50;
-            this.BtnSair.Location = new System.Drawing.Point(0, 858);
-            this.BtnSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnSair.Location = new System.Drawing.Point(0, 697);
+            this.BtnSair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSair.Name = "BtnSair";
-            this.BtnSair.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnSair.Size = new System.Drawing.Size(93, 68);
+            this.BtnSair.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnSair.Size = new System.Drawing.Size(70, 55);
             this.BtnSair.TabIndex = 16;
             this.BtnSair.UseVisualStyleBackColor = false;
             this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
@@ -229,11 +227,11 @@
             this.BtnInfo.IconColor = System.Drawing.Color.White;
             this.BtnInfo.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BtnInfo.IconSize = 46;
-            this.BtnInfo.Location = new System.Drawing.Point(0, 355);
-            this.BtnInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnInfo.Location = new System.Drawing.Point(0, 288);
+            this.BtnInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnInfo.Name = "BtnInfo";
-            this.BtnInfo.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnInfo.Size = new System.Drawing.Size(93, 68);
+            this.BtnInfo.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnInfo.Size = new System.Drawing.Size(70, 55);
             this.BtnInfo.TabIndex = 15;
             this.BtnInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnInfo.UseVisualStyleBackColor = false;
@@ -252,11 +250,11 @@
             this.BtnContato.IconColor = System.Drawing.Color.White;
             this.BtnContato.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BtnContato.IconSize = 46;
-            this.BtnContato.Location = new System.Drawing.Point(0, 283);
-            this.BtnContato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnContato.Location = new System.Drawing.Point(0, 230);
+            this.BtnContato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnContato.Name = "BtnContato";
-            this.BtnContato.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnContato.Size = new System.Drawing.Size(93, 68);
+            this.BtnContato.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnContato.Size = new System.Drawing.Size(70, 55);
             this.BtnContato.TabIndex = 11;
             this.BtnContato.UseVisualStyleBackColor = false;
             this.BtnContato.Click += new System.EventHandler(this.BtnContato_Click);
@@ -273,11 +271,11 @@
             this.BtnFeedback.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
             this.BtnFeedback.IconColor = System.Drawing.Color.White;
             this.BtnFeedback.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.BtnFeedback.Location = new System.Drawing.Point(0, 215);
-            this.BtnFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnFeedback.Location = new System.Drawing.Point(0, 175);
+            this.BtnFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnFeedback.Name = "BtnFeedback";
-            this.BtnFeedback.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnFeedback.Size = new System.Drawing.Size(93, 68);
+            this.BtnFeedback.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnFeedback.Size = new System.Drawing.Size(70, 55);
             this.BtnFeedback.TabIndex = 10;
             this.BtnFeedback.UseVisualStyleBackColor = false;
             this.BtnFeedback.Click += new System.EventHandler(this.BtnFeedback_Click);
@@ -295,11 +293,11 @@
             this.BtnEvento.IconColor = System.Drawing.Color.White;
             this.BtnEvento.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BtnEvento.IconSize = 46;
-            this.BtnEvento.Location = new System.Drawing.Point(0, 148);
-            this.BtnEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnEvento.Location = new System.Drawing.Point(0, 120);
+            this.BtnEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEvento.Name = "BtnEvento";
-            this.BtnEvento.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnEvento.Size = new System.Drawing.Size(93, 68);
+            this.BtnEvento.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnEvento.Size = new System.Drawing.Size(70, 55);
             this.BtnEvento.TabIndex = 9;
             this.BtnEvento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEvento.UseVisualStyleBackColor = false;
@@ -317,11 +315,11 @@
             this.BtnMapa.IconChar = FontAwesome.Sharp.IconChar.MapMarkedAlt;
             this.BtnMapa.IconColor = System.Drawing.Color.White;
             this.BtnMapa.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnMapa.Location = new System.Drawing.Point(0, 80);
-            this.BtnMapa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnMapa.Location = new System.Drawing.Point(0, 65);
+            this.BtnMapa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnMapa.Name = "BtnMapa";
-            this.BtnMapa.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnMapa.Size = new System.Drawing.Size(93, 68);
+            this.BtnMapa.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnMapa.Size = new System.Drawing.Size(70, 55);
             this.BtnMapa.TabIndex = 8;
             this.BtnMapa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnMapa.UseVisualStyleBackColor = false;
@@ -341,10 +339,10 @@
             this.BtnInicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnInicio.IconSize = 50;
             this.BtnInicio.Location = new System.Drawing.Point(0, 2);
-            this.BtnInicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnInicio.Name = "BtnInicio";
-            this.BtnInicio.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.BtnInicio.Size = new System.Drawing.Size(93, 68);
+            this.BtnInicio.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.BtnInicio.Size = new System.Drawing.Size(70, 55);
             this.BtnInicio.TabIndex = 7;
             this.BtnInicio.UseVisualStyleBackColor = false;
             this.BtnInicio.Click += new System.EventHandler(this.BtnInicio_Click);
@@ -354,44 +352,42 @@
             this.PainelGeral.Controls.Add(this.panel1);
             this.PainelGeral.Controls.Add(this.iconesenai);
             this.PainelGeral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PainelGeral.Location = new System.Drawing.Point(93, 50);
-            this.PainelGeral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PainelGeral.Location = new System.Drawing.Point(70, 41);
             this.PainelGeral.Name = "PainelGeral";
-            this.PainelGeral.Size = new System.Drawing.Size(1328, 927);
+            this.PainelGeral.Size = new System.Drawing.Size(996, 753);
             this.PainelGeral.TabIndex = 5;
+            this.PainelGeral.Paint += new System.Windows.Forms.PaintEventHandler(this.PainelGeral_Paint);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 927);
+            this.panel1.Size = new System.Drawing.Size(1, 753);
             this.panel1.TabIndex = 3;
             // 
             // iconesenai
             // 
             this.iconesenai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconesenai.Image = ((System.Drawing.Image)(resources.GetObject("iconesenai.Image")));
-            this.iconesenai.Location = new System.Drawing.Point(217, 388);
-            this.iconesenai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconesenai.Location = new System.Drawing.Point(163, 315);
+            this.iconesenai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconesenai.Name = "iconesenai";
-            this.iconesenai.Size = new System.Drawing.Size(893, 150);
+            this.iconesenai.Size = new System.Drawing.Size(670, 122);
             this.iconesenai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconesenai.TabIndex = 2;
             this.iconesenai.TabStop = false;
             // 
             // TelaVisitante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 977);
+            this.ClientSize = new System.Drawing.Size(1066, 794);
             this.Controls.Add(this.PainelGeral);
             this.Controls.Add(this.PainelLateral);
             this.Controls.Add(this.BarraSuperior);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaVisitante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaVisitante";

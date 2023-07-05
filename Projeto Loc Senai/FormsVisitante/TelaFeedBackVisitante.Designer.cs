@@ -29,12 +29,18 @@
         private void InitializeComponent()
         {
             this.PainelCentral = new CONTROL.GradientPanel();
+            this.picApaixonado = new System.Windows.Forms.PictureBox();
+            this.picAmei = new System.Windows.Forms.PictureBox();
+            this.picFeliz = new System.Windows.Forms.PictureBox();
+            this.picTriste = new System.Windows.Forms.PictureBox();
+            this.picMorte = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.box_obs_usuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,19 +48,13 @@
             this.PainelSuperior = new CONTROL.GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.picApaixonado = new System.Windows.Forms.PictureBox();
-            this.picAmei = new System.Windows.Forms.PictureBox();
-            this.picFeliz = new System.Windows.Forms.PictureBox();
-            this.picTriste = new System.Windows.Forms.PictureBox();
-            this.picMorte = new System.Windows.Forms.PictureBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.PainelCentral.SuspendLayout();
-            this.PainelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picApaixonado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAmei)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFeliz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTriste)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMorte)).BeginInit();
+            this.PainelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // PainelCentral
@@ -82,10 +82,90 @@
             this.PainelCentral.Controls.Add(this.box_nome_usuario);
             this.PainelCentral.Controls.Add(this.PainelSuperior);
             this.PainelCentral.Location = new System.Drawing.Point(47, 43);
-            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4);
+            this.PainelCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PainelCentral.Name = "PainelCentral";
             this.PainelCentral.Size = new System.Drawing.Size(1200, 800);
             this.PainelCentral.TabIndex = 0;
+            // 
+            // picApaixonado
+            // 
+            this.picApaixonado.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picApaixonado.BackColor = System.Drawing.Color.Transparent;
+            this.picApaixonado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picApaixonado.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
+            this.picApaixonado.Image = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
+            this.picApaixonado.Location = new System.Drawing.Point(989, 345);
+            this.picApaixonado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picApaixonado.Name = "picApaixonado";
+            this.picApaixonado.Size = new System.Drawing.Size(149, 150);
+            this.picApaixonado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picApaixonado.TabIndex = 25;
+            this.picApaixonado.TabStop = false;
+            this.picApaixonado.Click += new System.EventHandler(this.Pic_Click);
+            // 
+            // picAmei
+            // 
+            this.picAmei.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAmei.BackColor = System.Drawing.Color.Transparent;
+            this.picAmei.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAmei.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.amei1;
+            this.picAmei.Image = global::Projeto_Loc_Senai.Properties.Resources.amei1;
+            this.picAmei.Location = new System.Drawing.Point(753, 345);
+            this.picAmei.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picAmei.Name = "picAmei";
+            this.picAmei.Size = new System.Drawing.Size(149, 150);
+            this.picAmei.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAmei.TabIndex = 24;
+            this.picAmei.TabStop = false;
+            this.picAmei.Click += new System.EventHandler(this.Pic_Click);
+            // 
+            // picFeliz
+            // 
+            this.picFeliz.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picFeliz.BackColor = System.Drawing.Color.Transparent;
+            this.picFeliz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picFeliz.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
+            this.picFeliz.Image = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
+            this.picFeliz.Location = new System.Drawing.Point(517, 345);
+            this.picFeliz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picFeliz.Name = "picFeliz";
+            this.picFeliz.Size = new System.Drawing.Size(149, 150);
+            this.picFeliz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFeliz.TabIndex = 23;
+            this.picFeliz.TabStop = false;
+            this.picFeliz.Click += new System.EventHandler(this.Pic_Click);
+            // 
+            // picTriste
+            // 
+            this.picTriste.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picTriste.BackColor = System.Drawing.Color.Transparent;
+            this.picTriste.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picTriste.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.triste1;
+            this.picTriste.Image = global::Projeto_Loc_Senai.Properties.Resources.triste1;
+            this.picTriste.Location = new System.Drawing.Point(281, 345);
+            this.picTriste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picTriste.Name = "picTriste";
+            this.picTriste.Size = new System.Drawing.Size(149, 150);
+            this.picTriste.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picTriste.TabIndex = 22;
+            this.picTriste.TabStop = false;
+            this.picTriste.Click += new System.EventHandler(this.Pic_Click);
+            // 
+            // picMorte
+            // 
+            this.picMorte.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picMorte.BackColor = System.Drawing.Color.Transparent;
+            this.picMorte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMorte.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.morto1;
+            this.picMorte.Image = global::Projeto_Loc_Senai.Properties.Resources.morto1;
+            this.picMorte.Location = new System.Drawing.Point(45, 345);
+            this.picMorte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picMorte.Name = "picMorte";
+            this.picMorte.Size = new System.Drawing.Size(149, 150);
+            this.picMorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMorte.TabIndex = 21;
+            this.picMorte.TabStop = false;
+            this.picMorte.Click += new System.EventHandler(this.Pic_Click);
             // 
             // label9
             // 
@@ -163,6 +243,22 @@
             this.label3.Size = new System.Drawing.Size(157, 32);
             this.label3.TabIndex = 12;
             this.label3.Text = "Muito Ruim";
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(993, 726);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(149, 50);
+            this.iconButton1.TabIndex = 10;
+            this.iconButton1.Text = "Enviar";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // label2
             // 
@@ -243,102 +339,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(210, 51);
+            this.label6.Location = new System.Drawing.Point(211, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(778, 87);
             this.label6.TabIndex = 2;
             this.label6.Text = "FeedBack do Usuário";
-            // 
-            // picApaixonado
-            // 
-            this.picApaixonado.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picApaixonado.BackColor = System.Drawing.Color.Transparent;
-            this.picApaixonado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picApaixonado.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
-            this.picApaixonado.Image = global::Projeto_Loc_Senai.Properties.Resources.apaixonado1;
-            this.picApaixonado.Location = new System.Drawing.Point(989, 345);
-            this.picApaixonado.Name = "picApaixonado";
-            this.picApaixonado.Size = new System.Drawing.Size(149, 150);
-            this.picApaixonado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picApaixonado.TabIndex = 25;
-            this.picApaixonado.TabStop = false;
-            this.picApaixonado.Click += new System.EventHandler(this.Pic_Click);
-            // 
-            // picAmei
-            // 
-            this.picAmei.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picAmei.BackColor = System.Drawing.Color.Transparent;
-            this.picAmei.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAmei.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.amei1;
-            this.picAmei.Image = global::Projeto_Loc_Senai.Properties.Resources.amei1;
-            this.picAmei.Location = new System.Drawing.Point(753, 345);
-            this.picAmei.Name = "picAmei";
-            this.picAmei.Size = new System.Drawing.Size(149, 150);
-            this.picAmei.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAmei.TabIndex = 24;
-            this.picAmei.TabStop = false;
-            this.picAmei.Click += new System.EventHandler(this.Pic_Click);
-            // 
-            // picFeliz
-            // 
-            this.picFeliz.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picFeliz.BackColor = System.Drawing.Color.Transparent;
-            this.picFeliz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picFeliz.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
-            this.picFeliz.Image = global::Projeto_Loc_Senai.Properties.Resources.feliz1;
-            this.picFeliz.Location = new System.Drawing.Point(517, 345);
-            this.picFeliz.Name = "picFeliz";
-            this.picFeliz.Size = new System.Drawing.Size(149, 150);
-            this.picFeliz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFeliz.TabIndex = 23;
-            this.picFeliz.TabStop = false;
-            this.picFeliz.Click += new System.EventHandler(this.Pic_Click);
-            // 
-            // picTriste
-            // 
-            this.picTriste.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picTriste.BackColor = System.Drawing.Color.Transparent;
-            this.picTriste.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picTriste.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.triste1;
-            this.picTriste.Image = global::Projeto_Loc_Senai.Properties.Resources.triste1;
-            this.picTriste.Location = new System.Drawing.Point(281, 345);
-            this.picTriste.Name = "picTriste";
-            this.picTriste.Size = new System.Drawing.Size(149, 150);
-            this.picTriste.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picTriste.TabIndex = 22;
-            this.picTriste.TabStop = false;
-            this.picTriste.Click += new System.EventHandler(this.Pic_Click);
-            // 
-            // picMorte
-            // 
-            this.picMorte.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picMorte.BackColor = System.Drawing.Color.Transparent;
-            this.picMorte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMorte.ErrorImage = global::Projeto_Loc_Senai.Properties.Resources.morto1;
-            this.picMorte.Image = global::Projeto_Loc_Senai.Properties.Resources.morto1;
-            this.picMorte.Location = new System.Drawing.Point(45, 345);
-            this.picMorte.Name = "picMorte";
-            this.picMorte.Size = new System.Drawing.Size(149, 150);
-            this.picMorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMorte.TabIndex = 21;
-            this.picMorte.TabStop = false;
-            this.picMorte.Click += new System.EventHandler(this.Pic_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(993, 726);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(149, 50);
-            this.iconButton1.TabIndex = 10;
-            this.iconButton1.Text = "Enviar";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // TelaFeedBackVisitante
             // 
@@ -346,18 +351,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 879);
             this.Controls.Add(this.PainelCentral);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaFeedBackVisitante";
             this.Text = "TelaFeedBackVisitante";
+            this.Load += new System.EventHandler(this.TelaFeedBackVisitante_Load);
             this.PainelCentral.ResumeLayout(false);
             this.PainelCentral.PerformLayout();
-            this.PainelSuperior.ResumeLayout(false);
-            this.PainelSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picApaixonado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAmei)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFeliz)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTriste)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMorte)).EndInit();
+            this.PainelSuperior.ResumeLayout(false);
+            this.PainelSuperior.PerformLayout();
             this.ResumeLayout(false);
 
         }

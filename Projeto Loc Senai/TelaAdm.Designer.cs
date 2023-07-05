@@ -394,6 +394,7 @@
             this.PainelGeral.Name = "PainelGeral";
             this.PainelGeral.Size = new System.Drawing.Size(806, 753);
             this.PainelGeral.TabIndex = 4;
+            this.PainelGeral.Paint += new System.Windows.Forms.PaintEventHandler(this.PainelGeral_Paint);
             // 
             // iconesenai
             // 

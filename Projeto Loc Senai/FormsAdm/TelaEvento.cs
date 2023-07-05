@@ -53,7 +53,7 @@ namespace Projeto_Loc_Senai.FormsAdm
             else
             {
                 teste = box_pesquisa.Text;
-                MessageBox.Show(teste);
+                //MessageBox.Show(teste);
                 f1 = new Thread(AbrirJan2);
                 f1.SetApartmentState(ApartmentState.STA);
                 f1.Start(teste);

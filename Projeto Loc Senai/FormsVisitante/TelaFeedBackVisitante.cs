@@ -29,7 +29,8 @@ namespace Projeto_Loc_Senai.FormsVisitante
                 pic.Image = pic.ErrorImage;
             switch (picture.Name)
             {
-                case "picMorte": avaliacao = "Muito Ruim"; picture.Image = Resources.morto; break;
+                case "picMorte": avaliacao = "Muito Ruim"; 
+                    picture.Image = Resources.morto; break;
                 case "picTriste": avaliacao = "Ruim"; picture.Image = Resources.triste; break;
                 case "picFeliz": avaliacao = "Satisfeito"; picture.Image = Resources.feliz; break;
                 case "picAmei": avaliacao = "Bom"; picture.Image = Resources.amei; break;
@@ -73,5 +74,9 @@ namespace Projeto_Loc_Senai.FormsVisitante
             }
         }
 
+        private void TelaFeedBackVisitante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

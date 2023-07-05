@@ -27,7 +27,7 @@ namespace CONTROL
                 //"insert into tb_sala_do_predio(nome_sala,descricao_sala,numeracao,bloco) values (@nome_sala,@descricao_sala,@numeracao,@bloco)"
                 sql = "insert into tb_sala_do_predio(nome_sala,descricao_sala,numeracao,bloco) values (@nome_sala,@descricao_sala,@numeracao,@bloco)";
                 string[] campos = { "@nome_sala", "@descricao_sala", "@numeracao", "@bloco" };
-                string[] valores = { SL.Getnome_sala(), SL.Getdescricao_sala(), SL.Getbloco_sala(), SL.Getnumeracao_sala()};
+                string[] valores = { SL.Getnome_sala(), SL.Getdescricao_sala(), SL.Getnumeracao_sala(), SL.Getbloco_sala()};
                 if (con.cadastrar(campos, valores, sql) >= 1)
                 {
                     return resultado = true;

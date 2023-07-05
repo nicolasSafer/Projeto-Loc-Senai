@@ -17,7 +17,9 @@ namespace Projeto_Loc_Senai
         Thread f1;
         private Form activeForm;
         public int id_on;
-        public TelaVisitante(int id_on)
+        private string id_on1;
+
+        public TelaVisitante()
         {
             InitializeComponent();
 
@@ -27,7 +29,12 @@ namespace Projeto_Loc_Senai
             // Define o tamanho padrão da tela como 1440x1024 pixels
             this.Size = new Size(1440, 1024);
             this.MinimumSize = new Size(850, 600);
-            this.id_on = id_on;
+           
+        }
+
+        public TelaVisitante(string id_on1)
+        {
+            this.id_on1 = id_on1;
         }
 
         //Comando para responsividade da tela
@@ -71,7 +78,7 @@ namespace Projeto_Loc_Senai
         //sair do visitante
         private void AbrirJan(object obj)
         {
-            Application.Run(new TelaLogin(id_on));
+            Application.Run(new TelaLogin());
         }
 
         private void BtnSair_Click(object sender, EventArgs e)
@@ -131,6 +138,11 @@ namespace Projeto_Loc_Senai
         private void BtnInfo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormsVisitante.TelaInformacoes());
+        }
+
+        private void PainelGeral_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
