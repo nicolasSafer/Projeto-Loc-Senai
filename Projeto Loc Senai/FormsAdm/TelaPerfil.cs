@@ -16,8 +16,10 @@ namespace Projeto_Loc_Senai.FormsAdm
 {
     public partial class TelaPerfil : Form
     {
-        public TelaPerfil()
+        int id;
+        public TelaPerfil(int _id)
         {
+            id = _id;
             InitializeComponent();
         }
 
@@ -26,13 +28,19 @@ namespace Projeto_Loc_Senai.FormsAdm
             conexao conn = new conexao();
             
             ConsultarDados consu = new ConsultarDados();
-            MySqlDataReader dt = consu.select("select * from tb_funcionario");
+            MySqlDataReader dt = consu.select("select * from tb_funcionario where id_funcionario = " + id);
               dt.Read();
             box_nome_funcionario.Text = dt.GetString(1);
             box_email_funcionario.Text = dt.GetString(2);
             box_funcao_funcionario.Text = dt.GetString(4);
             box_id_funcionario.Text = dt.GetString(0);
-            box_pesquisa.Text = dt.GetString(5);
+            try
+            {
+                box_pesquisa.Text = dt.GetString(5);
+            }
+            catch { 
+                
+            }
             
 
             try
@@ -51,7 +59,7 @@ namespace Projeto_Loc_Senai.FormsAdm
             }
             catch
             {
-                MessageBox.Show("Erro na imagem");
+                //MessageBox.Show("Erro na imagem");
             }
 
 

@@ -71,7 +71,7 @@ namespace Projeto_Loc_Senai
         //sair do visitante
         private void AbrirJan(object obj)
         {
-            Application.Run(new TelaLogin(id_on));
+            Application.Run(new TelaLogin());
         }
 
         private void BtnSair_Click(object sender, EventArgs e)

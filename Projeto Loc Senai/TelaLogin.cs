@@ -24,7 +24,7 @@ namespace Projeto_Loc_Senai
         conexao con = new conexao();
         User us = new User();
         public int id_on;
-        public TelaLogin(int id_on)
+        public TelaLogin()
         {
             InitializeComponent();
             //Desativa barra superior padrão do Windows
@@ -33,7 +33,7 @@ namespace Projeto_Loc_Senai
             // Define o tamanho padrão da tela como 1440x1024 pixels
             this.Size = new Size(1440, 1024);
             this.MinimumSize = new Size(850, 600);
-            this.id_on = id_on;
+            
         }
 
         //Comando para responsividade da tela
@@ -115,9 +115,10 @@ namespace Projeto_Loc_Senai
             us.setsenha(txtsenha_adm.Text);
             us.setuser(txtusuario_adm.Text);
 
-            bool logado = cl.login(us);
-            if (logado == true)
+            int logado = cl.login(us);
+            if (logado > 0)
             {
+                id_on = logado;
                 this.Close();
                 f1 = new Thread(AbrirJan);
                 f1.SetApartmentState(ApartmentState.STA);
