@@ -216,6 +216,12 @@
     <Compile Include="TelaVisitante.Designer.cs">
       <DependentUpon>TelaVisitante.cs</DependentUpon>
     </Compile>
+    <Compile Include="teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teste.Designer.cs">
+      <DependentUpon>teste.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormsAdm\TelaCadastroEvento.resx">
       <DependentUpon>TelaCadastroEvento.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaVisitante.resx">
       <DependentUpon>TelaVisitante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teste.resx">
+      <DependentUpon>teste.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
