@@ -33,7 +33,8 @@ namespace CONTROL
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(ex.Message);
+            //  throw new System.Exception(ex.Message);
+                return false;
             }
         }
         public bool updatesala(m_feedback muf)
