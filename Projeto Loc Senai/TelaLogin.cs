@@ -115,31 +115,39 @@ namespace Projeto_Loc_Senai
         {
             
             controller_login cl = new controller_login();
-
-            us.setsenha(txtsenha_adm.Text);
-            us.setuser(txtusuario_adm.Text);
-            user = txtusuario_adm.Text;
-            senha = txtsenha_adm.Text;
-            bool logado = cl.login(us);
-            if (logado == true)
+            if(txtusuario_adm.Text == ""|| txtsenha_adm.Text == "")
             {
-                // 
-                ConsultarDados consu = new ConsultarDados();
-                MySqlDataReader dt = consu.select("select id_funcionario from tb_funcionario where usuario_funcionario = '"+user+"' and senha_funcionario = '"+senha+"';");
-
-                dt.Read();
-                id_on = dt.GetString(0);
-
-                this.Close();
-                f1 = new Thread(AbrirJan);
-                f1.SetApartmentState(ApartmentState.STA);
-                f1.Start(id_on);
+                MessageBox.Show("preencher usuario e senha");
             }
             else
             {
-                MessageBox.Show("Login ou Senha incorreto");
+                us.setsenha(txtsenha_adm.Text);
+                us.setuser(txtusuario_adm.Text);
+                user = txtusuario_adm.Text;
+                senha = txtsenha_adm.Text;
+                bool logado = cl.login(us);
+                if (logado == true)
+                {
+                    // 
+                    ConsultarDados consu = new ConsultarDados();
+                    MySqlDataReader dt = consu.select("select id_funcionario from tb_funcionario where usuario_funcionario = '"+user+"' and senha_funcionario = '"+senha+"';");
+
+                    dt.Read();
+                    id_on = dt.GetString(0);
+
+                    this.Close();
+                    f1 = new Thread(AbrirJan);
+                    f1.SetApartmentState(ApartmentState.STA);
+                    f1.Start(id_on);
+                }
+                else
+                {
+                    MessageBox.Show("Login ou Senha incorreto");
+
+                }
 
             }
+            
             
         }
 
