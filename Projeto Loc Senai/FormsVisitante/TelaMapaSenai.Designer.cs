@@ -36,9 +36,9 @@
             // picture_map
             // 
             this.picture_map.Image = ((System.Drawing.Image)(resources.GetObject("picture_map.Image")));
-            this.picture_map.Location = new System.Drawing.Point(391, 168);
+            this.picture_map.Location = new System.Drawing.Point(189, 4);
             this.picture_map.Name = "picture_map";
-            this.picture_map.Size = new System.Drawing.Size(459, 260);
+            this.picture_map.Size = new System.Drawing.Size(1006, 1011);
             this.picture_map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picture_map.TabIndex = 10;
             this.picture_map.TabStop = false;
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1335, 688);
+            this.ClientSize = new System.Drawing.Size(1362, 1013);
             this.Controls.Add(this.picture_map);
             this.Name = "TelaMapaSenai";
             this.Text = "TelaMapaSenai";

@@ -46,7 +46,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
             //getconexao().Open();
             ConsultarDados consu = new ConsultarDados();
             MySqlDataReader dt = consu.select("SELECT DATE_FORMAT(current_date, '%d') as Data_Atual,  DATE_FORMAT(current_date, '%m') as Mes_Atual, DATE_FORMAT(current_date, '%y') as Ano_Atual, DAYNAME(CURRENT_DATE) AS DiaDaSemanaAtual;");
-            dt.Read();
+           dt.Read();
 
 
 
