@@ -48,11 +48,11 @@
             this.box_pesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.box_pesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_pesquisa.Location = new System.Drawing.Point(20, 186);
-            this.box_pesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.box_pesquisa.Location = new System.Drawing.Point(27, 229);
+            this.box_pesquisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box_pesquisa.MaxLength = 1000;
             this.box_pesquisa.Name = "box_pesquisa";
-            this.box_pesquisa.Size = new System.Drawing.Size(738, 41);
+            this.box_pesquisa.Size = new System.Drawing.Size(983, 49);
             this.box_pesquisa.TabIndex = 22;
             // 
             // panel1
@@ -60,10 +60,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(16, 235);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(21, 289);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(862, 1);
+            this.panel1.Size = new System.Drawing.Size(1149, 1);
             this.panel1.TabIndex = 24;
             // 
             // dtEvento
@@ -71,14 +71,16 @@
             this.dtEvento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtEvento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtEvento.BackgroundColor = System.Drawing.Color.Snow;
+            this.dtEvento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtEvento.Location = new System.Drawing.Point(20, 251);
-            this.dtEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.dtEvento.Location = new System.Drawing.Point(27, 309);
+            this.dtEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtEvento.Name = "dtEvento";
             this.dtEvento.RowHeadersWidth = 51;
             this.dtEvento.RowTemplate.Height = 24;
-            this.dtEvento.Size = new System.Drawing.Size(739, 427);
+            this.dtEvento.Size = new System.Drawing.Size(985, 526);
             this.dtEvento.TabIndex = 29;
             this.dtEvento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtEvento_CellClick);
             // 
@@ -96,10 +98,10 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(762, 358);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton2.Location = new System.Drawing.Point(1016, 441);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(120, 50);
+            this.iconButton2.Size = new System.Drawing.Size(160, 62);
             this.iconButton2.TabIndex = 28;
             this.iconButton2.Text = "  Excluir";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,10 +122,10 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(762, 305);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton1.Location = new System.Drawing.Point(1016, 375);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(120, 50);
+            this.iconButton1.Size = new System.Drawing.Size(160, 62);
             this.iconButton1.TabIndex = 27;
             this.iconButton1.Text = "  Editar";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,10 +146,10 @@
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnAdd.IconSize = 32;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(763, 251);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(1017, 309);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(120, 50);
+            this.btnAdd.Size = new System.Drawing.Size(160, 62);
             this.btnAdd.TabIndex = 26;
             this.btnAdd.Text = "    Add  ";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,10 +167,10 @@
             this.btnPesquisar.IconColor = System.Drawing.Color.White;
             this.btnPesquisar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPesquisar.IconSize = 40;
-            this.btnPesquisar.Location = new System.Drawing.Point(762, 186);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPesquisar.Location = new System.Drawing.Point(1016, 229);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(120, 40);
+            this.btnPesquisar.Size = new System.Drawing.Size(160, 49);
             this.btnPesquisar.TabIndex = 23;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -181,9 +183,9 @@
             this.gradientPanel1.Controls.Add(this.label6);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(886, 162);
+            this.gradientPanel1.Size = new System.Drawing.Size(1181, 199);
             this.gradientPanel1.TabIndex = 1;
             // 
             // quadro
@@ -193,11 +195,11 @@
             this.quadro.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
             this.quadro.IconColor = System.Drawing.Color.White;
             this.quadro.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.quadro.IconSize = 128;
-            this.quadro.Location = new System.Drawing.Point(90, 24);
-            this.quadro.Margin = new System.Windows.Forms.Padding(2);
+            this.quadro.IconSize = 158;
+            this.quadro.Location = new System.Drawing.Point(120, 30);
+            this.quadro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.quadro.Name = "quadro";
-            this.quadro.Size = new System.Drawing.Size(128, 128);
+            this.quadro.Size = new System.Drawing.Size(171, 158);
             this.quadro.TabIndex = 3;
             this.quadro.TabStop = false;
             // 
@@ -208,18 +210,17 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(207, 49);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(276, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(621, 77);
+            this.label6.Size = new System.Drawing.Size(765, 92);
             this.label6.TabIndex = 2;
             this.label6.Text = "Controle de Evento";
             // 
             // TelaEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 715);
+            this.ClientSize = new System.Drawing.Size(1181, 880);
             this.Controls.Add(this.dtEvento);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
@@ -228,7 +229,7 @@
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.box_pesquisa);
             this.Controls.Add(this.gradientPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaEvento";
             this.Text = "TelaEvento";
             this.Load += new System.EventHandler(this.TelaEvento_Load);

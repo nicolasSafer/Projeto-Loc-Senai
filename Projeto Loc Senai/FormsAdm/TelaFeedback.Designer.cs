@@ -47,10 +47,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(16, 235);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(21, 289);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(862, 1);
+            this.panel1.Size = new System.Drawing.Size(1149, 1);
             this.panel1.TabIndex = 27;
             // 
             // btnPesquisar
@@ -64,10 +64,10 @@
             this.btnPesquisar.IconColor = System.Drawing.Color.White;
             this.btnPesquisar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPesquisar.IconSize = 40;
-            this.btnPesquisar.Location = new System.Drawing.Point(762, 186);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPesquisar.Location = new System.Drawing.Point(1016, 229);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(120, 40);
+            this.btnPesquisar.Size = new System.Drawing.Size(160, 49);
             this.btnPesquisar.TabIndex = 26;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -77,11 +77,11 @@
             this.box_pesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.box_pesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_pesquisa.Location = new System.Drawing.Point(20, 186);
-            this.box_pesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.box_pesquisa.Location = new System.Drawing.Point(27, 229);
+            this.box_pesquisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.box_pesquisa.MaxLength = 1000;
             this.box_pesquisa.Name = "box_pesquisa";
-            this.box_pesquisa.Size = new System.Drawing.Size(738, 41);
+            this.box_pesquisa.Size = new System.Drawing.Size(983, 49);
             this.box_pesquisa.TabIndex = 25;
             // 
             // iconButton2
@@ -98,10 +98,10 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(762, 305);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton2.Location = new System.Drawing.Point(1018, 309);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(120, 50);
+            this.iconButton2.Size = new System.Drawing.Size(160, 62);
             this.iconButton2.TabIndex = 31;
             this.iconButton2.Text = "  Excluir";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,14 +122,15 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(762, 251);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.iconButton1.Location = new System.Drawing.Point(1018, 375);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(120, 50);
+            this.iconButton1.Size = new System.Drawing.Size(160, 62);
             this.iconButton1.TabIndex = 30;
             this.iconButton1.Text = "  Editar";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Visible = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // dtFeedBack
@@ -137,14 +138,16 @@
             this.dtFeedBack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtFeedBack.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtFeedBack.BackgroundColor = System.Drawing.Color.Snow;
+            this.dtFeedBack.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtFeedBack.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtFeedBack.Location = new System.Drawing.Point(20, 251);
-            this.dtFeedBack.Margin = new System.Windows.Forms.Padding(2);
+            this.dtFeedBack.Location = new System.Drawing.Point(27, 309);
+            this.dtFeedBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtFeedBack.Name = "dtFeedBack";
             this.dtFeedBack.RowHeadersWidth = 51;
             this.dtFeedBack.RowTemplate.Height = 24;
-            this.dtFeedBack.Size = new System.Drawing.Size(739, 427);
+            this.dtFeedBack.Size = new System.Drawing.Size(985, 526);
             this.dtFeedBack.TabIndex = 32;
             this.dtFeedBack.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtFeedBack_CellClick);
             // 
@@ -156,9 +159,9 @@
             this.gradientPanel1.Controls.Add(this.iconPictureBox1);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(886, 162);
+            this.gradientPanel1.Size = new System.Drawing.Size(1181, 199);
             this.gradientPanel1.TabIndex = 2;
             // 
             // label6
@@ -168,10 +171,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 46.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(207, 49);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(276, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(672, 77);
+            this.label6.Size = new System.Drawing.Size(838, 92);
             this.label6.TabIndex = 2;
             this.label6.Text = "Feedback do Usuário";
             // 
@@ -182,19 +184,19 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox1.IconSize = 128;
-            this.iconPictureBox1.Location = new System.Drawing.Point(90, 24);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.iconPictureBox1.IconSize = 158;
+            this.iconPictureBox1.Location = new System.Drawing.Point(120, 30);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.iconPictureBox1.Size = new System.Drawing.Size(171, 158);
             this.iconPictureBox1.TabIndex = 4;
             this.iconPictureBox1.TabStop = false;
             // 
             // TelaFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 715);
+            this.ClientSize = new System.Drawing.Size(1181, 880);
             this.Controls.Add(this.dtFeedBack);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
@@ -202,7 +204,7 @@
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.box_pesquisa);
             this.Controls.Add(this.gradientPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaFeedback";
             this.Text = "TelaFeedback";
             this.Load += new System.EventHandler(this.TelaFeedback_Load);

@@ -38,7 +38,7 @@ namespace Projeto_Loc_Senai.FormsAdm
             if(box_pesquisa.Text == "" )
             {
 
-                MessageBox.Show("selecione");
+                MessageBox.Show("Insira o ID da sala que deseja editar na barra de pesquisa ou selecione na tabela o ID desejado");
             }
             else
             {
@@ -99,7 +99,7 @@ namespace Projeto_Loc_Senai.FormsAdm
             }
             else
             {
-                MessageBox.Show("insira o id da sala que deseja excluir na barra de pesquisa");
+                MessageBox.Show("Insira o ID da sala que deseja excluir na barra de pesquisa ou selecione na tabela o ID desejado");
             }
             
         }
