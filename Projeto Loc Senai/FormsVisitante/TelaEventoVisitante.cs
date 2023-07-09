@@ -221,23 +221,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
                         box_calculo5.Text = Convert.ToString(sexta);
                         box_calculo6.Text = Convert.ToString(sabado);
                         box_calculo7.Text = Convert.ToString(domingo);
-                        //if (box_calculo6.Text != "")
-                        //{
-
-                        //    ConsultarDados consu2 = new ConsultarDados();
-                        //    MySqlDataReader dt2 = consu.select("select id_evento,horario_evento,nome_evento from tb_evento where data_evento = '" + data_atual + "/" + mes_atual + "/" + ano_atual + "'  and dia_semana = '" + dia_atual + "';");
-                        //    dt2.Read();
-                        //    box_id_1_seg.Text = dt2.GetString(0);
-                        //    label_hora_sabado1.Text = dt2.GetString(1);
-                        //    label_nome_sabado1.Text = dt2.GetString(2);
-                        //    ConsultarDados consu3 = new ConsultarDados();
-                        //    MySqlDataReader dt3 = consu.select("select id_evento,horario_evento,nome_evento from tb_evento where data_evento = '" + data_atual + "/" + mes_atual + "/" + ano_atual + "'  and dia_semana = '" + dia_atual + "';");
-                        //    dt3.Read();
-                        //    box_id_1_seg.Text = dt3.GetString(0);
-                        //    label_hora_sabado1.Text = dt3.GetString(1);
-                        //    label_nome_sabado1.Text = dt3.GetString(2);
-
-                        //}
+                        
 
                     }
                     break;
@@ -247,7 +231,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal7.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal7.Text == "1")
                     {
                         box_calculo5.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);

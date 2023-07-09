@@ -127,14 +127,26 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ConsultarDados consu = new ConsultarDados();
-            MySqlDataReader dt1 = consu.select("SELECT * from tb_evento where id_evento= '" + Convert.ToInt32(evento_2.Text) + "';");
-            dt1.Read();
-            nome_evento.Text = dt1.GetString(1);
-            local_evento.Text = dt1.GetString(2);
-            data_evento.Text = dt1.GetString(3);
-            horario_evento.Text = dt1.GetString(4);
-            descricao_evento.Text = dt1.GetString(5);
+            if(evento_2.Text != "")
+            {
+                ConsultarDados consu = new ConsultarDados();
+                MySqlDataReader dt1 = consu.select("SELECT * from tb_evento where id_evento= '" + Convert.ToInt32(evento_2.Text) + "';");
+                dt1.Read();
+                nome_evento.Text = dt1.GetString(1);
+                local_evento.Text = dt1.GetString(2);
+                data_evento.Text = dt1.GetString(3);
+                horario_evento.Text = dt1.GetString(4);
+                descricao_evento.Text = dt1.GetString(5);
+                
+            }else
+            {
+                nome_evento.Text = "Sem evento";
+                local_evento.Text = "Sem evento";
+                data_evento.Text = "Sem evento";
+                horario_evento.Text = "Sem evento";
+                descricao_evento.Text = "Sem evento";
+            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
