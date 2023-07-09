@@ -357,7 +357,19 @@
     <None Include="Resources\triste.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FormsVisitante\map1.png" />
+    <None Include="Resources\map1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

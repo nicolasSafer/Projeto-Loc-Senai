@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Loc_Senai.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,7 +66,32 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            picture_map.ImageLocation = "map1.png";
+            picture_map.Image = Resources.map1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            picture_map.Image = Resources.map2;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            picture_map.Image = Resources.map3;
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            picture_map.Image = Resources.map4;
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            picture_map.Image = Resources.map5;
+
         }
     }
 }
