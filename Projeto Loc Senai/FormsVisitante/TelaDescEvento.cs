@@ -103,14 +103,22 @@ namespace Projeto_Loc_Senai.FormsVisitante
             dt.Close();
 
             ConsultarDados consu2 = new ConsultarDados();
+            if (evento_1.Text != "") 
+            { 
             MySqlDataReader dt1 = consu2.select("SELECT * from tb_evento where id_evento= '" + Convert.ToInt32(evento_1.Text) + "';");
             dt1.Read();
+            
             nome_evento.Text = dt1.GetString(1);
             local_evento.Text = dt1.GetString(2);
             data_evento.Text = dt1.GetString(3);
             horario_evento.Text = dt1.GetString(4);
             descricao_evento.Text = dt1.GetString(5);
-
+            }
+            else
+            {
+                MessageBox.Show("N tem evento");
+                this.Close();
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)

@@ -37,7 +37,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
         private void button1_Click(object sender, EventArgs e)
         {
             
-            picture_map.ImageLocation = "map1.png";
+            
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -62,7 +62,10 @@ namespace Projeto_Loc_Senai.FormsVisitante
            //     e.Graphics.DrawLine(blackPen, pnt1, pnt2);
            // }
         }
-        
-        
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            picture_map.ImageLocation = "map1.png";
+        }
     }
 }
