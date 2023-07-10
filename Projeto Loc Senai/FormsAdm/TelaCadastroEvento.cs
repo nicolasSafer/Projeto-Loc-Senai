@@ -52,7 +52,6 @@ namespace Projeto_Loc_Senai.FormsAdm
             mce.setdata_evento(box_data_evento.Text);
             mce.sethorario_evento(box_horario_evento.Text);
             mce.setdescricao_evento(box_descricao_evento.Text);
-            mce.setdia_da_semana(cmb_dia_da_semana.Text);
             ControllEventos ctr_evento= new ControllEventos();
 
             if (ctr_evento.cadastrar(mce) == true)

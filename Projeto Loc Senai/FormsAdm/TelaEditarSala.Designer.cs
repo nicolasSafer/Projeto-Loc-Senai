@@ -52,6 +52,9 @@
             // 
             this.dtSala.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtSala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtSala.BackgroundColor = System.Drawing.Color.White;
+            this.dtSala.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtSala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtSala.Location = new System.Drawing.Point(25, 220);
             this.dtSala.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -66,7 +69,7 @@
             this.box_nome_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_nome_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_nome_sala.Location = new System.Drawing.Point(245, 370);
-            this.box_nome_sala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_nome_sala.Margin = new System.Windows.Forms.Padding(4);
             this.box_nome_sala.Name = "box_nome_sala";
             this.box_nome_sala.Size = new System.Drawing.Size(239, 30);
             this.box_nome_sala.TabIndex = 10;
@@ -76,7 +79,7 @@
             this.descricao_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.descricao_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descricao_sala.Location = new System.Drawing.Point(245, 423);
-            this.descricao_sala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.descricao_sala.Margin = new System.Windows.Forms.Padding(4);
             this.descricao_sala.Name = "descricao_sala";
             this.descricao_sala.Size = new System.Drawing.Size(239, 30);
             this.descricao_sala.TabIndex = 12;
@@ -98,7 +101,7 @@
             this.box_numeracao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_numeracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_numeracao.Location = new System.Drawing.Point(700, 369);
-            this.box_numeracao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_numeracao.Margin = new System.Windows.Forms.Padding(4);
             this.box_numeracao.Name = "box_numeracao";
             this.box_numeracao.Size = new System.Drawing.Size(239, 30);
             this.box_numeracao.TabIndex = 14;
@@ -120,7 +123,7 @@
             this.box_bloco.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_bloco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_bloco.Location = new System.Drawing.Point(700, 423);
-            this.box_bloco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_bloco.Margin = new System.Windows.Forms.Padding(4);
             this.box_bloco.Name = "box_bloco";
             this.box_bloco.Size = new System.Drawing.Size(239, 30);
             this.box_bloco.TabIndex = 16;
@@ -164,7 +167,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(440, 514);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 50);
             this.button1.TabIndex = 19;
