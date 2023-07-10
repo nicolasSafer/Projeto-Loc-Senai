@@ -163,6 +163,16 @@ namespace Projeto_Loc_Senai.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap map_principal {
+            get {
+                object obj = ResourceManager.GetObject("map_principal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap map1 {
             get {
                 object obj = ResourceManager.GetObject("map1", resourceCulture);

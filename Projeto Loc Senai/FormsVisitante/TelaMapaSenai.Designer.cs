@@ -89,7 +89,7 @@
             // 
             // picture_map
             // 
-            this.picture_map.Image = global::Projeto_Loc_Senai.Properties.Resources.map3;
+            this.picture_map.Image = global::Projeto_Loc_Senai.Properties.Resources.map_principal;
             this.picture_map.Location = new System.Drawing.Point(189, 4);
             this.picture_map.Name = "picture_map";
             this.picture_map.Size = new System.Drawing.Size(1006, 1011);
