@@ -374,5 +374,11 @@
   <ItemGroup>
     <None Include="Resources\map_principal.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

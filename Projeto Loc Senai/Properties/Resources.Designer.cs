@@ -163,9 +163,9 @@ namespace Projeto_Loc_Senai.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap map_principal {
+        internal static System.Drawing.Bitmap Mapa {
             get {
-                object obj = ResourceManager.GetObject("map_principal", resourceCulture);
+                object obj = ResourceManager.GetObject("Mapa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,49 +173,9 @@ namespace Projeto_Loc_Senai.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap map1 {
+        internal static System.Drawing.Bitmap Mapa_Terreo {
             get {
-                object obj = ResourceManager.GetObject("map1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap map2 {
-            get {
-                object obj = ResourceManager.GetObject("map2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap map3 {
-            get {
-                object obj = ResourceManager.GetObject("map3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap map4 {
-            get {
-                object obj = ResourceManager.GetObject("map4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap map5 {
-            get {
-                object obj = ResourceManager.GetObject("map5", resourceCulture);
+                object obj = ResourceManager.GetObject("Mapa_Terreo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
