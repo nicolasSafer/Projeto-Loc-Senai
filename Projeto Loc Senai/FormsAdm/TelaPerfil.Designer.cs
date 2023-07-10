@@ -33,8 +33,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.box_pesquisa = new System.Windows.Forms.TextBox();
             this.FotoPerfil = new CONTROL.BordasPerfil();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +44,6 @@
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FotoPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
@@ -109,7 +106,7 @@
             this.FotoPerfil.BorderSize = 3;
             this.FotoPerfil.GradientAngle = 100F;
             this.FotoPerfil.Image = global::Projeto_Loc_Senai.Properties.Resources.do_utilizador;
-            this.FotoPerfil.Location = new System.Drawing.Point(98, 182);
+            this.FotoPerfil.Location = new System.Drawing.Point(90, 300);
             this.FotoPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.FotoPerfil.Name = "FotoPerfil";
             this.FotoPerfil.Size = new System.Drawing.Size(184, 184);
@@ -118,43 +115,13 @@
             this.FotoPerfil.TabStop = false;
             this.FotoPerfil.Click += new System.EventHandler(this.bordasPerfil1_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(34, 455);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Histórico";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 478);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(824, 228);
-            this.dataGridView1.TabIndex = 24;
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(342, 377);
+            this.label4.Location = new System.Drawing.Point(334, 495);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
@@ -167,7 +134,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(342, 296);
+            this.label3.Location = new System.Drawing.Point(334, 414);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
@@ -180,7 +147,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(342, 214);
+            this.label2.Location = new System.Drawing.Point(334, 332);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(160, 20);
@@ -192,7 +159,7 @@
             this.box_email_funcionario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_email_funcionario.Enabled = false;
             this.box_email_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_email_funcionario.Location = new System.Drawing.Point(346, 318);
+            this.box_email_funcionario.Location = new System.Drawing.Point(338, 436);
             this.box_email_funcionario.Margin = new System.Windows.Forms.Padding(2);
             this.box_email_funcionario.MaxLength = 50;
             this.box_email_funcionario.Name = "box_email_funcionario";
@@ -204,7 +171,7 @@
             this.box_funcao_funcionario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_funcao_funcionario.Enabled = false;
             this.box_funcao_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_funcao_funcionario.Location = new System.Drawing.Point(346, 400);
+            this.box_funcao_funcionario.Location = new System.Drawing.Point(338, 518);
             this.box_funcao_funcionario.Margin = new System.Windows.Forms.Padding(2);
             this.box_funcao_funcionario.MaxLength = 50;
             this.box_funcao_funcionario.Name = "box_funcao_funcionario";
@@ -216,7 +183,7 @@
             this.box_nome_funcionario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_nome_funcionario.Enabled = false;
             this.box_nome_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_nome_funcionario.Location = new System.Drawing.Point(346, 237);
+            this.box_nome_funcionario.Location = new System.Drawing.Point(338, 355);
             this.box_nome_funcionario.Margin = new System.Windows.Forms.Padding(2);
             this.box_nome_funcionario.MaxLength = 50;
             this.box_nome_funcionario.Name = "box_nome_funcionario";
@@ -229,7 +196,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 377);
+            this.label1.Location = new System.Drawing.Point(72, 495);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
@@ -241,7 +208,7 @@
             this.box_id_funcionario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_id_funcionario.Enabled = false;
             this.box_id_funcionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_id_funcionario.Location = new System.Drawing.Point(84, 400);
+            this.box_id_funcionario.Location = new System.Drawing.Point(76, 518);
             this.box_id_funcionario.Margin = new System.Windows.Forms.Padding(2);
             this.box_id_funcionario.MaxLength = 50;
             this.box_id_funcionario.Name = "box_id_funcionario";
@@ -255,8 +222,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(886, 715);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -276,7 +241,6 @@
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FotoPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,8 +253,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox box_pesquisa;
         private CONTROL.BordasPerfil FotoPerfil;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
