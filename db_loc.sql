@@ -114,7 +114,7 @@ CREATE TABLE `tb_evento` (
   `descricao_evento` varchar(250) NOT NULL,
   `dia_semana` varchar(45) NOT NULL,
   PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,7 @@ CREATE TABLE `tb_evento` (
 
 LOCK TABLES `tb_evento` WRITE;
 /*!40000 ALTER TABLE `tb_evento` DISABLE KEYS */;
-INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA'),(11,'a','a','06/06/23','15:00','Bora','TERÇA'),(12,'Teste','Senais','18/06/23','18:16','AAA','DOMINGO'),(13,'teste2','senai','23/06/23','18:00','Teste','SEXTA'),(14,'teste3','teste','23/06/23','19:00','teste1','SABADO'),(15,'TESTE4','TESTE4','23/06/23','20:00','TESTE2','QUINTA'),(16,'dor','sofrimento','24/06/23','21:00','mds','SABADO');
+INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA'),(11,'a','a','06/06/23','15:00','Bora','TERÇA'),(12,'Teste','Senais','18/06/23','18:16','AAA','DOMINGO'),(13,'teste2','senai','23/06/23','18:00','Teste','SEXTA'),(14,'teste3','teste','23/06/23','19:00','teste1','SABADO'),(15,'TESTE4','TESTE4','23/06/23','20:00','TESTE2','QUINTA'),(16,'dor','sofrimento','24/06/23','21:00','mds','SABADO'),(17,'AAAAA','BBBBB','04/07/23','21:00','fé','TERÇA'),(18,'TESTE 1','TESTE 1','08/07/23','20:00','TESTE','SABADO'),(19,'TESTE 2','TESTE 2','08/07/23','21:00','TESTE 2','SABADO'),(20,'TESTE 3','TESTE 3','08/07/23','22:00','TESTE 3','SABADO'),(21,'TESTE 4','TESTE 4','08/07/23','23:00','TESTE 4','SABADO'),(22,'TESTE 6','TESTE 6','09/07/23','21:00','TESTE 6','SEXTA');
 /*!40000 ALTER TABLE `tb_evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -268,4 +268,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-24  2:35:12
+-- Dump completed on 2023-07-09 20:08:49
