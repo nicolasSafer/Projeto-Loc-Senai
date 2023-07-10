@@ -229,6 +229,11 @@ namespace Projeto_Loc_Senai.FormsVisitante
         {
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

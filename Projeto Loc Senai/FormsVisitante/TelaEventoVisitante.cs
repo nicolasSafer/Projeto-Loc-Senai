@@ -67,9 +67,9 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal1.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal1.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo1.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta;
                         terca = conta + 1;
@@ -93,9 +93,9 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal2.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal2.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo2.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta - 1;
                         terca = conta;
@@ -121,9 +121,9 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal3.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal3.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo3.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta - 2;
                         terca = conta - 1;
@@ -148,9 +148,9 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     box_teste_dia.Text = dia_atual;
                     dia_principal = 1;
                     dia_principal4.Text = Convert.ToString(dia_principal);
-                    if (dia_principal5.Text == "1")
+                    if (dia_principal4.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo4.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta - 3;
                         terca = conta - 2;
@@ -233,7 +233,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
                     dia_principal7.Text = Convert.ToString(dia_principal);
                     if (dia_principal7.Text == "1")
                     {
-                        box_calculo5.Text = data_atual;
+                        box_calculo7.Text = data_atual;
                         conta = Convert.ToInt32(data_atual);
                         segunda = conta - 6;
                         terca = conta - 5;
