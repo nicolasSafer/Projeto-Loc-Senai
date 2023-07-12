@@ -161,6 +161,12 @@
     <Compile Include="FormsVisitante\TelaDescEvento.Designer.cs">
       <DependentUpon>TelaDescEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsVisitante\TelaDescSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsVisitante\TelaDescSala.Designer.cs">
+      <DependentUpon>TelaDescSala.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsVisitante\TelaEventoVisitante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsVisitante\TelaDescEvento.resx">
       <DependentUpon>TelaDescEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsVisitante\TelaDescSala.resx">
+      <DependentUpon>TelaDescSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsVisitante\TelaEventoVisitante.resx">
       <DependentUpon>TelaEventoVisitante.cs</DependentUpon>

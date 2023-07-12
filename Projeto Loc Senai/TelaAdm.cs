@@ -22,7 +22,7 @@ namespace Projeto_Loc_Senai
         public TelaAdm()
         {
             
-           
+
 
         }
 
