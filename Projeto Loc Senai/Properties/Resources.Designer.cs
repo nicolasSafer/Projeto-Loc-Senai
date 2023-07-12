@@ -163,9 +163,9 @@ namespace Projeto_Loc_Senai.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mapa {
+        internal static System.Drawing.Bitmap Mapa_Terreo_Almoxarifado {
             get {
-                object obj = ResourceManager.GetObject("Mapa", resourceCulture);
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Almoxarifado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,79 @@ namespace Projeto_Loc_Senai.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mapa_Terreo {
+        internal static System.Drawing.Bitmap Mapa_Terreo_Biblioteca {
             get {
-                object obj = ResourceManager.GetObject("Mapa_Terreo", resourceCulture);
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Biblioteca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Coordenacao {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Coordenacao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Lab_Costura {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Lab_Costura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Lab_Modelagem {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Lab_Modelagem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_pin {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_pin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Sala_03 {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Sala_03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Sala_10 {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Sala_10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mapa_Terreo_Secretaria {
+            get {
+                object obj = ResourceManager.GetObject("Mapa_Terreo_Secretaria", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,29 +29,32 @@
         private void InitializeComponent()
         {
             this.gradientPanel1 = new CONTROL.GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_inicio = new System.Windows.Forms.Button();
+            this.btn_Lab_Costura = new System.Windows.Forms.Button();
+            this.btn_Lab_modelagem = new System.Windows.Forms.Button();
+            this.btn_Sala_10 = new System.Windows.Forms.Button();
+            this.btn_Sala_03 = new System.Windows.Forms.Button();
+            this.btn_Biblioteca = new System.Windows.Forms.Button();
+            this.btn_almoxarifado = new System.Windows.Forms.Button();
+            this.btn_Coordenacao = new System.Windows.Forms.Button();
+            this.btn_secretaria = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Mapa = new System.Windows.Forms.PictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.gradientPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mapa)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
             // 
             this.gradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(105)))), ((int)(((byte)(157)))));
             this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(140)))), ((int)(((byte)(189)))));
+            this.gradientPanel1.Controls.Add(this.iconButton1);
             this.gradientPanel1.Controls.Add(this.panel3);
             this.gradientPanel1.Controls.Add(this.panel2);
             this.gradientPanel1.Controls.Add(this.panel1);
@@ -63,17 +66,138 @@
             this.gradientPanel1.Size = new System.Drawing.Size(250, 953);
             this.gradientPanel1.TabIndex = 0;
             // 
-            // label1
+            // panel3
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(70, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mapa";
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.btn_inicio);
+            this.panel3.Controls.Add(this.btn_Lab_Costura);
+            this.panel3.Controls.Add(this.btn_Lab_modelagem);
+            this.panel3.Controls.Add(this.btn_Sala_10);
+            this.panel3.Controls.Add(this.btn_Sala_03);
+            this.panel3.Controls.Add(this.btn_Biblioteca);
+            this.panel3.Controls.Add(this.btn_almoxarifado);
+            this.panel3.Controls.Add(this.btn_Coordenacao);
+            this.panel3.Controls.Add(this.btn_secretaria);
+            this.panel3.Location = new System.Drawing.Point(25, 170);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 497);
+            this.panel3.TabIndex = 4;
+            // 
+            // btn_inicio
+            // 
+            this.btn_inicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inicio.Location = new System.Drawing.Point(0, 0);
+            this.btn_inicio.Name = "btn_inicio";
+            this.btn_inicio.Size = new System.Drawing.Size(200, 56);
+            this.btn_inicio.TabIndex = 8;
+            this.btn_inicio.Text = "Início";
+            this.btn_inicio.UseVisualStyleBackColor = true;
+            this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
+            // 
+            // btn_Lab_Costura
+            // 
+            this.btn_Lab_Costura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Lab_Costura.Location = new System.Drawing.Point(0, 440);
+            this.btn_Lab_Costura.Name = "btn_Lab_Costura";
+            this.btn_Lab_Costura.Size = new System.Drawing.Size(200, 56);
+            this.btn_Lab_Costura.TabIndex = 7;
+            this.btn_Lab_Costura.Text = "Lab. de Costura";
+            this.btn_Lab_Costura.UseVisualStyleBackColor = true;
+            this.btn_Lab_Costura.Click += new System.EventHandler(this.btn_Lab_Costura_Click);
+            // 
+            // btn_Lab_modelagem
+            // 
+            this.btn_Lab_modelagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Lab_modelagem.Location = new System.Drawing.Point(0, 385);
+            this.btn_Lab_modelagem.Name = "btn_Lab_modelagem";
+            this.btn_Lab_modelagem.Size = new System.Drawing.Size(200, 56);
+            this.btn_Lab_modelagem.TabIndex = 6;
+            this.btn_Lab_modelagem.Text = "Lab. de Modelagem 01";
+            this.btn_Lab_modelagem.UseVisualStyleBackColor = true;
+            this.btn_Lab_modelagem.Click += new System.EventHandler(this.btn_Lab_modelagem_Click);
+            // 
+            // btn_Sala_10
+            // 
+            this.btn_Sala_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Sala_10.Location = new System.Drawing.Point(0, 330);
+            this.btn_Sala_10.Name = "btn_Sala_10";
+            this.btn_Sala_10.Size = new System.Drawing.Size(200, 56);
+            this.btn_Sala_10.TabIndex = 5;
+            this.btn_Sala_10.Text = "Sala de Aula 10";
+            this.btn_Sala_10.UseVisualStyleBackColor = true;
+            this.btn_Sala_10.Click += new System.EventHandler(this.btn_Sala_10_Click);
+            // 
+            // btn_Sala_03
+            // 
+            this.btn_Sala_03.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Sala_03.Location = new System.Drawing.Point(0, 275);
+            this.btn_Sala_03.Name = "btn_Sala_03";
+            this.btn_Sala_03.Size = new System.Drawing.Size(200, 56);
+            this.btn_Sala_03.TabIndex = 4;
+            this.btn_Sala_03.Text = "Sala de Aula 03";
+            this.btn_Sala_03.UseVisualStyleBackColor = true;
+            this.btn_Sala_03.Click += new System.EventHandler(this.btn_Sala_03_Click);
+            // 
+            // btn_Biblioteca
+            // 
+            this.btn_Biblioteca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Biblioteca.Location = new System.Drawing.Point(0, 220);
+            this.btn_Biblioteca.Name = "btn_Biblioteca";
+            this.btn_Biblioteca.Size = new System.Drawing.Size(200, 56);
+            this.btn_Biblioteca.TabIndex = 3;
+            this.btn_Biblioteca.Text = "Biblioteca";
+            this.btn_Biblioteca.UseVisualStyleBackColor = true;
+            this.btn_Biblioteca.Click += new System.EventHandler(this.btn_Biblioteca_Click);
+            // 
+            // btn_almoxarifado
+            // 
+            this.btn_almoxarifado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_almoxarifado.Location = new System.Drawing.Point(0, 165);
+            this.btn_almoxarifado.Name = "btn_almoxarifado";
+            this.btn_almoxarifado.Size = new System.Drawing.Size(200, 56);
+            this.btn_almoxarifado.TabIndex = 2;
+            this.btn_almoxarifado.Text = "Almoxarifado";
+            this.btn_almoxarifado.UseVisualStyleBackColor = true;
+            this.btn_almoxarifado.Click += new System.EventHandler(this.btn_almoxarifado_Click);
+            // 
+            // btn_Coordenacao
+            // 
+            this.btn_Coordenacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Coordenacao.Location = new System.Drawing.Point(0, 110);
+            this.btn_Coordenacao.Name = "btn_Coordenacao";
+            this.btn_Coordenacao.Size = new System.Drawing.Size(200, 56);
+            this.btn_Coordenacao.TabIndex = 1;
+            this.btn_Coordenacao.Text = "Coordenação";
+            this.btn_Coordenacao.UseVisualStyleBackColor = true;
+            this.btn_Coordenacao.Click += new System.EventHandler(this.btn_Coordenacao_Click);
+            // 
+            // btn_secretaria
+            // 
+            this.btn_secretaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_secretaria.Location = new System.Drawing.Point(0, 55);
+            this.btn_secretaria.Name = "btn_secretaria";
+            this.btn_secretaria.Size = new System.Drawing.Size(200, 56);
+            this.btn_secretaria.TabIndex = 0;
+            this.btn_secretaria.Text = "Secretaria";
+            this.btn_secretaria.UseVisualStyleBackColor = true;
+            this.btn_secretaria.Click += new System.EventHandler(this.btn_secretaria_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(249, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 953);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(25, 125);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.TabIndex = 2;
             // 
             // label2
             // 
@@ -87,136 +211,48 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Bloco C";
             // 
-            // panel1
+            // label1
             // 
-            this.panel1.Location = new System.Drawing.Point(25, 125);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 1);
-            this.panel1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(70, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mapa";
             // 
-            // panel2
+            // Mapa
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(249, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1, 953);
-            this.panel2.TabIndex = 3;
+            this.Mapa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mapa.Image = global::Projeto_Loc_Senai.Properties.Resources.Mapa_Terreo_pin;
+            this.Mapa.Location = new System.Drawing.Point(250, 0);
+            this.Mapa.Name = "Mapa";
+            this.Mapa.Size = new System.Drawing.Size(1132, 953);
+            this.Mapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Mapa.TabIndex = 1;
+            this.Mapa.TabStop = false;
             // 
-            // panel3
+            // iconButton1
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(25, 170);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 440);
-            this.panel3.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Secretaria";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 56);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Coordenação";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 110);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 56);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Almoxarifado";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 165);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 56);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Biblioteca";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 220);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 56);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Sala de Aula 03";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 275);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 56);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Sala de Aula 10";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 330);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 56);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Lab. de Modelagem 01";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(0, 385);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 56);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Lab. de Costura";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Projeto_Loc_Senai.Properties.Resources.Mapa_Terreo;
-            this.pictureBox1.Location = new System.Drawing.Point(250, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1132, 953);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(25, 688);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(200, 117);
+            this.iconButton1.TabIndex = 5;
+            this.iconButton1.Text = "Descrição \r\nda Sala";
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // TelaMapaSenai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 953);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Mapa);
             this.Controls.Add(this.gradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaMapaSenai";
@@ -224,7 +260,7 @@
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mapa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,19 +268,21 @@
         #endregion
 
         private CONTROL.GradientPanel gradientPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Mapa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_secretaria;
+        private System.Windows.Forms.Button btn_Lab_Costura;
+        private System.Windows.Forms.Button btn_Lab_modelagem;
+        private System.Windows.Forms.Button btn_Sala_10;
+        private System.Windows.Forms.Button btn_Sala_03;
+        private System.Windows.Forms.Button btn_Biblioteca;
+        private System.Windows.Forms.Button btn_almoxarifado;
+        private System.Windows.Forms.Button btn_Coordenacao;
+        private System.Windows.Forms.Button btn_inicio;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

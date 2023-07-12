@@ -380,5 +380,38 @@
   <ItemGroup>
     <None Include="Resources\Mapa_Terreo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Secretaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Secretaria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Secretaria2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Coordenacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Almoxarifado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Sala_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Biblioteca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Sala_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Lab_Modelagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_Terreo_Lab_Costura.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
