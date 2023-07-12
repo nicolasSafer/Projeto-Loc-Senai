@@ -59,7 +59,7 @@
             this.PainelSuperior.Controls.Add(this.iconPictureBox1);
             this.PainelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PainelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2);
             this.PainelSuperior.Name = "PainelSuperior";
             this.PainelSuperior.Size = new System.Drawing.Size(736, 162);
             this.PainelSuperior.TabIndex = 2;
@@ -92,7 +92,7 @@
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
             this.Fechar.Location = new System.Drawing.Point(694, 16);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(2);
             this.Fechar.Name = "Fechar";
             this.Fechar.Size = new System.Drawing.Size(22, 24);
             this.Fechar.TabIndex = 6;
@@ -108,7 +108,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconPictureBox1.IconSize = 112;
             this.iconPictureBox1.Location = new System.Drawing.Point(184, 20);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(112, 122);
             this.iconPictureBox1.TabIndex = 10;
@@ -123,7 +123,7 @@
             this.dtEvento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtEvento.Location = new System.Drawing.Point(703, 184);
-            this.dtEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtEvento.Margin = new System.Windows.Forms.Padding(2);
             this.dtEvento.Name = "dtEvento";
             this.dtEvento.RowHeadersWidth = 51;
             this.dtEvento.RowTemplate.Height = 24;
@@ -137,7 +137,7 @@
             this.box_local_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_local_evento.Location = new System.Drawing.Point(339, 236);
             this.box_local_evento.Name = "box_local_evento";
-            this.box_local_evento.Size = new System.Drawing.Size(180, 26);
+            this.box_local_evento.Size = new System.Drawing.Size(212, 26);
             this.box_local_evento.TabIndex = 20;
             // 
             // box_nome_evento
@@ -146,7 +146,7 @@
             this.box_nome_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box_nome_evento.Location = new System.Drawing.Point(339, 192);
             this.box_nome_evento.Name = "box_nome_evento";
-            this.box_nome_evento.Size = new System.Drawing.Size(180, 26);
+            this.box_nome_evento.Size = new System.Drawing.Size(212, 26);
             this.box_nome_evento.TabIndex = 18;
             // 
             // label1
@@ -154,7 +154,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 238);
+            this.label1.Location = new System.Drawing.Point(180, 237);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 24);
             this.label1.TabIndex = 25;
@@ -176,7 +176,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(286, 329);
+            this.label3.Location = new System.Drawing.Point(180, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 24);
             this.label3.TabIndex = 27;
@@ -187,7 +187,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(261, 375);
+            this.label4.Location = new System.Drawing.Point(358, 286);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 28;
@@ -198,7 +198,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(239, 283);
+            this.label5.Location = new System.Drawing.Point(180, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 24);
             this.label5.TabIndex = 29;
@@ -208,16 +208,18 @@
             // 
             this.box_descricao_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_descricao_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_descricao_evento.Location = new System.Drawing.Point(339, 282);
+            this.box_descricao_evento.Location = new System.Drawing.Point(184, 353);
+            this.box_descricao_evento.Multiline = true;
             this.box_descricao_evento.Name = "box_descricao_evento";
-            this.box_descricao_evento.Size = new System.Drawing.Size(180, 26);
+            this.box_descricao_evento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.box_descricao_evento.Size = new System.Drawing.Size(367, 137);
             this.box_descricao_evento.TabIndex = 30;
             // 
             // cadas_sala
             // 
-            this.cadas_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cadas_sala.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cadas_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadas_sala.Location = new System.Drawing.Point(330, 455);
+            this.cadas_sala.Location = new System.Drawing.Point(310, 496);
             this.cadas_sala.Name = "cadas_sala";
             this.cadas_sala.Size = new System.Drawing.Size(98, 41);
             this.cadas_sala.TabIndex = 18;
@@ -238,7 +240,7 @@
             // box_data_evento
             // 
             this.box_data_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.box_data_evento.Location = new System.Drawing.Point(339, 333);
+            this.box_data_evento.Location = new System.Drawing.Point(233, 290);
             this.box_data_evento.Mask = "00/00/00";
             this.box_data_evento.Name = "box_data_evento";
             this.box_data_evento.Size = new System.Drawing.Size(100, 20);
@@ -247,7 +249,7 @@
             // box_horario_evento
             // 
             this.box_horario_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.box_horario_evento.Location = new System.Drawing.Point(339, 379);
+            this.box_horario_evento.Location = new System.Drawing.Point(451, 290);
             this.box_horario_evento.Mask = "00:00";
             this.box_horario_evento.Name = "box_horario_evento";
             this.box_horario_evento.Size = new System.Drawing.Size(100, 20);

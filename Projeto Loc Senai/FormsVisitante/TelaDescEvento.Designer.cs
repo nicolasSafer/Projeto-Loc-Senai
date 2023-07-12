@@ -72,36 +72,36 @@
             // evento_1
             // 
             this.evento_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_1.Location = new System.Drawing.Point(14, 471);
+            this.evento_1.Location = new System.Drawing.Point(12, 215);
             this.evento_1.Name = "evento_1";
-            this.evento_1.Size = new System.Drawing.Size(100, 20);
+            this.evento_1.Size = new System.Drawing.Size(10, 20);
             this.evento_1.TabIndex = 3;
             this.evento_1.Visible = false;
             // 
             // evento_4
             // 
             this.evento_4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_4.Location = new System.Drawing.Point(14, 544);
+            this.evento_4.Location = new System.Drawing.Point(12, 288);
             this.evento_4.Name = "evento_4";
-            this.evento_4.Size = new System.Drawing.Size(100, 20);
+            this.evento_4.Size = new System.Drawing.Size(10, 20);
             this.evento_4.TabIndex = 4;
             this.evento_4.Visible = false;
             // 
             // evento_3
             // 
             this.evento_3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_3.Location = new System.Drawing.Point(14, 520);
+            this.evento_3.Location = new System.Drawing.Point(12, 264);
             this.evento_3.Name = "evento_3";
-            this.evento_3.Size = new System.Drawing.Size(100, 20);
+            this.evento_3.Size = new System.Drawing.Size(10, 20);
             this.evento_3.TabIndex = 5;
             this.evento_3.Visible = false;
             // 
             // evento_2
             // 
             this.evento_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_2.Location = new System.Drawing.Point(14, 496);
+            this.evento_2.Location = new System.Drawing.Point(12, 240);
             this.evento_2.Name = "evento_2";
-            this.evento_2.Size = new System.Drawing.Size(100, 20);
+            this.evento_2.Size = new System.Drawing.Size(10, 20);
             this.evento_2.TabIndex = 6;
             this.evento_2.Visible = false;
             // 
@@ -109,7 +109,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(126, 530);
+            this.button1.Location = new System.Drawing.Point(82, 530);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 49);
             this.button1.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(237, 530);
+            this.button2.Location = new System.Drawing.Point(193, 530);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 49);
             this.button2.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(348, 530);
+            this.button3.Location = new System.Drawing.Point(304, 530);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 49);
             this.button3.TabIndex = 9;
@@ -145,7 +145,7 @@
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(459, 530);
+            this.button4.Location = new System.Drawing.Point(415, 530);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 49);
             this.button4.TabIndex = 10;
@@ -202,11 +202,11 @@
             this.descricao_evento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.descricao_evento.BackColor = System.Drawing.Color.White;
             this.descricao_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descricao_evento.Location = new System.Drawing.Point(126, 420);
+            this.descricao_evento.Location = new System.Drawing.Point(50, 420);
             this.descricao_evento.Multiline = true;
             this.descricao_evento.Name = "descricao_evento";
             this.descricao_evento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descricao_evento.Size = new System.Drawing.Size(539, 99);
+            this.descricao_evento.Size = new System.Drawing.Size(615, 99);
             this.descricao_evento.TabIndex = 15;
             // 
             // label1
@@ -225,7 +225,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(121, 391);
+            this.label2.Location = new System.Drawing.Point(45, 391);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 26);
             this.label2.TabIndex = 17;
@@ -279,7 +279,7 @@
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(570, 530);
+            this.button5.Location = new System.Drawing.Point(526, 530);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(94, 49);
             this.button5.TabIndex = 21;
@@ -295,7 +295,7 @@
             this.PainelSuperior.Controls.Add(this.iconPictureBox1);
             this.PainelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PainelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2);
             this.PainelSuperior.Name = "PainelSuperior";
             this.PainelSuperior.Size = new System.Drawing.Size(736, 162);
             this.PainelSuperior.TabIndex = 22;
@@ -327,7 +327,7 @@
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
             this.Fechar.Location = new System.Drawing.Point(694, 16);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(2);
             this.Fechar.Name = "Fechar";
             this.Fechar.Size = new System.Drawing.Size(22, 24);
             this.Fechar.TabIndex = 6;
@@ -343,7 +343,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconPictureBox1.IconSize = 112;
             this.iconPictureBox1.Location = new System.Drawing.Point(184, 20);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(112, 122);
             this.iconPictureBox1.TabIndex = 10;

@@ -50,7 +50,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 191);
+            this.label1.Location = new System.Drawing.Point(146, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 24);
             this.label1.TabIndex = 7;
@@ -60,9 +60,9 @@
             // 
             this.box_nome_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_nome_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_nome_sala.Location = new System.Drawing.Point(265, 190);
+            this.box_nome_sala.Location = new System.Drawing.Point(265, 175);
             this.box_nome_sala.Name = "box_nome_sala";
-            this.box_nome_sala.Size = new System.Drawing.Size(180, 26);
+            this.box_nome_sala.Size = new System.Drawing.Size(232, 26);
             this.box_nome_sala.TabIndex = 8;
             // 
             // label2
@@ -70,7 +70,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(119, 236);
+            this.label2.Location = new System.Drawing.Point(146, 303);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 24);
             this.label2.TabIndex = 9;
@@ -80,9 +80,11 @@
             // 
             this.descricao_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.descricao_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descricao_sala.Location = new System.Drawing.Point(265, 236);
+            this.descricao_sala.Location = new System.Drawing.Point(150, 330);
+            this.descricao_sala.Multiline = true;
             this.descricao_sala.Name = "descricao_sala";
-            this.descricao_sala.Size = new System.Drawing.Size(180, 26);
+            this.descricao_sala.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.descricao_sala.Size = new System.Drawing.Size(347, 64);
             this.descricao_sala.TabIndex = 10;
             // 
             // label3
@@ -90,7 +92,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 280);
+            this.label3.Location = new System.Drawing.Point(146, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 24);
             this.label3.TabIndex = 11;
@@ -100,9 +102,9 @@
             // 
             this.box_numeracao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_numeracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_numeracao.Location = new System.Drawing.Point(265, 280);
+            this.box_numeracao.Location = new System.Drawing.Point(265, 218);
             this.box_numeracao.Name = "box_numeracao";
-            this.box_numeracao.Size = new System.Drawing.Size(180, 26);
+            this.box_numeracao.Size = new System.Drawing.Size(232, 26);
             this.box_numeracao.TabIndex = 12;
             // 
             // label4
@@ -110,7 +112,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(191, 325);
+            this.label4.Location = new System.Drawing.Point(146, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 24);
             this.label4.TabIndex = 13;
@@ -120,16 +122,16 @@
             // 
             this.box_bloco.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.box_bloco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_bloco.Location = new System.Drawing.Point(265, 325);
+            this.box_bloco.Location = new System.Drawing.Point(265, 261);
             this.box_bloco.Name = "box_bloco";
-            this.box_bloco.Size = new System.Drawing.Size(180, 26);
+            this.box_bloco.Size = new System.Drawing.Size(232, 26);
             this.box_bloco.TabIndex = 14;
             // 
             // cadas_sala
             // 
             this.cadas_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cadas_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadas_sala.Location = new System.Drawing.Point(304, 382);
+            this.cadas_sala.Location = new System.Drawing.Point(274, 400);
             this.cadas_sala.Name = "cadas_sala";
             this.cadas_sala.Size = new System.Drawing.Size(98, 41);
             this.cadas_sala.TabIndex = 15;
@@ -146,7 +148,7 @@
             this.PainelSuperior.Controls.Add(this.Fechar);
             this.PainelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PainelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2);
             this.PainelSuperior.Name = "PainelSuperior";
             this.PainelSuperior.Size = new System.Drawing.Size(662, 162);
             this.PainelSuperior.TabIndex = 0;
@@ -175,7 +177,7 @@
             this.quadro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.quadro.IconSize = 112;
             this.quadro.Location = new System.Drawing.Point(135, 20);
-            this.quadro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quadro.Margin = new System.Windows.Forms.Padding(2);
             this.quadro.Name = "quadro";
             this.quadro.Size = new System.Drawing.Size(112, 122);
             this.quadro.TabIndex = 7;
@@ -194,7 +196,7 @@
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
             this.Fechar.Location = new System.Drawing.Point(619, 16);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(2);
             this.Fechar.Name = "Fechar";
             this.Fechar.Size = new System.Drawing.Size(22, 24);
             this.Fechar.TabIndex = 6;
@@ -216,7 +218,7 @@
             this.Controls.Add(this.box_nome_sala);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PainelSuperior);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaCadastroSala";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Sala";

@@ -56,9 +56,9 @@
             this.PainelSuperior.Controls.Add(this.iconPictureBox1);
             this.PainelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PainelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PainelSuperior.Name = "PainelSuperior";
-            this.PainelSuperior.Size = new System.Drawing.Size(883, 199);
+            this.PainelSuperior.Size = new System.Drawing.Size(662, 162);
             this.PainelSuperior.TabIndex = 1;
             this.PainelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PainelSuperior_MouseDown);
             // 
@@ -69,9 +69,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(325, 25);
+            this.label6.Location = new System.Drawing.Point(244, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(304, 138);
+            this.label6.Size = new System.Drawing.Size(246, 110);
             this.label6.TabIndex = 8;
             this.label6.Text = " Cadastro \r\nde Evento\r\n";
             // 
@@ -87,10 +88,10 @@
             this.Fechar.IconColor = System.Drawing.Color.White;
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
-            this.Fechar.Location = new System.Drawing.Point(825, 20);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fechar.Location = new System.Drawing.Point(619, 16);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Fechar.Name = "Fechar";
-            this.Fechar.Size = new System.Drawing.Size(29, 30);
+            this.Fechar.Size = new System.Drawing.Size(22, 24);
             this.Fechar.TabIndex = 6;
             this.Fechar.UseVisualStyleBackColor = false;
             this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
@@ -102,112 +103,105 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox1.IconSize = 149;
-            this.iconPictureBox1.Location = new System.Drawing.Point(180, 25);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.IconSize = 112;
+            this.iconPictureBox1.Location = new System.Drawing.Point(135, 20);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(149, 150);
+            this.iconPictureBox1.Size = new System.Drawing.Size(112, 122);
             this.iconPictureBox1.TabIndex = 9;
             this.iconPictureBox1.TabStop = false;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(402, 349);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(301, 274);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 29);
+            this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 21;
             this.label4.Text = "Horário";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(181, 349);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(136, 274);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 29);
+            this.label3.Size = new System.Drawing.Size(47, 24);
             this.label3.TabIndex = 19;
             this.label3.Text = "Data";
             // 
             // box_local_evento
             // 
-            this.box_local_evento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.box_local_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_local_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_local_evento.Location = new System.Drawing.Point(407, 289);
-            this.box_local_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_local_evento.Location = new System.Drawing.Point(305, 225);
             this.box_local_evento.Name = "box_local_evento";
-            this.box_local_evento.Size = new System.Drawing.Size(239, 30);
+            this.box_local_evento.Size = new System.Drawing.Size(207, 26);
             this.box_local_evento.TabIndex = 18;
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(181, 289);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(136, 225);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 29);
+            this.label2.Size = new System.Drawing.Size(146, 24);
             this.label2.TabIndex = 17;
             this.label2.Text = "Local do Evento";
             // 
             // box_nome_evento
             // 
-            this.box_nome_evento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.box_nome_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_nome_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_nome_evento.Location = new System.Drawing.Point(407, 233);
-            this.box_nome_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_nome_evento.Location = new System.Drawing.Point(305, 179);
             this.box_nome_evento.Name = "box_nome_evento";
-            this.box_nome_evento.Size = new System.Drawing.Size(239, 30);
+            this.box_nome_evento.Size = new System.Drawing.Size(207, 26);
             this.box_nome_evento.TabIndex = 16;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(181, 235);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(136, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 29);
+            this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 15;
             this.label1.Text = "Nome do Evento";
             // 
             // box_descricao_evento
             // 
-            this.box_descricao_evento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.box_descricao_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_descricao_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_descricao_evento.Location = new System.Drawing.Point(315, 407);
-            this.box_descricao_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_descricao_evento.Location = new System.Drawing.Point(140, 348);
+            this.box_descricao_evento.Multiline = true;
             this.box_descricao_evento.Name = "box_descricao_evento";
-            this.box_descricao_evento.Size = new System.Drawing.Size(363, 30);
+            this.box_descricao_evento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.box_descricao_evento.Size = new System.Drawing.Size(372, 104);
             this.box_descricao_evento.TabIndex = 24;
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(181, 407);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(136, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 29);
+            this.label5.Size = new System.Drawing.Size(94, 24);
             this.label5.TabIndex = 23;
             this.label5.Text = "Descrição";
             // 
             // cadas_sala
             // 
-            this.cadas_sala.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cadas_sala.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cadas_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadas_sala.Location = new System.Drawing.Point(376, 482);
-            this.cadas_sala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cadas_sala.Location = new System.Drawing.Point(276, 458);
             this.cadas_sala.Name = "cadas_sala";
-            this.cadas_sala.Size = new System.Drawing.Size(131, 50);
+            this.cadas_sala.Size = new System.Drawing.Size(98, 41);
             this.cadas_sala.TabIndex = 25;
             this.cadas_sala.Text = "Cadastrar";
             this.cadas_sala.UseVisualStyleBackColor = true;
@@ -215,29 +209,29 @@
             // 
             // box_horario_evento
             // 
+            this.box_horario_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_horario_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_horario_evento.Location = new System.Drawing.Point(503, 349);
-            this.box_horario_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_horario_evento.Location = new System.Drawing.Point(379, 273);
             this.box_horario_evento.Mask = "00:00";
             this.box_horario_evento.Name = "box_horario_evento";
-            this.box_horario_evento.Size = new System.Drawing.Size(64, 30);
+            this.box_horario_evento.Size = new System.Drawing.Size(66, 26);
             this.box_horario_evento.TabIndex = 35;
             // 
             // box_data_evento
             // 
+            this.box_data_evento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_data_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_data_evento.Location = new System.Drawing.Point(260, 349);
-            this.box_data_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.box_data_evento.Location = new System.Drawing.Point(195, 274);
             this.box_data_evento.Mask = "00/00/00";
             this.box_data_evento.Name = "box_data_evento";
-            this.box_data_evento.Size = new System.Drawing.Size(94, 30);
+            this.box_data_evento.Size = new System.Drawing.Size(72, 26);
             this.box_data_evento.TabIndex = 34;
             // 
             // TelaCadastroEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 629);
+            this.ClientSize = new System.Drawing.Size(662, 511);
             this.Controls.Add(this.box_horario_evento);
             this.Controls.Add(this.box_data_evento);
             this.Controls.Add(this.cadas_sala);
@@ -250,7 +244,6 @@
             this.Controls.Add(this.box_nome_evento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PainelSuperior);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaCadastroEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastroEvento";
