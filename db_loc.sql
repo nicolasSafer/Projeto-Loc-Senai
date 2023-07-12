@@ -1,8 +1,8 @@
--- MariaDB dump 10.19  Distrib 10.4.27-MariaDB, for Win64 (AMD64)
+-- MySQL dump 10.16  Distrib 10.1.36-MariaDB, for Win32 (AMD64)
 --
 -- Host: 127.0.0.1    Database: db_loc
 -- ------------------------------------------------------
--- Server version	10.4.27-MariaDB
+-- Server version	10.1.36-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -26,7 +26,7 @@ CREATE TABLE `tb_bloco` (
   `id_bloco` int(6) NOT NULL AUTO_INCREMENT,
   `nome_bloco` varchar(50) NOT NULL,
   PRIMARY KEY (`id_bloco`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -56,7 +56,7 @@ CREATE TABLE `tb_cadastro_evento` (
   KEY `fk_id_evento` (`id_evento`),
   CONSTRAINT `fk_id_evento` FOREIGN KEY (`id_evento`) REFERENCES `tb_evento` (`id_evento`) ON UPDATE CASCADE,
   CONSTRAINT `fk_id_funcionario` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +86,7 @@ CREATE TABLE `tb_cadastro_sala` (
   KEY `fk_id_sala` (`id_sala`),
   CONSTRAINT `fk_id_funcionario_3` FOREIGN KEY (`id_funcionario`) REFERENCES `tb_funcionario` (`id_funcionario`) ON UPDATE CASCADE,
   CONSTRAINT `fk_id_sala` FOREIGN KEY (`id_sala`) REFERENCES `tb_sala_do_predio` (`id_sala`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -114,7 +114,7 @@ CREATE TABLE `tb_evento` (
   `descricao_evento` varchar(250) NOT NULL,
   `dia_semana` varchar(45) NOT NULL,
   PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,6 @@ CREATE TABLE `tb_evento` (
 
 LOCK TABLES `tb_evento` WRITE;
 /*!40000 ALTER TABLE `tb_evento` DISABLE KEYS */;
-INSERT INTO `tb_evento` VALUES (4,'a','v','06/06/23','11:00','aaaaa',''),(5,'Mundo Senai','Senai - Botanico','05/06/23','13:00','Exposição de trabalhos','SEGUNDA'),(6,'SENAI 2','senai','05/06/23','15:00','TESTE 2','SEGUNDA'),(7,'Aula Ciffoni','Sala de Aula','06/06/23','13:30','Aula de c#','TERÇA'),(8,'Aula Teste','Sala de Aula 1602','07/06/23','13:30','Aula de c# e bda','QUARTA'),(9,'Aula Teste2','Sala de Aula 999','08/06/23','13:30','Aula de c# e bda','QUINTA'),(10,'Aula Teste3','Sala de Aula 9696','09/06/23','13:30','Aula de PHP','SEXTA'),(11,'a','a','06/06/23','15:00','Bora','TERÇA'),(12,'Teste','Senais','18/06/23','18:16','AAA','DOMINGO'),(13,'teste2','senai','23/06/23','18:00','Teste','SEXTA'),(14,'teste3','teste','23/06/23','19:00','teste1','SABADO'),(15,'TESTE4','TESTE4','23/06/23','20:00','TESTE2','QUINTA'),(16,'dor','sofrimento','24/06/23','21:00','mds','SABADO'),(17,'AAAAA','BBBBB','04/07/23','21:00','fé','TERÇA'),(18,'TESTE 1','TESTE 1','08/07/23','20:00','TESTE','SABADO'),(19,'TESTE 2','TESTE 2','08/07/23','21:00','TESTE 2','SABADO'),(20,'TESTE 3','TESTE 3','08/07/23','22:00','TESTE 3','SABADO'),(21,'TESTE 4','TESTE 4','08/07/23','23:00','TESTE 4','SABADO'),(22,'TESTE 6','TESTE 6','09/07/23','21:00','TESTE 6','SEXTA');
 /*!40000 ALTER TABLE `tb_evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -140,7 +139,7 @@ CREATE TABLE `tb_feedback_software` (
   `avaliacao_software` varchar(50) NOT NULL,
   `observacoes` varchar(250) NOT NULL,
   PRIMARY KEY (`id_feedback`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +148,6 @@ CREATE TABLE `tb_feedback_software` (
 
 LOCK TABLES `tb_feedback_software` WRITE;
 /*!40000 ALTER TABLE `tb_feedback_software` DISABLE KEYS */;
-INSERT INTO `tb_feedback_software` VALUES (2,'Nicolas','','O melhor projeto'),(3,'Nicolas','Muito bom','Melhor equipe senai'),(4,'Nicolas','Bom','A'),(5,'a','Muito bom','a');
 /*!40000 ALTER TABLE `tb_feedback_software` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -164,7 +162,7 @@ CREATE TABLE `tb_funcao_funcionario` (
   `id_funcao` int(6) NOT NULL AUTO_INCREMENT,
   `funcao_funcionario` varchar(50) NOT NULL,
   PRIMARY KEY (`id_funcao`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -195,7 +193,7 @@ CREATE TABLE `tb_funcionario` (
   PRIMARY KEY (`id_funcionario`),
   KEY `fk_id_funcao` (`id_funcao`),
   CONSTRAINT `fk_id_funcao` FOREIGN KEY (`id_funcao`) REFERENCES `tb_funcao_funcionario` (`id_funcao`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +202,7 @@ CREATE TABLE `tb_funcionario` (
 
 LOCK TABLES `tb_funcionario` WRITE;
 /*!40000 ALTER TABLE `tb_funcionario` DISABLE KEYS */;
-INSERT INTO `tb_funcionario` VALUES (8,'Nicolas dos Santos Fernandes','Nicolas@gmail.com','3013',1,'C:\\Users\\Aluno\\Pictures\\carlos.png.png','Nicolas_SF'),(9,'Roberto da Silva','robertaodograu@gmail.com','3013',1,'','robert'),(10,'Teste','teste','3013',1,'F:\\senai\\carlos.png.png','teste'),(11,'Jorge Ciffone','Jorge@gmail.com','3013',1,NULL,'teste2');
+INSERT INTO `tb_funcionario` VALUES (1,'Nicolas Fernandes','Nicolasfernandes@gmail.com','3013',1,' ','Nicolas'),(2,'Daniel Ferreira','Daniel@gmail.com','3013',1,' ','Daniel'),(3,'Lucas das Neves','Lucasneves@hotmail.com','3013',1,' ','Lucas'),(4,'Jorge Ciffoni','Jorginhociffoni@outlook.com','3013',1,' ','Jorge');
 /*!40000 ALTER TABLE `tb_funcionario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -222,7 +220,7 @@ CREATE TABLE `tb_sala_do_predio` (
   `numeracao` varchar(50) DEFAULT NULL,
   `bloco` varchar(50) NOT NULL,
   PRIMARY KEY (`id_sala`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,7 +229,7 @@ CREATE TABLE `tb_sala_do_predio` (
 
 LOCK TABLES `tb_sala_do_predio` WRITE;
 /*!40000 ALTER TABLE `tb_sala_do_predio` DISABLE KEYS */;
-INSERT INTO `tb_sala_do_predio` VALUES (5,'Pedagogia','a','1','A'),(7,'a','a','1','C'),(9,'a','a','1','A');
+INSERT INTO `tb_sala_do_predio` VALUES (1,'Secretaria','Recepcionar pessoas; fornecer informações; atender pedidos, solicitações e chamadas telefônicas; filtrar ligações; anotar e transmitir recados; orientar e encaminhar pessoas; prestar atendimento especial a autoridades e usuários diferenciados.','0','C'),(2,'Coordenação','Alinhamento da grade do curso; Oferta de curso; Contratação de professores.','0','C'),(3,'Almoxarifado','O Almoxarifado é o local destinado à guarda, localização, segurança e preservação do material adquirido, adequado à sua natureza, a fim de suprir as necessidades operacionais dos setores integrantes da estrutura organizacional do SENAI.','0','C'),(4,'Biblioteca','É um espaço que reúne coleção de informações de qualquer tipo, sejam livros, enciclopédias, dicionário, monografias, revista, folhetos etc.','0','C'),(5,'Sala de aula','Reservado para aula','03','C'),(6,'Sala de Aula','Reservado para aula','10','C'),(7,'Lab. de Modelagem','O Laboratório de Modelagem e Vestuário é destinado ao desenvolvimento de trabalhos manuais dando assistência a várias disciplinas do curso e de outros cursos que necessitem da área de modelagem e costura.','01','C'),(8,'Lab. de Costura','Espaço reservado para aulas de costura','0','C');
 /*!40000 ALTER TABLE `tb_sala_do_predio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -246,7 +244,7 @@ CREATE TABLE `tb_usuario` (
   `id_usuario` int(6) NOT NULL AUTO_INCREMENT,
   `perfil` varchar(50) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -268,4 +266,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-09 20:08:49
+-- Dump completed on 2023-07-12 15:46:52

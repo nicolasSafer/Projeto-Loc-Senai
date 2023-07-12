@@ -18,7 +18,7 @@ namespace Projeto_Loc_Senai
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaMapaSenai());
+            Application.Run(new TelaLogin());
         }
     }
 }

@@ -17,11 +17,11 @@ namespace Projeto_Loc_Senai
         Thread f1;
         private Form activeForm;
         public string id_on;
-        
+
 
         public TelaAdm()
         {
-            
+
 
 
         }
@@ -143,7 +143,7 @@ namespace Projeto_Loc_Senai
 
         private void PainelGeral_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
     }
 }

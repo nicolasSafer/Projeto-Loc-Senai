@@ -139,7 +139,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
         int id_on;
         private void btn_1_Click(object sender, EventArgs e)
         {
-            id_on = 10;
+            id_on = 1;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -151,7 +151,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_2_Click(object sender, EventArgs e)
         {
-            id_on = 11;
+            id_on = 2;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -159,7 +159,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_3_Click(object sender, EventArgs e)
         {
-            id_on = 12;
+            id_on = 3;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -167,7 +167,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_4_Click(object sender, EventArgs e)
         {
-            id_on = 13;
+            id_on = 4;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -175,7 +175,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_5_Click(object sender, EventArgs e)
         {
-            id_on = 14;
+            id_on = 5;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -183,7 +183,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_6_Click(object sender, EventArgs e)
         {
-            id_on = 15;
+            id_on = 6;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -191,7 +191,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_7_Click(object sender, EventArgs e)
         {
-            id_on = 16;
+            id_on = 7;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);
@@ -199,7 +199,7 @@ namespace Projeto_Loc_Senai.FormsVisitante
 
         private void btn_8_Click(object sender, EventArgs e)
         {
-            id_on = 17;
+            id_on = 8;
             f1 = new Thread(AbrirJan);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start(id_on);

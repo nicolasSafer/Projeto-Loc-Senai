@@ -84,129 +84,145 @@
             // 
             // btn_2
             // 
+            this.btn_2.BackColor = System.Drawing.Color.White;
+            this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_2.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_2.IconColor = System.Drawing.Color.Black;
             this.btn_2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_2.Location = new System.Drawing.Point(154, 249);
+            this.btn_2.Location = new System.Drawing.Point(154, 254);
             this.btn_2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_2.Name = "btn_2";
             this.btn_2.Size = new System.Drawing.Size(30, 30);
             this.btn_2.TabIndex = 13;
             this.btn_2.Text = "+";
-            this.btn_2.UseVisualStyleBackColor = true;
+            this.btn_2.UseVisualStyleBackColor = false;
             this.btn_2.Visible = false;
             this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
             // 
             // btn_8
             // 
+            this.btn_8.BackColor = System.Drawing.Color.White;
+            this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_8.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_8.IconColor = System.Drawing.Color.Black;
             this.btn_8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_8.Location = new System.Drawing.Point(154, 513);
+            this.btn_8.Location = new System.Drawing.Point(154, 523);
             this.btn_8.Margin = new System.Windows.Forms.Padding(2);
             this.btn_8.Name = "btn_8";
             this.btn_8.Size = new System.Drawing.Size(30, 30);
             this.btn_8.TabIndex = 12;
             this.btn_8.Text = "+";
-            this.btn_8.UseVisualStyleBackColor = true;
+            this.btn_8.UseVisualStyleBackColor = false;
             this.btn_8.Visible = false;
             this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_7
             // 
+            this.btn_7.BackColor = System.Drawing.Color.White;
+            this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_7.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_7.IconColor = System.Drawing.Color.Black;
             this.btn_7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_7.Location = new System.Drawing.Point(154, 473);
+            this.btn_7.Location = new System.Drawing.Point(154, 478);
             this.btn_7.Margin = new System.Windows.Forms.Padding(2);
             this.btn_7.Name = "btn_7";
             this.btn_7.Size = new System.Drawing.Size(30, 30);
             this.btn_7.TabIndex = 11;
             this.btn_7.Text = "+";
-            this.btn_7.UseVisualStyleBackColor = true;
+            this.btn_7.UseVisualStyleBackColor = false;
             this.btn_7.Visible = false;
             this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
             // 
             // btn_6
             // 
+            this.btn_6.BackColor = System.Drawing.Color.White;
+            this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_6.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_6.IconColor = System.Drawing.Color.Black;
             this.btn_6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_6.Location = new System.Drawing.Point(154, 428);
+            this.btn_6.Location = new System.Drawing.Point(154, 433);
             this.btn_6.Margin = new System.Windows.Forms.Padding(2);
             this.btn_6.Name = "btn_6";
             this.btn_6.Size = new System.Drawing.Size(30, 30);
             this.btn_6.TabIndex = 10;
             this.btn_6.Text = "+";
-            this.btn_6.UseVisualStyleBackColor = true;
+            this.btn_6.UseVisualStyleBackColor = false;
             this.btn_6.Visible = false;
             this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // btn_5
             // 
+            this.btn_5.BackColor = System.Drawing.Color.White;
+            this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_5.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_5.IconColor = System.Drawing.Color.Black;
             this.btn_5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_5.Location = new System.Drawing.Point(154, 383);
+            this.btn_5.Location = new System.Drawing.Point(154, 388);
             this.btn_5.Margin = new System.Windows.Forms.Padding(2);
             this.btn_5.Name = "btn_5";
             this.btn_5.Size = new System.Drawing.Size(30, 30);
             this.btn_5.TabIndex = 9;
             this.btn_5.Text = "+";
-            this.btn_5.UseVisualStyleBackColor = true;
+            this.btn_5.UseVisualStyleBackColor = false;
             this.btn_5.Visible = false;
             this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
             // 
             // btn_4
             // 
+            this.btn_4.BackColor = System.Drawing.Color.White;
+            this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_4.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_4.IconColor = System.Drawing.Color.Black;
             this.btn_4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_4.Location = new System.Drawing.Point(154, 338);
+            this.btn_4.Location = new System.Drawing.Point(154, 344);
             this.btn_4.Margin = new System.Windows.Forms.Padding(2);
             this.btn_4.Name = "btn_4";
             this.btn_4.Size = new System.Drawing.Size(30, 30);
             this.btn_4.TabIndex = 8;
             this.btn_4.Text = "+";
-            this.btn_4.UseVisualStyleBackColor = true;
+            this.btn_4.UseVisualStyleBackColor = false;
             this.btn_4.Visible = false;
             this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_3
             // 
+            this.btn_3.BackColor = System.Drawing.Color.White;
+            this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_3.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_3.IconColor = System.Drawing.Color.Black;
             this.btn_3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_3.Location = new System.Drawing.Point(154, 294);
+            this.btn_3.Location = new System.Drawing.Point(154, 299);
             this.btn_3.Margin = new System.Windows.Forms.Padding(2);
             this.btn_3.Name = "btn_3";
             this.btn_3.Size = new System.Drawing.Size(30, 30);
             this.btn_3.TabIndex = 7;
             this.btn_3.Text = "+";
-            this.btn_3.UseVisualStyleBackColor = true;
+            this.btn_3.UseVisualStyleBackColor = false;
             this.btn_3.Visible = false;
             this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // btn_1
             // 
+            this.btn_1.BackColor = System.Drawing.Color.White;
+            this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_1.IconColor = System.Drawing.Color.Black;
             this.btn_1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_1.Location = new System.Drawing.Point(154, 204);
+            this.btn_1.Location = new System.Drawing.Point(154, 210);
             this.btn_1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(30, 30);
             this.btn_1.TabIndex = 6;
             this.btn_1.Text = "+";
-            this.btn_1.UseVisualStyleBackColor = true;
+            this.btn_1.UseVisualStyleBackColor = false;
             this.btn_1.Visible = false;
             this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
