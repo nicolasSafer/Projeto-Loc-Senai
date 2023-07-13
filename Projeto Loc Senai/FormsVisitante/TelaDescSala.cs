@@ -26,6 +26,11 @@ namespace Projeto_Loc_Senai.FormsVisitante
             
             this.id_on = id_on;
             InitializeComponent();
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            // Define o tamanho padrão da tela como 1000x600 pixels
+            this.MaximumSize = new Size(1000, 600);
+            this.MinimumSize = new Size(900, 600);
         }
 
         private void TelaDescSala_Load(object sender, EventArgs e)
@@ -39,6 +44,11 @@ namespace Projeto_Loc_Senai.FormsVisitante
             numeracao_sala.Text = dt.GetString(2);
             bloco_sala.Text = dt.GetString(3);
             
+        }
+
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

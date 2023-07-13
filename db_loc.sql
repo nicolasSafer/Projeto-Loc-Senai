@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.36-MariaDB, for Win32 (AMD64)
+-- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
 --
 -- Host: 127.0.0.1    Database: db_loc
 -- ------------------------------------------------------
--- Server version	10.1.36-MariaDB
+-- Server version	10.4.24-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -114,7 +114,7 @@ CREATE TABLE `tb_evento` (
   `descricao_evento` varchar(250) NOT NULL,
   `dia_semana` varchar(45) NOT NULL,
   PRIMARY KEY (`id_evento`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,6 +123,7 @@ CREATE TABLE `tb_evento` (
 
 LOCK TABLES `tb_evento` WRITE;
 /*!40000 ALTER TABLE `tb_evento` DISABLE KEYS */;
+INSERT INTO `tb_evento` VALUES (1,'PALESTRA - MULHERES NA INFRAESTRUTURA','Sala de Convenções 1','10/07/23','19:00','No ramo da Engenharia, Arquitetura, Agronomia e Geociência as mulheres estão cada vez mais presentes, esta iniciativa é para que Elas venham, cada vez mais, fazer parte das discussões, sugestões e ideias.',''),(2,'Palestra - Biotecnologia, a Proteção Ambiental','Sala de Convenções 2','11/07/23','17:00','O Palestrante Rui Alexandre Sabatke Gutierrez nasceu em Curitiba – PR, é oficial Reformado da Marinha no Posto de Capitão de Mar e Guerra (FN). Durante os mais de trinta anos em que esteve na ativa na Marinha de Guerra morou nas cidades do Rio de Jan',''),(3,'#Elas Inspiram: A Criar e Inovar','Átrios I e II','13/07/23','13:00','Apresentamos a você o evento mais aguardado do ano: \"Elas Inspiram a Criar e Inovar\". Em um cenário encantador e inusitado, a renomada Queijaria Vaca Profana, sob o comando da inspiradora Maristela Dalla Lasta, abrirá suas portas para nos contar sua ',''),(4,'Encontro de Negócios','Sala de Convenções 2','10/07/23','15:00','Participe do Encontro de Negócios e potencialize sua empresa! Conecte-se, apresente sua empresa e feche negócios com outros empreendedores. Garanta sua vaga agora!',''),(5,'Barragens de Terra e Enrocamento','AUDITÓRIO CAIO AMARAL GRUBER','14/07/23','09:00','',''),(6,'TRILHA MEI - GESTÃO FINANCEIRA','Átrios I e II','12/07/23','14:00','Essa trilha de capacitação foi desenvolvida especialmente para empreendedores como você, que desejam desenvolver uma visão empreendedora ampliada sobre a gestão financeira do seu negócio. Com ela, você aprenderá um conjunto de ações e procedimentos f','');
 /*!40000 ALTER TABLE `tb_evento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,7 +140,7 @@ CREATE TABLE `tb_feedback_software` (
   `avaliacao_software` varchar(50) NOT NULL,
   `observacoes` varchar(250) NOT NULL,
   PRIMARY KEY (`id_feedback`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,4 +267,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-12 15:46:52
+-- Dump completed on 2023-07-13 12:11:03

@@ -22,8 +22,8 @@ namespace Projeto_Loc_Senai.FormsAdm
             this.Text = string.Empty;
             this.ControlBox = false;
             // Define o tamanho padrão da tela como 900x600 pixels
-            this.MaximumSize = new Size(900, 600);
-            this.MinimumSize = new Size(700, 575);
+            this.MaximumSize = new Size(900, 700);
+            this.MinimumSize = new Size(700, 650);
         }
 
         //Comando para responsividade da tela

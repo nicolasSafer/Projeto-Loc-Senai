@@ -48,7 +48,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.PainelSuperior = new CONTROL.GradientPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.Fechar = new FontAwesome.Sharp.IconButton();
@@ -63,45 +62,50 @@
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(380, 169);
+            this.textBox1.Location = new System.Drawing.Point(507, 208);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 37);
+            this.textBox1.Size = new System.Drawing.Size(159, 45);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // evento_1
             // 
             this.evento_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_1.Location = new System.Drawing.Point(12, 215);
+            this.evento_1.Location = new System.Drawing.Point(16, 265);
+            this.evento_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.evento_1.Name = "evento_1";
-            this.evento_1.Size = new System.Drawing.Size(10, 20);
+            this.evento_1.Size = new System.Drawing.Size(12, 22);
             this.evento_1.TabIndex = 3;
             this.evento_1.Visible = false;
             // 
             // evento_4
             // 
             this.evento_4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_4.Location = new System.Drawing.Point(12, 288);
+            this.evento_4.Location = new System.Drawing.Point(16, 354);
+            this.evento_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.evento_4.Name = "evento_4";
-            this.evento_4.Size = new System.Drawing.Size(10, 20);
+            this.evento_4.Size = new System.Drawing.Size(12, 22);
             this.evento_4.TabIndex = 4;
             this.evento_4.Visible = false;
             // 
             // evento_3
             // 
             this.evento_3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_3.Location = new System.Drawing.Point(12, 264);
+            this.evento_3.Location = new System.Drawing.Point(16, 325);
+            this.evento_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.evento_3.Name = "evento_3";
-            this.evento_3.Size = new System.Drawing.Size(10, 20);
+            this.evento_3.Size = new System.Drawing.Size(12, 22);
             this.evento_3.TabIndex = 5;
             this.evento_3.Visible = false;
             // 
             // evento_2
             // 
             this.evento_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.evento_2.Location = new System.Drawing.Point(12, 240);
+            this.evento_2.Location = new System.Drawing.Point(16, 295);
+            this.evento_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.evento_2.Name = "evento_2";
-            this.evento_2.Size = new System.Drawing.Size(10, 20);
+            this.evento_2.Size = new System.Drawing.Size(12, 22);
             this.evento_2.TabIndex = 6;
             this.evento_2.Visible = false;
             // 
@@ -109,9 +113,10 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(82, 530);
+            this.button1.Location = new System.Drawing.Point(195, 653);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 49);
+            this.button1.Size = new System.Drawing.Size(125, 60);
             this.button1.TabIndex = 7;
             this.button1.Text = "1º - Evento";
             this.button1.UseVisualStyleBackColor = true;
@@ -121,9 +126,10 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(193, 530);
+            this.button2.Location = new System.Drawing.Point(343, 653);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 49);
+            this.button2.Size = new System.Drawing.Size(125, 60);
             this.button2.TabIndex = 8;
             this.button2.Text = "2º - Evento";
             this.button2.UseVisualStyleBackColor = true;
@@ -133,9 +139,10 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(304, 530);
+            this.button3.Location = new System.Drawing.Point(491, 653);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 49);
+            this.button3.Size = new System.Drawing.Size(125, 60);
             this.button3.TabIndex = 9;
             this.button3.Text = "3º - Evento";
             this.button3.UseVisualStyleBackColor = true;
@@ -145,9 +152,10 @@
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(415, 530);
+            this.button4.Location = new System.Drawing.Point(639, 653);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 49);
+            this.button4.Size = new System.Drawing.Size(125, 60);
             this.button4.TabIndex = 10;
             this.button4.Text = "4º - Evento";
             this.button4.UseVisualStyleBackColor = true;
@@ -159,9 +167,10 @@
             this.nome_evento.BackColor = System.Drawing.Color.White;
             this.nome_evento.Enabled = false;
             this.nome_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nome_evento.Location = new System.Drawing.Point(216, 215);
+            this.nome_evento.Location = new System.Drawing.Point(266, 265);
+            this.nome_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nome_evento.Name = "nome_evento";
-            this.nome_evento.Size = new System.Drawing.Size(448, 35);
+            this.nome_evento.Size = new System.Drawing.Size(596, 41);
             this.nome_evento.TabIndex = 11;
             // 
             // local_evento
@@ -170,9 +179,10 @@
             this.local_evento.BackColor = System.Drawing.Color.White;
             this.local_evento.Enabled = false;
             this.local_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.local_evento.Location = new System.Drawing.Point(216, 260);
+            this.local_evento.Location = new System.Drawing.Point(266, 320);
+            this.local_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.local_evento.Name = "local_evento";
-            this.local_evento.Size = new System.Drawing.Size(449, 35);
+            this.local_evento.Size = new System.Drawing.Size(597, 41);
             this.local_evento.TabIndex = 12;
             // 
             // data_evento
@@ -181,9 +191,10 @@
             this.data_evento.BackColor = System.Drawing.Color.White;
             this.data_evento.Enabled = false;
             this.data_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.data_evento.Location = new System.Drawing.Point(216, 301);
+            this.data_evento.Location = new System.Drawing.Point(266, 370);
+            this.data_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.data_evento.Name = "data_evento";
-            this.data_evento.Size = new System.Drawing.Size(199, 35);
+            this.data_evento.Size = new System.Drawing.Size(200, 41);
             this.data_evento.TabIndex = 13;
             // 
             // horario_evento
@@ -192,9 +203,10 @@
             this.horario_evento.BackColor = System.Drawing.Color.White;
             this.horario_evento.Enabled = false;
             this.horario_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horario_evento.Location = new System.Drawing.Point(216, 344);
+            this.horario_evento.Location = new System.Drawing.Point(701, 369);
+            this.horario_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.horario_evento.Name = "horario_evento";
-            this.horario_evento.Size = new System.Drawing.Size(199, 35);
+            this.horario_evento.Size = new System.Drawing.Size(161, 41);
             this.horario_evento.TabIndex = 14;
             // 
             // descricao_evento
@@ -202,11 +214,12 @@
             this.descricao_evento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.descricao_evento.BackColor = System.Drawing.Color.White;
             this.descricao_evento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descricao_evento.Location = new System.Drawing.Point(50, 420);
+            this.descricao_evento.Location = new System.Drawing.Point(67, 474);
+            this.descricao_evento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.descricao_evento.Multiline = true;
             this.descricao_evento.Name = "descricao_evento";
             this.descricao_evento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descricao_evento.Size = new System.Drawing.Size(615, 99);
+            this.descricao_evento.Size = new System.Drawing.Size(819, 164);
             this.descricao_evento.TabIndex = 15;
             // 
             // label1
@@ -214,9 +227,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 215);
+            this.label1.Location = new System.Drawing.Point(60, 265);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 26);
+            this.label1.Size = new System.Drawing.Size(185, 32);
             this.label1.TabIndex = 16;
             this.label1.Text = "Nome Evento";
             // 
@@ -225,20 +239,22 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 391);
+            this.label2.Location = new System.Drawing.Point(60, 438);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 26);
+            this.label2.Size = new System.Drawing.Size(236, 32);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Descricao Evento";
+            this.label2.Text = "Descrição Evento";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 260);
+            this.label3.Location = new System.Drawing.Point(60, 320);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 26);
+            this.label3.Size = new System.Drawing.Size(179, 32);
             this.label3.TabIndex = 17;
             this.label3.Text = "Local Evento";
             // 
@@ -247,9 +263,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 305);
+            this.label4.Location = new System.Drawing.Point(60, 375);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 26);
+            this.label4.Size = new System.Drawing.Size(170, 32);
             this.label4.TabIndex = 18;
             this.label4.Text = "Data Evento";
             // 
@@ -258,9 +275,10 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(45, 350);
+            this.label5.Location = new System.Drawing.Point(485, 375);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 26);
+            this.label5.Size = new System.Drawing.Size(203, 32);
             this.label5.TabIndex = 19;
             this.label5.Text = "Horario Evento";
             // 
@@ -269,22 +287,12 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(210, 173);
+            this.label6.Location = new System.Drawing.Point(280, 213);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 29);
+            this.label6.Size = new System.Drawing.Size(182, 36);
             this.label6.TabIndex = 20;
             this.label6.Text = "Data de hoje";
-            // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(526, 530);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 49);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // PainelSuperior
             // 
@@ -295,9 +303,9 @@
             this.PainelSuperior.Controls.Add(this.iconPictureBox1);
             this.PainelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PainelSuperior.Location = new System.Drawing.Point(0, 0);
-            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(2);
+            this.PainelSuperior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PainelSuperior.Name = "PainelSuperior";
-            this.PainelSuperior.Size = new System.Drawing.Size(736, 162);
+            this.PainelSuperior.Size = new System.Drawing.Size(981, 199);
             this.PainelSuperior.TabIndex = 22;
             // 
             // label7
@@ -307,10 +315,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(302, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(403, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(291, 110);
+            this.label7.Size = new System.Drawing.Size(361, 138);
             this.label7.TabIndex = 8;
             this.label7.Text = "Informação  \r\n   Evento";
             // 
@@ -326,10 +333,10 @@
             this.Fechar.IconColor = System.Drawing.Color.White;
             this.Fechar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Fechar.IconSize = 25;
-            this.Fechar.Location = new System.Drawing.Point(694, 16);
-            this.Fechar.Margin = new System.Windows.Forms.Padding(2);
+            this.Fechar.Location = new System.Drawing.Point(925, 20);
+            this.Fechar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Fechar.Name = "Fechar";
-            this.Fechar.Size = new System.Drawing.Size(22, 24);
+            this.Fechar.Size = new System.Drawing.Size(29, 30);
             this.Fechar.TabIndex = 6;
             this.Fechar.UseVisualStyleBackColor = false;
             this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
@@ -341,21 +348,20 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox1.IconSize = 112;
-            this.iconPictureBox1.Location = new System.Drawing.Point(184, 20);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.iconPictureBox1.IconSize = 149;
+            this.iconPictureBox1.Location = new System.Drawing.Point(245, 25);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(112, 122);
+            this.iconPictureBox1.Size = new System.Drawing.Size(149, 150);
             this.iconPictureBox1.TabIndex = 10;
             this.iconPictureBox1.TabStop = false;
             // 
             // TelaDescEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 590);
+            this.ClientSize = new System.Drawing.Size(981, 726);
             this.Controls.Add(this.PainelSuperior);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -376,6 +382,7 @@
             this.Controls.Add(this.evento_4);
             this.Controls.Add(this.evento_1);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaDescEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TelaDescEvento_Load);
@@ -408,7 +415,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
         private CONTROL.GradientPanel PainelSuperior;
         private System.Windows.Forms.Label label7;
         private FontAwesome.Sharp.IconButton Fechar;
